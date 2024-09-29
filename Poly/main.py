@@ -6,8 +6,8 @@ import sys
 
 # 初始化Pygame
 pygame.init()
-screen_width = 1000
-screen_height = 650
+screen_width = 1400
+screen_height = 1200
 
 class Polygon:
     def __init__(self, radius, N, is_regular=True):

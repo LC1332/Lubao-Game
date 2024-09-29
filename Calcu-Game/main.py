@@ -8,7 +8,7 @@ from CarManager import CarManager
 pygame.init()
 
 # 游戏窗口设置
-scale = 80
+scale = 70
 screen_width, screen_height = 10 * scale, 9 * scale
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("数学早教游戏")
@@ -95,7 +95,7 @@ def main_game_loop():
                     answer = key_map[event.key]
 
                     if answer == current_eqn['answer']:
-                        audios = ["答对了,", current_eqn['question'], "和", current_co_eqn['question'], f"都是{current_eqn['answer']}。"]
+                        audios = ["鲁宝真棒！答对了,", current_eqn['question'], "和", current_co_eqn['question'], f"都是{current_eqn['answer']}。"]
                         is_answer = True
                         if if_first_correct:
                             print("一次答对")

@@ -22,8 +22,10 @@ WHITE = (255, 255, 255)
 score = 0
 
 # 设置窗口大小
+#SCREEN_WIDTH = 1600
+#SCREEN_HEIGHT = 1200
 SCREEN_WIDTH = 1200
-SCREEN_HEIGHT = 700
+SCREEN_HEIGHT = 750
 carScale = 5
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 # 设置速度
