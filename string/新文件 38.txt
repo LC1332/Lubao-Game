@@ -1,0 +1,63 @@
+我正在编写一个简易的早教游戏。请参考系统函数说明中的函数，以及对应例子。编写一个Query = "编写一个10以内减法的游戏"相关的游戏。
+
+# 系统函数说明
+
+整个游戏的画面是800 * 500的。并且提供以下函数
+
+## spawn_card
+
+spawn_card( text ,x, y ) 根据text对应的卡片，在x,y中心位置生成卡片，如spawn_card("苹果",400,300)
+
+其中可选参数为
+text 卡片的描述，或者卡片的文件hash名，没有卡片的时候会自动调用dalle3进行文生图
+x,y 中心位置，如果不指定，则卡片会进入下方的“候选卡片区域”（会在屏幕下方的区域自动展示）
+scale 默认为1， 卡片的大小，默认卡片大小为70*70
+if_moveable 卡片是否能被移动，一般题目卡片不能被移动
+click_text 默认为空，如果指定，则点击的时候会语音播放对应的文本（或者audio hash名对应的音频)
+
+## set_target
+
+set_target( answer_text, x, y ) 在x,y中心位置生成一个虚线框，如果用户将答案对应的card拖动到框中，则会播放correct_text
+
+其中可选参数为
+answer_text 默认的答案卡片
+x,y 中心位置，必要
+scale 默认为1
+error_text 默认为空，如果指定，当拖动错误卡片的时候，会播放语音，并把卡片弹回原来的位置
+correct_text 默认为空，如果指定，拖动正确卡片时，会播放对应的语音
+
+## 游戏结束
+
+所有的targets的文本都吻合的时候，游戏成功
+
+## 最简单的例子
+
+```python
+spawn_card( "你好" ) # 自动生成在候选区
+set_target( "你好", 400, 300, correct_text = "成功啦" )
+```
+
+# Reference
+Query: 编写一个10以内加法的早教游戏
+Answer:
+```python
+set("start_audio", "1加3等于几啊？")
+spawn_card('数字1', x=100, y= 250)
+spawn_card('符号+', x=200, y= 250)
+spawn_card('数字3', x=300, y= 250)
+spawn_card('符号=', x=400, y= 250)
+spawn_card('数字2') # 自动加入候选卡牌池子
+spawn_card('数字4')
+spawn_card('数字6')
+spawn_card('数字7')
+set_target('数字4' , x=500, y=250, error_text = "不是哦，再想想", correct_text = "答对了 真棒")
+```
+
+# Goal
+
+请参考系统函数说明中的函数，以及对应例子。编写一个Query = "编写一个10以内减法的游戏"相关的游戏。
+
+根据Query的需求，参考Reference中的例子，进行python程序的编写 
+Let's think it step-by-step 
+- analysis 分析具体的实现思路
+- code 具体的实现

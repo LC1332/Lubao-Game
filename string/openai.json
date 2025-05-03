@@ -1,0 +1,1694 @@
+[
+    [
+        "resize(image_2, new_height, new_width, is_flow=False)"
+    ],
+    [
+        "RGBABuffer outputBuffer = RGBABuffer.createAbsoluteImage(width, height);\n\n        new VP8LDecoder(lsbBitInputStream).readVP8Lossless(outputBuffer, true, width, height);\n\n        return outputBuffer;\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "try {\n                    newCtx = MessageHelper.cloneMessageContext(synCtx);\n                } catch (AxisFault e) {\n                    handleException(\"Error cloning the message context\", e);\n                    return;\n                }"
+    ],
+    [
+        "indexer.index_document(code_doc)"
+    ],
+    [
+        "def model_classify(self, xs, ys=None):\n        \"\"\"\n        This model is used to add an auxiliary (supervised) loss as described in the\n        Kingma et al., \"Semi-Supervised Learning with Deep Generative Models\".\n        \"\"\"\n        # register all pytorch (sub)modules with pyro\n        pyro.module(\"ss_vae\", self)\n\n        # inform Pyro that the variables in the batch of xs, ys are conditionally independent\n        with pyro.iarange(\"data\"):\n            # this here is the extra term to yield an auxiliary loss that we do gradient descent on\n            if ys is not None:\n                alpha = self.encoder_y.forward(xs)\n                with pyro.poutine.scale(scale=self.aux_loss_multiplier):\n                    pyro.sample(\"y_aux\", dist.OneHotCategorical(alpha), obs=ys)\n\n    def guide_classify(self, xs, ys=None):\n        \"\"\"\n        dummy guide function to accompany model_classify in inference\n        \"\"\"\n        pass"
+    ],
+    [
+        "result.setExistingBranchDeleteError(e.getMessage());"
+    ],
+    [
+        "ame=\\\"prefetch-with-select-related\\\"),\\n    re_path(r\\\"^autooptimization/select-related-by-source$\\\", SelectRelatedBySourceAPI.as_view(),\\n            name=\\\"select-related-by-source\\\"),\\n    re_path(r\\\"^autooptimization/prefetch-related-forced$\\\", PrefetchRelatedForcedAPI.as_view(),\\n            name=\\\"prefetch-related-forced\\\"),"
+    ],
+    [
+        "coin_to_asset['ETH']]['position']['leverage'], indent=2))"
+    ],
+    [
+        "int waitOneSecond = 1000;\n            int waitTwoSecond = 2000;\n            int waitThreeSecond = 3000;\n            int waitFourSecond = 4000;\n            int waitFiveSecond = 5000;\n            int waitSixSecond = 6000;"
+    ],
+    [
+        "def query(self, *args, **kwargs):\n        return self.adapter.query(*args, **kwargs)"
+    ],
+    [
+        "add(Prompt.of(\\\"Explain\\\", \\\"帮我增强下面一段代码的可读性吧，除了优化后的代码，不要添加任何其他信息，这是代码片段：{query}\\\"));"
+    ],
+    [
+        "if start_chat:\n        print(\"Resuming existing chat session.\")\n        session_id = os.getenv(\"CHAT_SESSION_ID\", None)\n        if session_id:\n            agent.resume_session(session_id)\n        else:\n            print(\"No existing session found. Starting a new session.\")\n            agent.start_session(model=model)\n    else:\n        print(\"Starting a new chat session.\")\n        agent.start_session(model=model)\n\n    prompt = input(\">>> Input your message:\\n>\")\n    while prompt.lower() != \"exit\":\n        response = agent.send_message(prompt)\n        print(\"Response:\", response)\n        prompt = input(\">>> Input your message:\\n>\")"
+    ],
+    [
+        "global gitNoteHome, gitNoteNoteHome, userName, password, gitUrl, myGitNote\n    gitNoteHome = os.path.join(os.getenv('HOME'), 'GitNote')\n    gitNoteNoteHome = os.path.join(gitNoteHome, 'notes')\n    userName = 'your_username'\n    password = 'your_password'\n    gitUrl = 'https://github.com/your_username/your_repo.git'\n    \n    if not os.path.exists(gitNoteHome):\n        os.makedirs(gitNoteHome)\n        os.makedirs(gitNoteNoteHome)\n        gitExist = False\n    \n    if not gitExist:\n        repo = git.Repo.init(gitNoteHome)\n        origin = repo.create_remote('origin', gitUrl)\n        origin.fetch()\n        repo.create_head('master', origin.refs.master)\n        repo.heads.master.set_tracking_branch(origin.refs.master)\n        repo.heads.master.checkout()\n    \n    myGitNote = GitNote.GitNote(gitNoteHome, userName, password, gitUrl)\n    updateStatus = myGitNote.updateNotes()"
+    ],
+    [
+        "@Override\n    K checkKey(K key) {\n        return key;\n    }"
+    ],
+    [
+        "k, v = value.split('=', 1)\n                if re.match(r'^\\\\{.*\\\\}$', v):  # Check if the value is a JSON object\n                    try:\n                        d[k] = json.loads(v)\n                    except json.JSONDecodeError:\n                        d[k] = parse_arg(v)\n                else:\n                    d[k] = parse_arg(v)\n        setattr(args, self.dest, d)"
+    ],
+    [
+        "setCurrentPage(page);"
+    ],
+    [
+        "if (!event.ctrlKey && !event.altKey && !event.metaKey) {"
+    ],
+    [
+        ""
+    ],
+    [
+        "function Start () {\n    // Initially set the light's intensity to low.\n    light.intensity = lowIntensity;\n    // Set the initial target intensity.\n    targetIntensity = highIntensity;\n}"
+    ],
+    [
+        "super(ConstnessValidator, self).__init__(engine)\n        self.in_assign = False"
+    ],
+    [
+        "record.getLength());"
+    ],
+    [
+        "String dembedFooter = mainConfig.getDembedFooter();"
+    ],
+    [
+        "def test_constants_additional(self):\n        self.assertEqual(WebKit.WKMediaCaptureTypeCamera, 0)\n        self.assertEqual(WebKit.WKMediaCaptureTypeMicrophone, 1)\n        self.assertEqual(WebKit.WKMediaCaptureTypeCameraAndMicrophone, 2)"
+    ],
+    [
+        "for server_name, server_info in cluster.items():\n        server = manager.create_server(server_info)\n        server.deploy()\n        print(f\"Server {server_name} created and deployed.\")"
+    ],
+    [
+        "function Console(consoleId, motd) {\n      this.consoleObj = document.getElementById(consoleId);\n      this.inputLine = null;\n      this.inputMode = Enum.consoleInputMode.NONE;\n      this.shell = new Shell();\n\n      // Print the message of the day.\n      this.print(motd);\n      this.promptForInput('>', '', true, Enum.consoleInputMode.BY_LINE);\n    }"
+    ],
+    [
+        "treturn stack.join('\\\\n');"
+    ],
+    [
+        "void promptDenied();"
+    ],
+    [
+        "characterCount++;"
+    ],
+    [
+        "function Node(value = null) {\n    this.value = value;\n    this.left = null;\n    this.right = null;\n}"
+    ],
+    [
+        "def md5(message):"
+    ],
+    [
+        "ew RtcMsg(subject, application, content, to)"
+    ],
+    [
+        "for start, end in zip(span_starts, span_ends):\n            mention_text = text[start:end+1]\n            if len(mention_text) <= self.span_width:\n                candidate_mentions.append(mention_text)\n        return candidate_mentions"
+    ],
+    [
+        "group += paren_string[i];\n        }"
+    ],
+    [
+        "return True"
+    ],
+    [
+        "while (i < length) {\n    String str2 = strArr[i];\n    stringBuilder = stringBuilder + \" AND bucket_display_name=\\\"\" + str2 + \"\\\"\";\n    i++;\n}"
+    ],
+    [
+        "def adjust_learning_rate(optimizer, new_lr):\n    \"\"\"Sets the learning rate to the given value\"\"\"\n    for param_group in optimizer.param_groups:\n        param_group['lr'] = new_lr"
+    ],
+    [
+        "{\n        ObjectGraph objectGraph = ObjectGraph.create(new MyModule());\n        objectGraph.inject(this);\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "while (i < n && typePath.charAt(i) >= '0' && typePath.charAt(i) <= '9') {\n                typeArg = typeArg * 10 + (typePath.charAt(i) - '0');\n                i++;\n            }"
+    ],
+    [
+        "orderBook.showLevels();"
+    ],
+    [
+        "def restart_kernel(self, kernel_id):\n        \\\"\\\"\\\"Issues request to restart the given kernel\n        \\\"\\\"\\\"\n        with mocked_gateway:\n            response = self.request('POST', '/api/kernels/' + kernel_id + '/restart')\n            self.assertEqual(response.status_code, 200)\n            model = json.loads(response.content.decode('utf-8'))\n            restarted_kernel_id = model.get('id')\n            # ensure its in the running_kernels and name matches.\n            running_kernel = running_kernels.get(restarted_kernel_id)\n            self.assertEqual(restarted_kernel_id, running_kernel.get('id'))\n            self.assertEqual(model.get('name'), running_kernel.get('name'))"
+    ],
+    [
+        "TimeConverter.toTicks(delay, unit), TimeConverter.toTicks(period, unit))"
+    ],
+    [
+        "Xden=blind_bwe_utils.apply_stft(denoised_estimate, self.args.tester.blind_bwe.NFFT)"
+    ],
+    [
+        "badger_os.init()\nbadger_os.state_load(\"qrcodes\", state)"
+    ],
+    [
+        "parameter.setImageBase64(base64String);"
+    ],
+    [
+        "0} : OK\\\", command.getId());\\n    }\\n}"
+    ],
+    [
+        "while ((match = getterRegex.exec(injectedScriptSource)) !== null) {\n        getters.add(match[0].substring(1)); // Remove the leading dot\n    }"
+    ],
+    [
+        "get();\\n        if (c != null) {"
+    ],
+    [
+        ""
+    ],
+    [
+        "        return result;"
+    ],
+    [
+        "instance.getCore().info(\"Proxy IP detected: \" + message.sourceAddress());\n                // Log the proxy IP and close the channel\n            }\n        }\n    }"
+    ],
+    [
+        "parsedReport -> parsedReport.getAverages().get(test.getTestName())"
+    ],
+    [
+        "install(new RemoteQueryCancellationModule());\n    }"
+    ],
+    [
+        "item()), 'accuracy': metrics.meters['accuracy'].avg, 'ndcg': metrics.meters['ndcg'].avg, 'mrr': metrics.meters['mrr'].avg})"
+    ],
+    [
+        "512, 512, 512, 512, 512]"
+    ],
+    [
+        "def __init__(self):\n        self.name_to_frames = {}\n        self.hierarchy = {}\n        self.frames = []\n        self.lexemes_to_frames = {}\n        self.typesystem = None\n        self.definitions_to_frames = {}\n        self.xml_definitions_to_frames = {}\n        self.ID_to_frames = {}\n        self.untagged_lus = {}\n\n    def common_supertype(self, f1, f2):\n        \"\"\" Returns the lowest common supertype between two frames. Could be useful for metaphor. \"\"\"\n        try:\n            return self.typesystem.lowest_common_supertype(f1, f2, self)\n        except TypeSystemException as e:\n            print(e.message)\n            return None\n\n    def subtype_s(self, f1_s, f2_s):\n        \"\"\" Returns TRUE if f1 inherits from f2 or from one of f2's children. \"\"\"\n        f1, f2 = self.get_frame(f1_s), self.get_frame(f2_s)\n        return self.subtype(f1, f2)\n\n    def subtype(self, f1, f2):\n        \"\"\" Returns TRUE if f1 inherits from f2 or from one of f2's children. "
+    ],
+    [
+        "h = block0(h)\n            presents.append(tf.stack([past, present], axis=1))\n            activations.append(h)\n            if layer % 2 == 0:\n                tf.logging.info('Processing even layer %d', layer)\n            else:\n                tf.logging.info('Processing odd layer %d', layer)"
+    ],
+    [
+        "t\\t} else if (i % 4 == 0) {"
+    ],
+    [
+        "while (x % i == 0) {\n                primes.add(i);\n                x /= i;\n                i--;\n            }\n        }\n        if (x > 1) {\n            primes.add(x);\n        }"
+    ],
+    [
+        "for (int i = 0; i < K; i++) {\n    st = new StringTokenizer(br.readLine());\n    int A = Integer.parseInt(st.nextToken());\n    int B = Integer.parseInt(st.nextToken());\n    int C = Integer.parseInt(st.nextToken());\n    rules[i] = new Rule(A, B, C);\n}"
+    ],
+    [
+        "def __init__(self, forwardcheck=True):\n        \"\"\"\n        @param forwardcheck: If false forward checking will not be requested\n                             to constraints while looking for solutions\n                             (default is true)\n        @type  forwardcheck: bool\n        \"\"\"\n        self._forwardcheck = forwardcheck\n\n    def getSolutionIter(self, domains, constraints, vconstraints):\n        forwardcheck = self._forwardcheck\n        assignments = {}\n\n        queue = []\n\n        while True:\n\n            # Mix the Degree and Minimum Remaing Values (MRV) heuristics\n            lst = [(-len(vconstraints[variable]),\n                    len(domains[variable]), variable) for variable in domains]\n            lst.sort()\n            for item in lst:\n                if item[-1] not in assignments:\n                    # Found unassigned variable\n                    variable = item[-1]\n                    values = domains[variable][:]\n                    if forwardcheck:\n                        pushdomains = [domains[x] for x in domains\n                                                   if x not in assignments and\n                                                      x != variable]\n                    else:\n                        pushdomains = None\n                    break\n            else:\n                # No unassigned variables. We've got a solution. Go back\n                # to last variable, if there's one.\n                yield assignments.copy()\n                if not queue:\n                    return\n                variable, values, pushdomains = queue.pop()\n                if pushdomains:\n                    for domain in pushdomains:\n                        domain.popState()\n\n            while True:\n                # We have a variable. Do we have any values left?\n                if not values:\n                    # No. Go back to last variable, if there's one.\n                    del assignments[variable]"
+    ],
+    [
+        "fromArray: function(months) {\n      return months.map(function(month) {\n        return 'd-' + month.getFullYear() + '-' + month.getMonth() + '-' + month.getDate();\n      }).join(', ');\n    }"
+    ],
+    [
+        "{\n    if(bytes == 0) return '0 Bytes';\n    const k = 1024;\n    const dm = decimals <= 0 ? 0 : decimals || 2;\n    const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];\n    const i = Math.floor(Math.log(bytes) / Math.log(k));\n    return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];\n}"
+    ],
+    [
+        "assert chain.find_by_chain_id(deep_llm.chain_id) == deep_llm"
+    ],
+    [
+        "for (int i = 0; i < len; i++) {\n            double d1 = adapter1.getDouble(data1, i);\n            double d2 = adapter2.getDouble(data2, i);\n            m1 += d1;\n            m2 += d2;\n        }"
+    ],
+    [
+        "box.content();"
+    ],
+    [
+        "        return newArr;\\n    }"
+    ],
+    [
+        "public String getName()"
+    ],
+    [
+        "            } else if (currentGrade > 1.3f) {"
+    ],
+    [
+        "import tensorflow as tf"
+    ],
+    [
+        "{\n        TweetListFragment fragment = new TweetListFragment();\n        Bundle args = new Bundle();\n        args.putInt(ARG_COLUMN_COUNT, columnCount);\n        fragment.setArguments(args);\n        return fragment;\n    }"
+    ],
+    [
+        "var vowels = ['a', 'e', 'i', 'o', 'u'];"
+    ],
+    [
+        "orderedDish.setStatus(status);"
+    ],
+    [
+        ""
+    ],
+    [
+        "// Reset the maxlevel and level when a space is encountered\n            result.push(maxlevel);\n            maxlevel = 0;\n            level = 0;"
+    ],
+    [
+        "if (user.get().getRole().equals(role)) {\n            attendanceRepository.findByUserId(userId).forEach(\n                attendance -> {\n                    if (attendance.getEvent().getBranch().equals(user.get().getBranch())) {\n                        events.add(attendance.getEvent());\n                    }\n                }\n            );\n        }"
+    ],
+    [
+        "if (!publicUrl.origin.startsWith(window.location.origin)) {\n      console.log('Service worker won\\'t work because PUBLIC_URL is on a different origin from what our page is served on.')\n      return\n    }"
+    ],
+    [
+        "public Long getSimCardId() {\n        return simCardId;\n    }"
+    ],
+    [
+        "private static void preparingCloudResources(Context context) {\n        ProgressDialog preparingDialog = new ProgressDialog(context);\n        preparingDialog.setMessage(context.getString(R.string.preparing_resources));\n        preparingDialog.setCancelable(false);\n        preparingDialog.setCanceledOnTouchOutside(false);\n        preparingDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);\n        preparingDialog.show();\n\n        // Simulate preparing resources\n        new Thread(() -> {\n            try {\n                Thread.sleep(5000); // Simulate time delay for preparing resources\n                context.runOnUiThread(() -> {\n                    preparingDialog.dismiss();\n                    download3dResources(context, new Product()); // Assuming a product is passed here for example\n                });\n            } catch (InterruptedException e) {\n                Log.e(TAG, \"Preparing interrupted\", e);\n            }\n        }).start();\n    }"
+    ],
+    [
+        "if (argv.package) {\\n    params.push(argv.package);\\n}"
+    ],
+    [
+        ".locust_task_weight, \\\"Locust task weight attribute not transferred correctly.\\\"\\n    wrapped_func = task(sample_func, weight=4)\\n    assert callable(wrapped_func), \\\"Return value of decorator is not a callable.\\\"\\n    result_of_calling_wrapped_func = wrapped_func(mock_journey)\\n    assert hasattr(result_of_calling_wrapped_func, 'locust_task_weight'), \\\"Task weight attribute missing from wrapped function.\\\"\\n    assert result_of_calling_wrapped_func.locust_task_weight == 4, \\\"Incorrect task weight set on wrapped function.\\\""
+    ],
+    [
+        "public static void main(String[] args) {\n        // Test cases for the antiShuffle function\n        System.out.println(antiShuffle(\"Hi\"));\n        System.out.println(antiShuffle(\"hello\"));\n        System.out.println(antiShuffle(\"Hello World!!!\"));\n    }"
+    ],
+    [
+        "function removeMarkdownStar(s) {\n    const r = /^\\* /;\n    if (r.test(s)) {\n        return s.replace(r, '');\n    }\n    return s;\n}"
+    ],
+    [
+        "def import_wrapper(name, *args, **kwargs):\n            splitted_name = name.split('.')\n            base_name = splitted_name[0]\n            base_sequence = '.'.join(splitted_name[:-1])\n            last_name = splitted_name[-1]\n\n            current_frame = inspect.currentframe()\n            options = get_options_from_comments(current_frame.f_back)\n\n            package_name = options."
+    ],
+    [
+        ""
+    ],
+    [
+        ".get(uuid).forEach(request -> request.getFuture().complete(response));"
+    ],
+    [
+        "class MaxScaler(SKCMatrixAndWeightTransformerABC):\n    r\\\"\\\"\\\"Scaler based on the maximum values.\n\n    .. math::\n\n        \\\\overline{X}_{ij} = \\\\frac{X_{ij}}{\\\\max_{X_{ij}}}\n\n    If the scaler is configured to work with 'matrix' each value\n    of each criteria is divided by the maximum value of that criteria.\n    In other hand if is configure to work with 'weights',\n    each value of weight is divided by the maximum value the weights.\n\n    \\\"\\\"\\\"\n\n    @doc_inherit(SKCMatrixAndWeightTransformerABC._transform_weights)\n    def _transform_weights(self, weights):\n        return scale_by_max(weights, axis=None)\n\n    @doc_inherit(SKCMatrixAndWeightTransformerABC._transform_matrix)\n    def _transform_matrix(self, matrix):\n        return scale_by_max(matrix, axis=0)"
+    ],
+    [
+        "Iterator<String> getAllScripts();"
+    ],
+    [
+        "pointer != getHead()"
+    ],
+    [
+        "return name.startswith('_') and not name.startswith('__') and not name.endswith('__') if skip else skip"
+    ],
+    [
+        "{\n      self.monitorClient.info(function (err, infoStr) {\n        if (err) {\n          debug('Error fetching info:', err);\n          return;\n        }\n        self._updateInfo(null, infoStr);\n      });\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "if (isGM) {\n        console.log(LOG_PREFIX + 'Greasemonkey API detected.');\n    } else {\n        console.log(LOG_PREFIX + 'Standard JavaScript environment.');\n    }"
+    ],
+    [
+        " degrees * radConst;"
+    ],
+    [
+        "for (int i = 0; i < items.size(); i++) {\n        if (items.get(i).account.equals(selected)) {\n            return i;\n        }\n    }"
+    ],
+    [
+        "show_single_comment = await repository_comments.show_single_comment(1, session, new_user)"
+    ],
+    [
+        "public String getMystromFriendlyName(String itemName) {\n        MyStromEcoPowerBindingConfig config = (MyStromEcoPowerBindingConfig) bindingConfigs.get(itemName);\n        return config != null ? config.mystromFriendlyName : null;\n    }"
+    ],
+    [
+        "res.send();\n  }"
+    ],
+    [
+        "useEffect"
+    ],
+    [
+        "var new_lst = [];"
+    ],
+    [
+        "byte[] cmdLenNew = BigInteger.valueOf(ndefLenIntRequest).toByteArray();"
+    ],
+    [
+        "{\n  // Get the values from input fields\n  var fruit = fruitInput.value();\n  var total = totalInput.value();\n\n  // Create a unique reference based on timestamp\n  var ref = database.ref('fruits').push();\n\n  // Create data object to send to Firebase\n  var data = {\n    fruit: fruit,\n    total: total\n  };\n\n  // Push data to Firebase\n  ref.set(data, function(error) {\n    if (error) {\n      console.log('Error sending data:', error);\n    } else {\n      console.log('Data sent successfully');\n    }\n  });\n\n  // Clear input fields\n  fruitInput.value('');\n  totalInput.value('');\n}"
+    ],
+    [
+        "if (block instanceof CrushingWheelBlockEntity || block instanceof ClutchBlockEntity)"
+    ],
+    [
+        "@api_page.route('/users/<int:id>', methods=['DELETE'])\\n@token_auth.login_required\\ndef delete_user(id):\\n    \\\"\\\"\\\"API Delete a user.\\\"\\\"\\\"\\n    user = User.query.get_or_404(id)\\n    db.session.delete(user)\\n    db.session.commit()\\n    return jsonify({'message': 'User has been deleted'})"
+    ],
+    [
+        "urlpatterns.extend(speech.urlpatterns)"
+    ],
+    [
+        "if building_datasets_generator.building_type == 'residential':"
+    ],
+    [
+        "def __init__(self, expname, runtime_args, external_loggers=None):\n        now = datetime.datetime.fromtimestamp(time.time())\n        self.experiment_id = \"{}_{}\".format(expname, now.strftime('%Y%m%d_%H%M%S'))\n        self.filename = \"{}.log\".format(self.experiment_id)\n        self.logstr(\"# %s\" % str(runtime_args))\n        self.headers = None\n        self.start_time = time.time()\n        self.last_time = self.start_time\n        self.last_input_count = 0\n        self.external_loggers = None\n\n        if external_loggers is not None:\n            self.external_loggers = external_loggers\n            if not isinstance(runtime_args, dict):\n                runtime_args = dict(vars(runtime_args))\n            runtime_args['experiment_id'] = self.experiment_id\n            runtime_args['hostname'] = socket.gethostname()\n            for logger in self.external_loggers:\n                logger.set_runtime_args(runtime_args)\n        else:\n            self.external_loggers = []\n\n    def logstr(self, str):\n        with open(self.filename, \"a\") as f:\n            f.write(str + \"\\n\")\n            f.close()\n        logging.getLogger(\"experiment_logger\").info(str)\n\n    def log(self, input_count, batch_count, additional_values):\n        logdict = OrderedDict()\n        delta_t = time.time() - self.last_time\n        delta_count = input_count - self.last_input_count\n        self.last_time = time.time()\n        self.last_input_count = input_count\n\n        logdict['time_spent'] = delta_t\n        logdict['cumulative_time_spent'] = time.time() - self.start_time\n        logdict['input_count'] = delta_count\n        logdict['cumulative_input_count'] = input_count\n        logdict['cumulative_batch_count'] = batch_count\n        if delta_t > 0:\n            logdict['inputs_per_sec'] = delta_count / delta_t\n        else:\n            logdict['inputs_per_sec'] = 0.0\n\n        for k in sorted(viewkeys(additional_values)):\n            logdict[k] = additional_values[k]\n\n        # Write the headers if they are not written yet\n        if self.headers is None:\n            self.headers = list(viewkeys(logdict))\n            self.logstr(\",\".join(self.headers))\n\n        self.logstr(\",\".join(str(v) for v in viewvalues(logdict)))\n\n        for logger in self.external_loggers:\n            try:\n                logger.log(logdict)\n            except Exception as e:\n                logging.warn(\n                    \"Failed to call ExternalLogger: {}\".format(e), e)"
+    ],
+    [
+        "Collections.sort(numbers);\n        "
+    ],
+    [
+        "log.info('processing RpcStatus for device %s', device.id)\n        getdata, tabledata = results"
+    ],
+    [
+        ""
+    ],
+    [
+        "var temp = str.split(\"\");\n        temp.sort();\n        result.push(temp.join(\"\"));\n    });"
+    ],
+    [
+        "ray[n];"
+    ],
+    [
+        "etwork;\\n    }"
+    ],
+    [
+        "try {\n            return new String(Base64.decodeBase64(value.getBytes(charset)), charset);\n        } catch (UnsupportedEncodingException e) {\n            throw new DecoderException(e.getMessage());\n        }"
+    ],
+    [
+        "return new HeavyWeightWindow(getParentWindow(owner));\n    }"
+    ],
+    [
+        "return CLISubCommandTests, CLITableTests"
+    ],
+    [
+        "switch (method) {\n    case 'create':\n        resp = TAP.setString(prefix + '-' + model.id, JSON.stringify(model.toJSON()));\n        break;\n    case 'read':\n        var stored = TAP.getString(prefix + '-' + model.id);\n        resp = stored ? JSON.parse(stored) : null;\n        break;\n    case 'update':\n        resp = TAP.setString(prefix + '-' + model.id, JSON.stringify(model.toJSON()));\n        break;\n    case 'delete':\n        resp = TAP.removeProperty(prefix + '-' + model.id);\n        break;\n    default:\n        throw new Error('Unsupported sync method: ' + method);\n}"
+    ],
+    [
+        "+= product.get().getValue() * quantidade;"
+    ],
+    [
+        "check (sum) {\n    if (!Buffer.isBuffer(sum)) {\n      throw new Error('Provided sum must be a Buffer')\n    }\n    if (sum.length !== SHA256_BYTE_SIZE) {\n      throw new Error('Provided sum does not match the required length')\n    }\n    return Buffer.compare(this.sum, sum) === 0\n  }"
+    ],
+    [
+        "if domain == \"media_player\":\n                config = MEDIA_PLAYER_SCHEMA(config)\n                feature_list = []\n                for feature in config.get(CONF_FEATURE_LIST, []):\n                    if feature in (\n                        FEATURE_ON_OFF,\n                        FEATURE_PLAY_PAUSE,\n                        FEATURE_PLAY_STOP,\n                        FEATURE_TOGGLE_MUTE,\n                    ):\n                        feature_list.append(feature)"
+    ],
+    [
+        "initialize()\nlogger = get_global_dist_logger()\nconfig = PIPE_CONFIG_PATH\nengine = Engine(config=config)"
+    ],
+    [
+        "return Buffer.from(input).toString('hex');\n}"
+    ],
+    [
+        "if (n % i == 0 || n % (i + 2) == 0) return false;"
+    ],
+    [
+        "try {\n    List<String> tagsList = database.comments().getAllTags();\n    runLater(() -> allTags.getItems().setAll(tagsList));\n} catch (SQLException e) {\n    logger.error(\"Failed to refresh tags\", e);\n}"
+    ],
+    [
+        "def train_one_epoch(sess, ops, train_writer):\n    \"\"\" ops: dict mapping from string to tf ops \"\"\"\n    is_training = True\n    \n    # Load data\n    train_data, train_label = load_data('train')\n    \n    total_correct = 0\n    total_seen = 0\n    loss_sum = 0\n    \n    for batch_idx in range(num_batches):\n        start_idx = batch_idx * BATCH_SIZE\n        end_idx = (batch_idx + 1) * BATCH_SIZE\n        \n        feed_dict = {\n            ops['pointclouds_pl']: train_data[start_idx:end_idx, :, :],\n            ops['labels_pl']: train_label[start_idx:end_idx],\n            ops['is_training_pl']: is_training,\n        }\n        \n        summary, step, _, loss_val, pred_val = sess.run([ops['merged'], ops['step'], ops['train_op'], ops['loss'], ops['pred']], feed_dict=feed_dict)\n        train_writer.add_summary(summary, step)\n        \n        pred_val = np.argmax(pred_val, 1)\n        correct = np.sum(pred_val == train_label[start_idx:end_idx])\n        total_correct += correct\n        total_seen += BATCH_SIZE\n        loss_sum += loss_val\n    \n    log_string('mean loss: %f' % (loss_sum / float(num_batches)))\n    log_string('accuracy: %f' % (total_correct / float(total_seen)))"
+    ],
+    [
+        "times += 1"
+    ],
+    [
+        "pe\": \"\\n        return getattr(xp, name)(a)"
+    ],
+    [
+        "run_dinov2_inference(file, class_names)"
+    ],
+    [
+        "Context context"
+    ],
+    [
+        "song.push(1);"
+    ],
+    [
+        "self.actions = dataset['actions']"
+    ],
+    [
+        "def main():"
+    ],
+    [
+        "@Override\n    public String getTaskDataTableIdentifier() {\n        return taskDataTableIdentifier;\n    }"
+    ],
+    [
+        "def __repr__(self) -> str:\n        \"\"\"\n        Delegates to storage format manager.\n        \"\"\"\n        return _format.get_repr(self)\n\n    def _get_lilypond_format_bundle(self, component=None):\n        bundle = _bundle.LilyPondFormatBundle()\n        n = self.n or 0\n        string = rf\"\\\\ottava {n}\"\n        if self.format_slot in (\"before\", None):\n            bundle.before.commands.append(string)\n        else:\n            assert self.format_slot == \"after\"\n            bundle.after.commands.append(string)\n        return bundle\n\n    @property\n    def format_slot(self) -> typing.Optional[str]:\n        \"\"\"\n        Gets format slot.\n\n        ..  container:: example\n\n            Format slot defaults to before:\n\n            >>> staff = abjad.Staff(\"c'4 d' e' f'\")\n            >>> ottava = abjad.Ottava(n=1)\n            >>> abjad.attach(ottava, staff[0])\n            >>> ottava = abjad.Ottava(n=0)\n            >>> abjad.attach(ottava, staff[-1])\n            >>> abjad.show(staff) # doctest: +SKIP\n\n            ..  docs::\n\n                >>> string = abjad.lilypond(staff)\n                >>> print(string)\n                \\\\new Staff\n                {\n                    \\\\ottava 1\n                    c'4\n                    d'4\n                    e'4\n                    \\\\ottava 0\n                    f'4\n                }\n\n            Set format slot to after like this:\n\n            >>> staff = abjad.Staff(\"c'4 d' e' f'\")\n            >>> ottava = abjad.Ottava(n=1)\n            >>> abjad.attach(ottava, staff[0])\n            >>> ottava = abjad.Ottava(n=0, format_slot='after')\n            >>> abjad.attach(ottava, staff[-1])\n            >>> abjad.show(staff) # doctest: +SKIP\n\n            ..  docs::\n\n                >>> string = abjad.lilypond(staff)\n                >>> print(string)\n                \\\\new Staff\n                {\n                    \\\\ottava 1\n                    c'4\n                    d'4\n                    e'4\n                    f'4\n                    \\\\ottava 0\n                }\n\n        \"\"\"\n        return self._format_slot\n\n    @property\n    def n(self) -> typing.Optional[int]:\n        \"\"\"\n        Gets octave change.\n        \"\"\"\n        return self._"
+    ],
+    [
+        "JsonHelper json = new JsonHelper(data);"
+    ],
+    [
+        "toStr(methodInfo.getActionInfo().getBatchSql())"
+    ],
+    [
+        "{\n    // Adds the current square position to the trail and keeps the trail size within the limit\n    MagicPuzzleTrail.push({ X: MouseX, Y: MouseY });\n    if (MagicPuzzleTrail.length > MagicPuzzleTrailLimit) {\n        MagicPuzzleTrail.shift();\n    }\n}"
+    ],
+    [
+        "def __init__(self, ctx):\n        super(TanhSinh, self).__init__(ctx)\n        self.ctx = ctx\n\n    def calc_nodes(self, degree, prec, verbose=False):\n        ctx = self.ctx\n        nodes = []\n        extra = 20\n        ctx.prec += extra\n        tol = ctx.ldexp(1, -prec-10)\n        pi4 = ctx.pi/4\n\n        t0 = ctx.ldexp(1, -degree)\n        if degree == 1:\n            nodes.append((ctx.zero, ctx.pi/2))\n            h = t0\n        else:\n            h = t0*2\n\n        expt0 = ctx.exp(t0)\n        a = pi4 * expt0\n        b = pi4 / expt0\n        udelta = ctx.exp(h)\n        urdelta = 1/udelta\n\n        for k in xrange(0, 20*2**degree+1):\n            c = ctx.exp(a-b)\n            d = 1/c\n            co = (c+d)/2\n            si = (c-d)/2\n            x = si / co\n            w = (a+b) / co**2\n            diff = abs(x-1)\n            if diff <= tol:\n                break\n\n            nodes.append((x, w))\n            nodes.append((-x, w))\n\n            a *= udelta\n            b *= urdelta\n\n            if verbose and k % 300 == 150:\n                print(\"Calculating nodes:\", ctx.nstr(-ctx.log(diff, 10) / prec))\n\n        ctx.prec -= extra\n        return nodes"
+    ],
+    [
+        "function doSave() {\n    if (filename) {\n        if (fs) {\n            fs.writeFileSync(filename, JSON.stringify(graph), 'utf8');\n            fs.writeFileSync(gameFilenameFromNormalFilename(filename), JSON.stringify(gameData()), 'utf8');\n        } else {\n            if (!localStorage[filename])\n                addFileEntry(filename);\n            localStorage[filename] = JSON.stringify(graph);\n        }\n        flash('Saved ' + filename);\n    }\n}"
+    ],
+    [
+        "return prod;"
+    ],
+    [
+        "private void createSelectMappedStatement(String mappedStatement, SqlSource sqlSource, Class<?> resultType)"
+    ],
+    [
+        "methodLog.setDescription(finishedDesc);\n        methodLog.setException(exceptionInfo);\n        methodLog.setRequestParams(JSONObject.toJSONString(requestParameterMap));\n        methodLog.setResponse(JSONObject.toJSONString(replaceStrategy.getParamMap()));"
+    ],
+    [
+        "public void setTabId(int tabId)"
+    ],
+    [
+        "def oneVsAll(X, y, num_labels, the_lambda):"
+    ],
+    [
+        "// Initialize variables to track the maximum number seen so far and the previous number\n    int running_max = 0;\n    int previous_number = 0;\n    boolean first_time = true; // Flag to handle the first element separately\n    boolean seen_2_in_a_row = false; // Flag to check for more than one duplicate in a row\n\n    // Iterate through each number in the list\n    for (Long number : lst) {\n        if (first_time) {\n            // Handle the first element: set flags and initial values\n            first_time = false;\n            previous_number = number.intValue();\n            running_max = number.intValue();\n        } else {\n            // For subsequent elements, check if the list is sorted\n            if (running_max > number.intValue()) {\n                // If current number is less than the running maximum, list is not sorted\n                return false;\n            } else {\n                // Check for duplicates\n                if (previous_number == number.intValue()) {\n                    // If current number is same as previous and we've seen a duplicate before\n                    if (seen_2_in_a_row) {\n                        return false;\n                    } else {\n                        // Mark that we've seen a duplicate\n                        seen_2_in_a_row = true;\n                    }\n                } else {\n                    // Reset duplicate flag if current number is different\n                    seen_2_in_a_row = false;\n                }\n                // Update previous number and running maximum\n                previous_number = number.intValue();\n                running_max = number.intValue();\n            }\n        }\n    }\n    // If all checks are passed, the list is sorted\n    return true;"
+    ],
+    [
+        ""
+    ],
+    [
+        "classify_resources(example_graph, nodes)"
+    ],
+    [
+        "public abstract String getCanonicalName();"
+    ],
+    [
+        "validate_user(user)"
+    ],
+    [
+        "self.assertEqual(self.rule.get_header_value(response.headers, self.rule.HEADER_NAME), \\\"0\\\")\n            self.assertEqual(self.rule.get_header_value(response.getheaders(), self.rule.HEADER_NAME), \\\"0\\\")\n            self.assertTrue(self.rule.is_allowed(response=response))\n            self.assertTrue(self.rule.is_allowed(headers=response.headers))"
+    ],
+    [
+        "sum = 0"
+    ],
+    [
+        "ue;\\n    }"
+    ],
+    [
+        "{\n    return degrees * radConst;\n}"
+    ],
+    [
+        "# Generate the opaque backend configuration for the custom call\n    opaque = volrendutils_cuda.make_morton3d_descriptor(length)"
+    ],
+    [
+        "cookieStore.updateFromResponse(response);"
+    ],
+    [
+        "ap;this._dirtyMaterials=new Set;this._model=a}"
+    ],
+    [
+        "crypt_unprotect_secret"
+    ],
+    [
+        "join_lists = data.join_lists(list_data(), list_data2(), 'Description', 'MergedData')\nmerged_data = join_lists"
+    ],
+    [
+        "def parse_cmd_line(usage, description, epilog, exname, version):\n    import argparse\n    kwargs = dict(usage=usage,\n                  description=description,\n                  epilog=\"\\n\" + epilog,\n                  prog=exname,\n                  formatter_class=argparse.RawTextHelpFormatter)\n\n    try:\n        parser = argparse.ArgumentParser(version=version, **kwargs)\n    except TypeError:  ## compat with argparse from python 3.4\n        parser = argparse.ArgumentParser(**kwargs)\n        parser.add_argument('-v', '--version',\n                            help=\"show program's version number and exit\",\n                            action=\"version\", version=version)"
+    ],
+    [
+        "// Initialize the editor instance with the provided options\n    var instance = new CodeMirror(place, options);\n\n    // Set up the editor's internal document structure\n    instance.doc = {\n      lines: splitLines(options.value),\n      sel: {\n        from: {line: 0, ch: 0},\n        to: {line: 0, ch: 0}\n      }\n    };\n\n    // Attach event handlers\n    instance.on(\"change\", function() {\n      console.log(\"Content changed!\");\n    });\n\n    instance.on(\"cursorActivity\", function() {\n      var cursor = instance.getCursor();\n      console.log(\"Cursor moved to line \" + cursor.line + \", character \" + cursor.ch);\n    });\n\n    // Return the instance\n    return instance;"
+    ],
+    [
+        "@classmethod\n    def get_es_django_indexable(cls, force_reindexing=False):\n        \"\"\"Overridden to prefetch tags and forum\"\"\"\n        q = super().get_es_django_indexable(force_reindexing).prefetch_related(\"tags\").prefetch_related(\"forum\")\n        return q"
+    ],
+    [
+        "all().items()"
+    ],
+    [
+        "hct.getChroma();"
+    ],
+    [
+        "build_generic_source(self, text: str):\n        # Create a new source based on the text\n        source = self.source_builder.build(text)\n        return source"
+    ],
+    [
+        "def create_default_items(self):\n        \\\"\\\"\\\"Create default items for the Scripts menu\\\"\\\"\\\"\n        # Add default actions like 'Refresh' or 'Settings'\n        refresh_action = QtWidgets.QAction('Refresh', self)\n        refresh_action.triggered.connect(self.on_update)\n        self.addAction(refresh_action)\n\n        settings_action = QtWidgets.QAction('Settings', self)\n        # Placeholder for settings action functionality\n        settings_action.triggered.connect(lambda: log.info('Settings clicked'))\n        self.addAction(settings_action)\n\n        # Add a separator after default items\n        self.addSeparator()"
+    ],
+    [
+        "// Custom API to drive the \"job queue\". We only want to exit when\n    // there are no more Promise jobs or unhandledRejection() callbacks,\n    // i.e. no more work to do. Note that an unhandledRejection()\n    // callback may queue more Promise job entries and vice versa.\n    def(cons, 'runQueue', function _runQueueUntilEmpty() {\n        do {\n            while (runQueueEntry()) {}\n            checkUnhandledRejections();\n        } while(!(queueEmpty() && cons.potentiallyUnhandled.length === 0));\n    });\n    def(cons, 'unhandledRejection', nop);\n\n    compact(this); compact(cons); compact(proto);"
+    ],
+    [
+        "var streamer = new saxpath.SaXPath(saxParser, '/bookstore/title', recorder);"
+    ],
+    [
+        "modified |= mySettingsComponent.isAutoReplaceCode() != settings.autoReplaceCode;"
+    ],
+    [
+        "def test_get_records(self):\n        \"\"\"Test retrieval of multiple records.\"\"\"\n        with self._fms as server:\n            server.login()\n            records = server.get_records()\n            self.assertIsInstance(records, list)\n            self.assertGreater(len(records), 0)\n            self.assertIsInstance(records[0], Record)\n\n    def test_find(self):\n        \"\"\"Test find functionality with specific criteria.\"\"\"\n        with self._fms as server:\n            server.login()\n            found_records = server.find(query=[{'name': 'David'}])\n            self.assertIsInstance(found_records, list)\n            self.assertGreater(len(found_records), 0)\n            self.assertEqual(found_records[0].name, 'David')\n\n    def test_edit_record(self):\n        \"\"\"Test editing a record's data.\"\"\"\n        with self._fms as server:\n            server.login()\n            record_id = server.create_record({'name': 'Test Name', 'drink': 'Water'})\n            self.assertIsInstance(record_id, int)\n            updated = server.edit_record(record_id, {'name': 'Updated Name'})\n            self.assertTrue(updated)\n            record = server.get_record(record_id)\n            self.assertEqual(record.name, 'Updated Name')\n            server.delete_record(record_id)"
+    ],
+    [
+        "public boolean setStretch(final MultiSegmentSequence mss);"
+    ],
+    [
+        ""
+    ],
+    [
+        "EGRESSED_MODE_TIMEOUT\n} = require('./constants')"
+    ],
+    [
+        "def test_send_failure(self):\n        out_port = port.OutPort(str)\n        self.assertFalse(out_port.send(1))\n        self.assertFalse(out_port.send(True))\n        self.assertFalse(out_port.send(1.2))\n        time.sleep(0.01)"
+    ],
+    [
+        "else {\n            staffService.saveStaff(staff);\n            model.addAttribute(\"success\", \"Новый сотрудник добавлен успешно!\");\n        }"
+    ],
+    [
+        "constructor() {\n        super();\n\n        /** @private */\n        this._markers = new Map();\n    }\n\n    /**\n     * Adds a marker to the collection.\n     *\n     * @param {String} name Name of the marker.\n     * @param {module:engine/model/range~Range} range Range of the marker.\n     * @param {Boolean} [managedUsingOperations=false] Specifies whether the marker is managed using operations.\n     * @param {Boolean} [affectsData=false] Specifies whether the marker affects the data produced by the data pipeline.\n     * @returns {module:engine/model/markercollection~Marker} The marker instance added to the collection.\n     */\n    set(name, range, managedUsingOperations = false, affectsData = false) {\n        if (this._markers.has(name)) {\n            throw new CKEditorError('markercollection-marker-already-exists', this, { name });\n        }\n\n        const marker = new Marker(name, LiveRange.fromRange(range), managedUsingOperations, affectsData);\n        this._markers.set(name, marker);\n        this.fire('update', marker, null, range);\n\n        return marker;\n    }\n\n    /**\n     * Removes a marker from the collection.\n     *\n     * @param {String} name Name of the marker to remove.\n     * @returns {Boolean} `true` if the marker was found and removed, `false` otherwise.\n     */\n    remove(name) {\n        const marker = this._markers.get(name);\n        if (!marker) {\n            return false;\n        }\n\n        this._markers.delete(name);\n        this.fire('update', null, marker.getRange(), null);\n        marker._detachLiveRange();\n\n        return true;\n    }\n\n    /**\n     * Returns the marker with the given name.\n     *\n     * @param {String} name Name of the marker to get.\n     * @returns {module:engine/model/markercollection~Marker|null} The marker instance or `null` if no marker with the given name exists.\n     */\n    get(name) {\n        return this._markers.get(name) || null;\n    }\n\n    /**\n     * Checks if a marker with the given name exists in the collection.\n     *\n     * @param {String} name Name of the marker to check.\n     * @returns {Boolean} `true` if the marker exists, `false` otherwise.\n     */\n    has(name) {\n        return this._markers.has(name);\n    }\n\n    /**\n     * Returns an iterator that iterates over all markers in the collection.\n     *\n     * @returns {Iterable.<module:engine/model/markercollection~Marker>}\n     */\n    [Symbol.iterator]() {\n        return this._markers.values();\n    }"
+    ],
+    [
+        "String strongest = \"\";\n        int strength = Integer.MIN_VALUE;"
+    ],
+    [
+        "@Override\n    public String getId()"
+    ],
+    [
+        "public String getProcessName() {\n        return processName;\n    }"
+    ],
+    [
+        "event.reply(\"Sorry, no joke available at the moment.\").queue();"
+    ],
+    [
+        "public int getFaultCode() {\n        return this.faultCode;\n    }"
+    ],
+    [
+        "public String encode(Object value) throws EncoderExceptio"
+    ],
+    [
+        "(game.getId() == id) {"
+    ],
+    [
+        "t(element) {\\n  return element.getBoundingClientRect();\\n}"
+    ],
+    [
+        "eg_sum = np.sum(currs.data[currs.data < 0], axis=1)\n    pos_sum = np.sum(currs.data[currs.data > 0], axis=1)\n    currs.neg_sum = neg_sum\n    currs.pos_sum = pos_sum\n\n    # Normalize positive and negative currents separately\n    if np.any(pos_sum):\n        pos_norm = currs.data[currs.data > 0] / pos_sum[:, np.newaxis]\n    else:\n        pos_norm = np.zeros_like(currs.data[currs.data > 0])\n\n    if np.any(neg_sum):\n        neg_norm = currs.data[currs.data < 0] / neg_sum[:, np.newaxis]\n    else:\n        neg_norm = np.zeros_like(currs.data[currs.data < 0])\n\n    # Store normalized data\n    currs.pos_norm = pos_norm\n    currs.neg_norm = neg_norm\n\n    # Identify indices of non-zero normalized data\n    currs.pos_norm.idxs = np.nonzero(pos_sum)[0]\n    currs.neg_norm.idxs = np.nonzero(neg_sum)[0]"
+    ],
+    [
+        "        }\\n        return res;"
+    ],
+    [
+        "window.N2RegFeature.prototype.getFeatureID = function() {\n    return this._sFeatureID;\n};"
+    ],
+    [
+        "words = sentence.strip().split()"
+    ],
+    [
+        "threads.get(i).join();\n        }"
+    ],
+    [
+        ""
+    ],
+    [
+        "stHandler):\\n    @tornalet.tornalet\\n    def get(self, path):\\n        url = urljoin(options.url, path)\\n\\n        http_client = tornado.httpclient.AsyncHTTPClient()\\n        body = tornalet.asyncify(http_client.fetch)(url).body\\n\\n        self.write(body)\\n\\ndef main():\\n    tornado.options.parse_command_line()\\n\\n    application = tornado.web.Application([\\n        (r\\\"/(.*)\\\", ProxyHandler),\\n    ], debug = True)\\n\\n    http_server = tornado.httpserver.HTTPServer(application)\\n    http_server.listen(options.port)\\n    tornado.ioloop.IOLoop.instance().start()\\n\\nif __name__ == \\\"__main__\\\":\\n    main()"
+    ],
+    [
+        "recipe_chat.engine = \"gpt-3.5-turbo\"\n    recipe_chat.user(\"Start by describing the original recipe provided.\")"
+    ],
+    [
+        "for(var i = 0; i < lst.length; i++){"
+    ],
+    [
+        "log.info(\"Waiting for running interval: \" + interval + \"ms\");"
+    ],
+    [
+        "(commandSender, command) -> {\n            return Component.text(String.format(\"Help for command: %s\", command.getPrimaryAlias()));\n          }"
+    ],
+    [
+        ""
+    ],
+    [
+        "array.forEach(function(deviceToken) {\n      var note = new apn.Notification();\n      note.expiry = Math.floor(Date.now() / 1000) + 3600; // Expires 1 hour from now.\n      note.badge = 3;\n      note.sound = \"ping.aiff\";\n      note.alert = body;\n      note.payload = payload;\n      apnConnection.pushNotification(note, deviceToken);\n  });"
+    ],
+    [
+        "for (int i = 0; i < expected.length; i++) {\n            sumExpected += expected[i];\n            sumObserved += observed[i];\n        }"
+    ],
+    [
+        "parse_stats = entry.parse_stats()\n    counters_mngr.add_stats(parse_stats)"
+    ],
+    [
+        "function TranslationPluralHelper() {}"
+    ],
+    [
+        "private void dfs(char[][] board, int x, int y) {\n        if (x < 0 || x >= board.length || y < 0 || y >= board[0].length || board[x][y] != 'E') {\n            return;\n        }\n        board[x][y] = 'B';\n        int cnt = 0;\n        for (int i = 0; i < 8; ++i) {\n            int tx = x + dirX[i];\n            int ty = y + dirY[i];\n            if (tx < 0 || tx >= board.length || ty < 0 || ty >= board[0].length) {\n                continue;\n            }\n            if (board[tx][ty] == 'M') {\n                ++cnt;\n            }\n        }\n        if (cnt > 0) {\n            board[x][y] = (char) (cnt + '0');\n        } else {\n            for (int i = 0; i < 8; ++i) {\n                int tx = x + dirX[i];\n                int ty = y + dirY[i];\n                if (tx < 0 || tx >= board.length || ty < 0 || ty >= board[0].length || board[tx][ty] != 'E') {\n                    continue;\n                }\n                dfs(board, tx, ty);\n            }\n        }\n    }"
+    ],
+    [
+        "udget, progression } = props;"
+    ],
+    [
+        "constructor(instance) {\n    super(instance);\n    this.instance = instance;\n    this.bounds = new Boundings();\n    this.animation = {\n      frame: 0,\n      w: 0,\n      h: 0\n    };\n  }"
+    ],
+    [
+        "rmsd_by_resmap(structure, structure_ref, resmap, allow_missing_res=True, verbose=False)"
+    ],
+    [
+        "audio.setStreamVolume(AudioManager.STREAM_RING, audio.getStreamMaxVolume(AudioManager.STREAM_RING), AudioManager.FLAG_SHOW_UI);"
+    ],
+    [
+        "if (modulesByName.containsKey(name)) {\n            JdiModelTargetModule module = modulesByName.get(name);\n            modulesByName.remove(name);\n            changeElements(List.of(module), List.of(), Map.of(), \"Unloaded\");\n        }"
+    ],
+    [
+        "r.add_constraint(sum_lt_val, ('listvar',))"
+    ],
+    [
+        "um--;\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "return Response(\n        generate(),\n        mimetype=\"text/csv\",\n        headers={\n            \"Content-Disposition\":\n            \"attachment;filename=%s.csv\" % self.model.__name__.lower()\n        }\n    )"
+    ],
+    [
+        "operand[count] = operand[count] + operand[count + 1];\n        operand.splice(count + 1, 1);\n        operator.splice(count, 1);\n        count = 0;\n        do_again = true;\n        break;\n      case '-':\n        operand[count] = operand[count] - operand[count + 1];\n        operand.splice(count + 1, 1);\n        operator.splice(count, 1);\n        count = 0;\n        do_again = true;\n        break;"
+    ],
+    [
+        "logger.error(f'Exceeded maximum retry limit of {self.retry_times} for request {request_id}')\n        error_response = self.get_error_response(request_id, 'Maximum retries exceeded')\n        if result_queue:\n            await self.rabbitmq_connection.send_data_in_queue(error_response, result_queue)"
+    ],
+    [
+        "iterator.set(TokenRange.encompassing(lastRange, previous));"
+    ],
+    [
+        "# Generate registers based on peptide length and specified parameters\n    if len(pep) > 9:\n        registers = nn_utils.generate_registers_I(len(pep))\n    else:\n        registers = [(0, len(pep) - 9)]  # Default register for peptides of length 9"
+    ],
+    [
+        "var result = [];\n    var groups = paren_string.split(' ');\n    for (var group of groups) {\n        level = 0;\n        maxlevel = 0;\n        for (var i = 0; i < group.length; i++) {\n            if (group[i] == '(') {\n                level++;\n                if (level > maxlevel) {\n                    maxlevel = level;\n                }\n            } else if (group[i] == ')') {\n                level--;\n            }\n        }\n        result.push(maxlevel);\n    }"
+    ],
+    [
+        "change_summary(curr)"
+    ],
+    [
+        "if (isTouching) {\n                    float curDistance = x - downX;\n                    if (coverSlideDirection == AnimHelper.SLID_DIRECTION_UNKNOWN && checkDownArea(downArea)) {\n                        if (curDistance > 0) {\n                            coverSlideDirection = AnimHelper.SLID_DIRECTION_RIGHT;\n                        } else {\n                            coverSlideDirection = AnimHelper.SLID_DIRECTION_LEFT;\n                        }\n                    }\n                }"
+    ],
+    [
+        "oob = OOB(name='alarm', content='set alarm at 7am')\n        self.assertIsNotNone(oob)\n        self.assertEqual('alarm', oob.name)\n        self.assertEqual('set alarm at 7am', oob.content)"
+    ],
+    [
+        "public static int getHomeId(ActionBar actionBar)"
+    ],
+    [
+        "print('nop called');"
+    ],
+    [
+        "public static String findPrivate(NestMates f)"
+    ],
+    [
+        "testUtils.assertStartsWith(\"SecureElement\", el.toString(), \"Expected \" + property + \" in helper to be a SecureElement\");\n    }"
+    ],
+    [
+        "return ' '.join(html.findAll(text=True))"
+    ],
+    [
+        "return SIZE;"
+    ],
+    [
+        "ID_MODAL = dpg.generate_uuid()\n    ID_HEADER = dpg.generate_uuid()\n    ID_CHILD_WINDOW = dpg.generate_uuid()\n    ID_TABBAR = dpg.generate_uuid()\n    ID_TAB_CATEGORY = dpg.generate_uuid()\n    ID_TAB_RANGE = dpg.generate_uuid()\n    ID_OK = dpg.generate_uuid()\n    ID_WINDOW_HANDLER = dpg.generate_uuid()\n\n    TEX_PARTIAL_CHECK = TextureIds.ID_PARTIAL_CHECK.UUID\n    ID_MCB_CHECKBOX = dpg.generate_uuid()\n    ID_MCB_LABEL = dpg.generate_uuid()\n    ID_CHECKBOX_THEME = dpg.generate_uuid()\n\n    ID_SCRIPT_INPUT = dpg.generate_uuid()\n\n    child_checkboxes = []\n\n    # resize the child window on resize modal window\n    def resize_window(sender, data):\n        windowHeight = dpg.get_item_height(ID_MODAL)\n        windowWidth = dpg.get_item_width(ID_MODAL)\n\n        dpg.configure_item(ID_CHILD_WINDOW, height = windowHeight - 95)\n        dpg.configure_item(ID_SCRIPT_INPUT, width = windowWidth - 4*MvStyleVar.WindowPadding.value[1])\n\n        pos = [dpg.get_item_width(ID_MODAL) - 75*2-16, dpg.get_item_height(ID_MODAL) - 30]\n        dpg.configure_item(ID_OK, pos = pos)\n\n    # get theme for partial checkbox\n    with dpg.theme(tag=ID_CHECKBOX_THEME):\n        with dpg.theme_component(dpg.mvImageButton):\n            # remove frame padding around image button\n            dpg.add_theme_style(dpg.mvStyleVar_FramePadding, 0, 0)\n\n    def on_mcb_click(sender):\n        # on master checkbox click\n        for ccb in child_checkboxes:\n            dpg.set_value(ccb[0], dpg.get_value(sender))\n\n    def on_mcb_check(init_state=True):\n        # set ID_MCB_CHECKBOX to a checkbox\n        if dpg.does_item_exist(ID_MCB_CHECKBOX):\n            dpg.delete_item(ID_MCB_CHECKBOX)\n        \n        # print(init_state)\n        dpg.add_checkbox(before=ID_MCB_LABEL, tag=ID_MCB_CHECKBOX, default_value=init_state, callback=on_mcb_click)\n\n        for ccb in child_checkboxes:\n            dpg.set_value(ccb[0], init_state)\n    \n    def on_mcb_init():\n        # on first call, figure out whether to be checkbox or imagebutton\n        # this method could potentially be merged with on_ccb_click\n        set_checked = all(e[0] for e in data)\n        set_unchecked = not any(e[0] for e in data)\n        if set_checked or set_unchecked:\n            on_mcb_check(set_checked)\n        else:\n            dpg.add_image_button(before=ID_MCB_LABEL, tag=ID_MCB_CHECKBOX, texture_tag=TEX_PARTIAL_CHECK, height=19, width=19, callback=lambda: on_mcb_check(init_state=True), show=True)\n            dpg.bind_item_theme(ID_MCB_CHECKBOX, ID_CHECKBOX_THEME)\n\n    def on_ccb_click():\n        # on child checkbox click\n        set_checked = all(dpg.get_value(e[0]) for e in child_checkboxes)\n        set_unchecked = not any(dpg.get_value(e[0]) for e in child_checkboxes)\n\n        # if all children are checked, check master\n        if set_checked or set_unchecked:\n            if(dpg.get_item_type(ID_MCB_CHECKBOX) == MvItemTypes."
+    ],
+    [
+        "long current_depth = 0;"
+    ],
+    [
+        "display.getMode().name().toLowerCase()"
+    ],
+    [
+        "// Check if the input is a negative number\n    if (n < 0) {\n        return \"error\";\n    }\n    var temp = 0; // Temporary variable to store each digit\n    var prod = 1; // Product of odd digits\n    var odd = true; // Flag to check if there are any odd digits\n\n    // Loop through each digit of the number\n    for (n; n > 0; n = Math.floor(n / 10)) {\n        temp = n % 10; // Get the last digit\n        if (temp % 2 != 0) { // Check if the digit is odd\n            prod *= temp; // Multiply the product by the digit\n            odd = false; // Set flag to false as there is at least one odd digit\n        }\n    }\n\n    // If all digits were even, return 0\n    if (odd) {\n        return 0;\n    }\n\n    // Return the product of odd digits\n    return prod;"
+    ],
+    [
+        "try:\n        client = create_ipfs_client()\n        print(\"IPFS client created successfully.\")\n    except ConnectionError as e:\n        logger.error(\"Failed to connect to IPFS daemon: \" + str(e))\n        raise IPFSDaemonNotAvailable(\"IPFS daemon connection failed.\")\n    except Exception as e:\n        logger.error(\"An unexpected error occurred: \" + str(e))\n        raise Exception(\"An unexpected error occurred while creating IPFS client.\")"
+    ],
+    [
+        "}\n            for (Map.Entry<Long, Long> entry : map.entrySet()) {\n                long val = entry.getKey();\n                long freq = entry.getValue();\n                if (freq >= val && val > max) {\n                    max = val;\n                }\n            }"
+    ],
+    [
+        "dto.setUserName(userName);"
+    ],
+    [
+        "{\n        return \"DefaultColumn{\" +\n                \"name='\" + name + '\\'' +\n                \", value=\" + value +\n                '}';\n    }"
+    ],
+    [
+        "for i in range(1, 7):\n            e = tkinter.Entry(right_frame, bg='lightBlue', fg='white')\n            name = 'Player' + str(i)\n            e.insert(0, name)\n            e.pack()"
+    ],
+    [
+        ".solve(evidence=a, M=ExactInference())"
+    ],
+    [
+        "if value >= key and key > maxValue:\n        maxValue = key"
+    ],
+    [
+        "completion = CompletionModel()\n    try:\n        # Attempt to fix the code snippet using the model\n        self.send_message(info='Attempting to fix code', model=completion.name)\n        edited = completion.get_completion(\n            \"A syntax error is reported in the following code snippet. \"\n            \"Please correct the syntax error and make no other changes. \"\n            \"Return the executable code only with no markups. \"\n            \"If you absolutely have to, please put them as comments.\\n```\"\n            + code_string + \"```\",\n            text_only=True\n        ).strip('```')\n        # Try executing the corrected code\n        result['last_expression_value'] = exec_and_return(edited, loc, loc)\n        self.send_message(script_returns=result['last_expression_value'])\n    except SyntaxError as e:\n        # Handle syntax error during the fix attempt\n        self.send_message(syntax_error=str(e), fix_model=self.config['fix_model'])\n        model = CompletionModel()"
+    ],
+    [
+        "for filename in fnmatch.filter(filelist, filepat):\n        yield os.path.join(path, filename)"
+    ],
+    [
+        "index.add_item(i, embedding)"
+    ],
+    [
+        "content += f\"root={self._root}"
+    ],
+    [
+        "add_result(probility.detach().cpu())"
+    ],
+    [
+        ""
+    ],
+    [
+        "raster.getDataElements(x - 1, 0, predictor);"
+    ],
+    [
+        "def load_packets(pcap, dataset, category, capture):\n    \"\"\"Method to load all raw packets from a pcap into a buffer\"\"\"\n    _logger.info(f\"Starting to load packets from {pcap}\")\n    init_ts = 0\n    all_pkts = []\n    for i, (ts, pkt) in enumerate(Reader(filename=pcap)):\n        if i == 0:\n            init_ts = ts\n        all_pkts.append((ts - init_ts, pkt, dataset, category, capture))\n    _logger.info(f\"Finished Loading packets of {pcap}\")\n    return all_pkts"
+    ],
+    [
+        "String exchangeRate = conversion.getExchangeRate(baseComboBox, inputBox.getComboBox().getValue());\nif (exchangeRate == null) {\n    result = \"offline\";\n} else {\n    result += \" | Exchange Rate: \" + exchangeRate;\n}"
+    ],
+    [
+        "return True"
+    ],
+    [
+        "async function _export(address, format)"
+    ],
+    [
+        "this.canvasHeight = (this.canvasWidth / this.pageRatio) | 0;\n    this.scale = (this.canvasWidth / this.pageWidth);"
+    ],
+    [
+        "{\n  return name.replace(/\\//g, '\\\\\\\\');\n}"
+    ],
+    [
+        "this.normal = normal;\n            this.distance = distance;\n        }"
+    ],
+    [
+        " this.id;"
+    ],
+    [
+        "{\n        return logbookLifeCycleParameters;\n    }"
+    ],
+    [
+        "tesTo(this);\n    }\n\n    @SuppressLint(\"UseSparseArrays\")\n    private static void findCollidingIds(List<SubmissionRowUiModel> rows) {\n        Map<Long, SubmissionRowUiModel> ids = new HashMap<>(rows.size(), 1f);\n        for (SubmissionRowUiModel row : rows) {\n            if (ids.containsKey(row.adapterId())) {\n                SubmissionRowUiModel existing = ids.get(row.adapterId());\n                throw new AssertionError(\"ID collision between \" + existing + \" and \" + row);\n            }\n            ids.put(row.adapterId(), row);\n        }\n    }"
+    ],
+    [
+        "arrayXOR.push(0);"
+    ],
+    [
+        "String json = request.getJson();"
+    ],
+    [
+        "if type(self) is vqtorch.nn.VectorQuant:\n        num_codes = self.codebook.weight.shape[0]\n        new_codebook = sample_centroids(z_e, num_codes)\n        self.codebook.weight.data = new_codebook"
+    ],
+    [
+        "function gen_commit(kmsgs)"
+    ],
+    [
+        "{\n    if (e.source.id === 'btnOptions') {\n        alert('Options button clicked!');\n    }\n}"
+    ],
+    [
+        ""
+    ],
+    [
+        "while True:\n                string_custom_id = string_custom_ids[index]\n                repr_parts.append(repr(string_custom_id))\n                \n                index += 1\n                if index == limit:\n                    break\n                \n                repr_parts.append(', ')\n                continue"
+    ],
+    [
+        "def coerce_addr_to_hex(x):\n    if is_numeric(x):\n        return '0x' + encode_hex(zpad(big_endian_int.serialize(x), 20))\n    elif len(x) == 40 or len(x) == 0:\n        return '0x' + encode_hex(decode_hex(x))\n    else:\n        return '0x' + encode_hex(zpad(x, 20)[-20:])"
+    ],
+    [
+        "constituents = index_constituents.get_constituents()\n    for symbol in tqdm(constituents):"
+    ],
+    [
+        "t\\telse {"
+    ],
+    [
+        "t\\tif (handle === 'round') {\n\\t\\t\\tthis.handle1.addClass('round');\n\\t\\t\\tthis.handle2.addClass('round');\n\\t\\t} else if (handle === 'square') {\n\\t\\t\\tthis.handle1.addClass('square');\n\\t\\t\\tthis.handle2.addClass('square');\n\\t\\t}"
+    ],
+    [
+        "messageHandler.terminateSession(username, ctx);"
+    ],
+    [
+        "let _numericMapping = {};\n\nfunction LiteralTreeMap() {\n  let _root = new _TreeNode();\n  let _count = 0;\n\n  // only create an argument tree when needed otherwise we incur infinite loop\n  let _argumentTreeSymbol = null;\n  let _argumentClauses = {};\n  let _variableMapping = {};"
+    ],
+    [
+        ""
+    ],
+    [
+        "String newValue = getPropertyValue(newKey, mavenProjectProperties, environment, circularDefinitionPreventer);"
+    ],
+    [
+        "self._template_open_closed = util_path.get_template_open_closed(reach."
+    ],
+    [
+        "def iob_words(self, fileids=None, **kwargs):\n        # Concatenate the list of lists given by iob_sents().\n        return LazyConcatenation(self.iob_sents(fileids, **kwargs))\n        \n    def chunks(self, fileids=None, **kwargs):\n        \"\"\"\n        @return: A list of chunked sents where chunks are multi-word strings.\n        @rtype: C{list} of C{list} of C{str}\n        @param fileids: A list of corpus files.\n        @type fileids: C{list} of C{str} or regular expression \n        @kwparam depth: Depth of chunk parsing for nested chunks.\n        @type depth: C{int}        \n        @kwparam concat: Concatenate sentence lists into one list; works like\n            itertools.chain()\n        @type concat: C{bool}\n        \"\"\"\n        def __chunks(sent):\n            chunks = []\n            for token in sent:\n                # If the token is a list of chunk pieces, append the piece's\n                # contents as a string.                \n                if isinstance(token, list):\n                    # TODO: Better if able to reverse Treebank-style\n                    # tokenization. The join leaves some weird whitespace.                    \n                    chunks.append(' '.join([word[0] for word in token]))\n                # If the token is a tuple, append the token's contents.\n                elif isinstance(token, tuple):\n                    chunks.append(token[0])\n                # Something bad happened.\n                else:\n                    raise\n            return chunks\n        sents = self.chunked_sents(fileids, **kwargs) \n        # Concatenate the lists.          \n        if kwargs.get('concat'):\n            return LazyConcatenation(LazyMap(__chunks, sents))\n        else:\n            return LazyMap(__chunks, sents)\n        \n    def mentions(self, fileids=None, **kwargs):\n        \"\"\"\n        @return: A list of mentions as the tuple of \n            ([words...], id, referent, type)\n        @rtype: C{list} of C{list} of C{tuple}\n        @param fileids: A list of corpus files.\n        @type fileids: C{list} of C{str} or regular expression \n        @kwparam depth: Depth of chunk parsing for nested chunks.\n        @type depth: C{int}  \n        @kwparam concat: Concatenate sentence lists into one list; works like\n            itertools.chain(). Defaults to False.\n        @type concat: C{bool}\n        @kwparam nonmentions: Return nonmentions as well as mentions. Defaults\n            to False.\n        @type nonmentions: C{bool}              \n        \"\"\"\n        def __mentions(sent):\n            mentions = []            \n            # Map each sentence subtree into a tuple.            \n            for token in map(tree2tuple, sent):\n                # If the token type is COREF then append the token contents\n                # and everything but the token type.\n                if token[1] == 'COREF':\n                    mentions.append(token[:1] + token[2:])\n                # If including nonmentions, append the token contents only.\n                elif kwargs.get('nonmentions'):\n                    mentions.append(token[:1])\n            return mentions\n        # TODO: Is depth doing what it's expected to?                \n        depth = kwargs.get('depth', 0)        \n        sents = self._chunked_sents(self._sents(fileids), depth)                \n        # Concatenate the lists.\n        if kwargs.get('concat'):\n            return LazyConcatenation(LazyMap(__mentions, sents))\n        else:\n            return LazyMap(__mentions, sents)"
+    ],
+    [
+        "return (\n    <div className='table-header'>\n      <TableHeaderActions\n        actions={actionsShowed}\n        onSearch={onSearch}\n      />\n      {columns.map((column, index) => (\n        <div key={index} className='table-header-column'>\n          <span>{column}</span>\n          {filters && (\n            <input\n              type='text'\n              value={columnValues[column] || ''}\n              onChange={(e) => onFilter(column, e.target.value)}\n              placeholder={`Filter by ${column}`}\n            />\n          )}\n          {sort && (\n            <button onClick={() => onSort(column)}>\n              Sort\n            </button>\n          )}\n        </div>\n      ))}\n    </div>\n  );"
+    ],
+    [
+        "return \"Info{\" +\n                \"appVersion='\" + appVersion + '\\'' +\n                \", identifier=\" + identifier +\n                \", mediaType=\" + mediaType +\n                \", metadata=\" + metadata +\n                \", serialization=\" + serialization +\n                \", images=\" + images +\n                \", numResolutions=\" + numResolutions +\n                \", isPersistable=\" + isPersistable +\n                '}';"
+    ],
+    [
+        "var xhr = new XMLHttpRequest();\\nxhr.open(method, url, true);\\nxhr.setRequestHeader('Content-Type', 'application/json');\\nxhr.onload = function () {\\n  if (xhr.status >= 200 && xhr.status < 300) {\\n    console.log('Success:', xhr.responseText);\\n  } else {\\n    console.log('Failed:', xhr.statusText);\\n  }\\n};\\nxhr.onerror = function () {\\n  console.log('Error in request');\\n};\\nxhr.send(JSON.stringify(data));"
+    ],
+    [
+        "if (type == EventType.STARTED) {\n                transferredBytes = 0;\n            }"
+    ],
+    [
+        "Analysis analysis = new Analysis();\n            analysis.setup(socketServer.getScenarioOptions(), socketServer.getOutputDirectory(), socketServer.getNetwork(), preparer.getDatabase());"
+    ],
+    [
+        "public void addParameterDefinitions(List<ParameterDefinition> paramList) {\n        paramList.add(new ParameterDefinitionImpl(PARAM_TYPE, DataTypeDefinition.QNAME, true, getParamDisplayLabel(PARAM_TYPE)));\n    }"
+    ],
+    [
+        "}\\n    }"
+    ],
+    [
+        "while (count !== index) {\\n        current = current.next;\\n        count++;\\n      }"
+    ],
+    [
+        "vate long effective = 60 * 10;\n\n    // 邮件内容，例如：你的验证码为%s\n    private String content = \"欢迎注册，你的验证码为：%s（统一登录门户）\";\n\n    private String subject = \"统一门户注册验证码\";\n\n    // 来自哪个用户发送\n    private String from;\n\n    // 验证码长度\n    private int codeLen = 6;"
+    ],
+    [
+        "inference(z)"
+    ],
+    [
+        ""
+    ],
+    [
+        "@Override\n    public void setOnClickListener(@Nullable View.OnClickListener l) {\n        super.setOnClickListener(l);\n        this.mOnClickListener = l;\n    }\n\n    @Override\n    public void setOnLongClickListener(@Nullable View.OnLongClickListener l) {\n        super.setOnLongClickListener(l);\n        this.mLongClickListener = l;\n    }\n\n    @Override\n    public boolean onInterceptTouchEvent(MotionEvent ev) {\n        final int action = ev.getAction();\n        if (action == MotionEvent.ACTION_DOWN) {\n            mDownX = (int) ev.getX();\n            mDownY = (int) ev.getY();\n            mPressing = true;\n            mHandler.postDelayed(mLongpressCheck, ViewConfiguration.getLongPressTimeout());\n        } else if (action == MotionEvent.ACTION_MOVE) {\n            int deltaX = (int) ev.getX() - mDownX;\n            int deltaY = (int) ev.getY() - mDownY;\n            int distanceSquared = deltaX * deltaX + deltaY * deltaY;\n            if (distanceSquared > mTouchSlopSquared) {\n                mPressing = false;\n                mHandler.removeCallbacks(mLongpressCheck);\n            }\n        } else if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {\n            mPressing = false;\n            mHandler.removeCallbacks(mLongpressCheck);\n            if (mInLongpress) {\n                mInLongpress = false;\n                return true;\n            }\n        }\n        return super.onInterceptTouchEvent(ev);\n    }\n\n    @Override\n    public boolean onTouchEvent(MotionEvent ev) {\n        if (mInLongpress) {\n            return true;\n        }\n        return super.onTouchEvent(ev);\n    }"
+    ],
+    [
+        "if (value - Math.floor(value) === 0.5) {\n        return value > 0 ? Math.ceil(value) : Math.floor(value);\n    }"
+    ],
+    [
+        "def train_on_batch(self, batch):\n        x, y = batch\n        x = torch.from_numpy(np.array(x)).to(self.device_name)\n        y = torch.from_numpy(np.array(y)).to(self.device_name)\n\n        self.model.train()\n        self.optim.zero_grad()\n\n        loss = self.compute_loss(self.model, (x, y))\n        loss.backward()\n        self.clip_grad()\n        self.optim.step()\n\n        if not self.config.get('no_saving'):\n            self.writer.add_scalar('loss/train', loss.item(), self.num_iters_done)\n\n        return loss.item()"
+    ],
+    [
+        "check.equal(config.b, 2)\n    check.equal(config.c.d.e, 3)\n    check.equal(config.c.d.f, [2, 3])"
+    ],
+    [
+        "if request.user.is_staff:\n                return func(view, request, *args, **kw)\n            else:\n                raise PermissionDenied"
+    ],
+    [
+        "if (left_to_right[i] === right_to_left[j]) {"
+    ],
+    [
+        "def api_get_job_status(self, job_id: str) -> JsonObject:\n        res = self._smart_call(raw_api.get_job_status, job_id=job_id)\n        return res\n\n    def api_get_all_jobs(self) -> JsonList:\n        res = self._smart_call(raw_api.get_all_jobs)\n        return res\n\n    def api_delete_job(self, job_id: str):\n        self._smart_call(raw_api.delete_job, job_id=job_id)"
+    ],
+    [
+        "fs.mkdir(path, mask, function(err) {\n        if (err) {\n            if (err.code == 'EEXIST') cb(null); // ignore the error if the folder already exists\n            else cb(err); // something else went wrong\n        } else {\n            cb(null); // successfully created folder\n        }\n    });"
+    ],
+    [
+        "    }"
+    ],
+    [
+        "discordActivityAccess.start(applicationId);\n                    return;\n                }\n                // Pass rich presence data down to the Discord activity access\n                var details = richPresenceData.getString(\"details\");\n                var state = richPresenceData.getString(\"state\");\n                var smallImageId = richPresenceData.getString(\"smallImageId\");\n                var smallImageText = richPresenceData.getString(\"smallImageText\");\n                var largeImageId = richPresenceData.getString(\"largeImageId\");\n                var largeImageText = richPresenceData.getString(\"largeImageText\");\n                var activityStart = richPresenceData.getLong(\"activityStart\");\n                var activityEnd = richPresenceData.getLong(\"activityEnd\");\n\n                discordActivityAccess.updateRichPresence(applicationId,\n                        details,\n                        state,\n                        activityStart,\n                        activityEnd,\n                        smallImageId,\n                        smallImageText,\n                        largeImageId,\n                        largeImageText);\n            } else {\n                // The application ID has to be reset here so the core gets started up again once we receive data again\n                lastApplicationID = 0;\n                discordActivityAccess.stop();\n            }\n            // Run callbacks\n            discordActivityAccess.runCallbacks();\n        } catch (Exception e) {\n            LOGGER.error(\"An error occurred during the rich presence update loop\", e);\n        }\n    }, UPDATE_INTERVAL, UPDATE_INTERVAL, TimeUnit.MILLISECONDS);"
+    ],
+    [
+        "get_embeddings(['This method is not implemented yet'])"
+    ],
+    [
+        "      case '+':\\n        operand[count] = operand[count] + operand[count + 1];\\n        operand.splice(count + 1, 1);\\n        operator.splice(count, 1);\\n        count = 0;\\n        do_again = true;\\n        break;\\n      case '-':\\n        operand[count] = operand[count] - operand[count + 1];\\n        operand.splice(count + 1, 1);\\n        operator.splice(count, 1);\\n        count = 0;\\n        do_again = true;\\n        break;"
+    ],
+    [
+        "if (e instanceof IapApiException) {\n                    IapApiException apiException = (IapApiException) e;\n                    int returnCode = apiException.getStatusCode();\n                    Log.e(TAG, \"isEnvReady, fail, IapApiException returnCode: \" + returnCode);\n                    iapApiCallback.onFail(apiException);\n                } else {\n                    Log.e(TAG, \"isEnvReady, fail, error: \" + e.getMessage());\n                    iapApiCallback.onFail(e);\n                }"
+    ],
+    [
+        "var result = [];"
+    ],
+    [
+        "println(\"Transferência para outra conta:\");\n    System.out.printf(\"Insira o valor da transferência: R$ \");\n    double valor = sc.nextDouble();\n    if (valor <= 0) {\n        System.out.println(\"Por favor, insira um valor válido.\");\n        menuCliente(conta, cliente);\n    } else if (valor > conta.getSaldo()) {\n        System.out.println(\"Saldo insuficiente.\");\n        menuCliente(conta, cliente);\n    } else {\n        sc.nextLine(); // Consume the newline left-over\n        System.out.print(\"Insira o CPF do destinatário: \");\n        String cpfDestinatario = sc.nextLine();\n        while (cpfDestinatario.equals(conta.getCpf())) {\n            System.out.println(\"Você não pode transferir para a mesma conta.\");\n            System.out.print(\"Por favor, insira um CPF válido: \");\n            cpfDestinatario = sc.nextLine();\n        }\n        Conta contaDestino = SistemaBancario.mapaDeContas.get(cpfDestinatario);\n        if (contaDestino != null) {\n            conta.transferir(contaDestino, valor);\n            Escritor.comprovanteTransferencia(conta, contaDestino, valor);\n            System.out.println(\"Transferência realizada com sucesso.\");\n        } else {\n            System.out.println(\"Conta destinatária não encontrada.\");\n        }\n    }\n    menuCliente(conta, cliente);"
+    ],
+    [
+        "# Ensure that we have a api-core operations client.\n    assert isinstance(transport.operations_client, operations_v1.OperationsClient,)\n\n    # Ensure that subsequent calls to the property send the exact same object.\n    assert transport.operations_client is transport.operations_client"
+    ],
+    [
+        "for (int i = 0; i < columnCount; i++) {\n                if (td == null) {\n                    break;\n                }\n                int cellWidth = td.getOffsetWidth();\n                idealWidths[i] = cellWidth;\n                td = td.getNextSiblingElement();\n            }"
+    ],
+    [
+        "def _remove_file(path):\n        try:\n            os.remove(path)\n            LOGGER.info('Removed file: %r', path)\n        except OSError as ex:\n            LOGGER.error('Failed to remove file %r: %s', path, ex)\n\n    def _rename_file(src, dst):\n        try:\n            os.rename(src, dst)\n            LOGGER.info('Renamed file from %r to %r', src, dst)\n        except OSError as ex:\n            LOGGER.error('Failed to rename file from %r to %r: %s', src, dst, ex)\n\n    def _copy_file(src, dst):\n        try:\n            shutil.copy2(src, dst)\n            LOGGER.info('Copied file from %r to %r', src, dst)\n        except OSError as ex:\n            LOGGER.error('Failed to copy file from %r to %r: %s', src, dst, ex)\n\n    def _create_sparse_file(path, size):\n        try:\n            with open(path, 'wb') as f:\n                f.truncate(size)\n            LOGGER.info('Created sparse file: %r', path)\n        except OSError as ex:\n            LOGGER.error('Failed to create sparse file %r: %s', path, ex)\n\n    def _resize_file(path, size):\n        try:\n            with open(path, 'r+b') as f:\n                f.truncate(size)\n            LOGGER.info('Resized file: %r', path)\n        except OSError as ex:\n            LOGGER.error('Failed to resize file %r: %s', path, ex)\n\n    def _update_loopdev_sizes(img):\n        try:\n            realpath = os.path.realpath(img)\n            for loopdev in glob.glob('/sys/block/loop*/loop/backing_file'):\n                with open(loopdev, 'r') as f:\n                    if realpath == f.read().strip():\n                        dev = '/dev/' + os.path.basename(os.path.dirname(loopdev))\n                        with open(dev, 'r+b') as dev_f:\n                            fcntl.ioctl(dev_f.fileno(), LOOP_SET_CAPACITY)\n            LOGGER.info('Updated loop device sizes for image: %r', img)\n        except Exception as ex:\n            LOGGER.error('Failed to update loop device sizes for image %r: %s', img, ex)\n\n    def _attempt_ficlone(src_io, dst_io):\n        try:\n            fcntl.ioctl(dst_io.fileno(), FICLONE, src_io.fileno())\n            LOGGER.info('Reflinked file from %r to %r', src_io.name, dst_io.name)\n            return True\n        except OSError as ex:\n            if ex.errno in (errno.EBADF, errno.EINVAL, errno.EOPNOTSUPP, errno.EXDEV):\n                LOGGER.info('Reflink not supported, falling back to copy for %r to %r', src_io.name, dst_io.name)\n                return False\n            else:\n                LOGGER.error('Error attempting to reflink file from %r to %r: %s', src_io.name, dst_io.name, ex)\n                raise"
+    ],
+    [
+        "{\n            return \"{name: \" + name + \", surname: \" + surname + \"}\";\n        }"
+    ],
+    [
+        ""
+    ],
+    [
+        "def main():\n    logging.basicConfig(level=logging.CRITICAL)\n    p = Program(\"./6\")\n    alert_placeholder_addr = p.find_function_addr(\"__alert_placeholder\")\n    dse = SymbolicExplorator(Config(symbolize_argv=True, skip_unsupported_import=True), p)\n\n    dse.callback_manager.register_post_execution_callback(post_exec_hook)\n    #dse.callback_manager.register_post_instruction_callback(trace_inst)\n    dse.callback_manager.register_pre_addr_callback(alert_placeholder_addr, hook_alert_placeholder)\n    dse.callback_manager.register_probe(StrncpySanitizer())\n    dse.callback_manager.register_probe(NullDerefSanitizer())\n\n    dse.explore()\n\nif __name__ == \"__main__\":\n    main()"
+    ],
+    [
+        "request.getInput().getTimeout() * 20L"
+    ],
+    [
+        "while(el && el !== document.body) {\n        if(el === this.input.element || el === this.container) {\n          isPicker = true;\n          break;\n        }\n        el = el.parentNode;\n      }"
+    ],
+    [
+        "var numString = numbers.split(' ');"
+    ],
+    [
+        "def parse_tf_file_for_block_strings(path: Path) -> Generator[str, None, None]:\n\n    states = [State.ROOT]\n\n    buffer = []\n\n    for char in read_chars_from_file(path):\n\n        buffer.append(char)\n\n        state = states[-1]\n\n        if state is State.ROOT:\n\n            if char == '\\\"':\n                states.append(State.STRING)\n            elif char == \"{\":\n                if buffer[-1:] != \"\\\\n\":\n                    buffer.append(\"\\\\n\")\n                states.append(State.BLOCK)\n            elif char == \"\\\\n\":\n                block = clean_block_string(\"\".join(buffer))\n                if block:\n                    yield block\n                buffer.clear()\n\n        elif state is State.STRING:\n\n            if char == \"\\\\\":\n                states.append(State.ESCAPE)\n            elif char == '\\\"':\n                states.pop()\n\n        elif state is State.ESCAPE:\n\n            states.pop()\n\n        elif state is State.BLOCK:\n\n            if char == '\\\"':\n                states.append(State.STRING)\n            elif char == \"{\":\n                states.append(State.BLOCK)\n            elif char == \"}\":\n                if buffer[-1:] != \"\\\\n\":\n                    buffer[-1] = \"\\\\n\"\n                    buffer.append(char)\n                states.pop()\n                if states[-1] is State.ROOT:\n                    block = clean_block_string(\"\".join(buffer))\n                    if block:\n                        yield block\n                    buffer.clear()\n\n        else:\n            raise ValueError(state)\n\n    # There shouldn't be anything left over.\n    block = clean_block_string(\"\".join(buffer))\n    if block:\n        raise ValueError(block)"
+    ],
+    [
+        "function SubClass() {\n        // Constructor of the new class\n    }"
+    ],
+    [
+        "@GET\n    @Path(\"/{id}\")\n    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })\n    @AnonymousAllowed\n    public Response getCategoryById(@PathParam(\"id\") String id) throws SearchExceptio"
+    ],
+    [
+        "    Create a new UserProjectSettings entry for a given project and user.\n    \"\"\"\n    model_cls = apps.get_model(\"settings\", \"UserProjectSettings\")\n    try:\n        return model_cls.objects.create(project=project,\n                                        user=user,\n                                        homepage=homepage)\n    except IntegrityError as e:\n        raise exc.IntegrityError(\n            _(\"Notify exists for specified user and project\")) from e"
+    ],
+    [
+        "def __init__(self, graph: GraphT) -> None:\n        self.graph_scene = EditGraphScene()\n        self.graph_scene.vertices_moved.connect(self._vert_moved)\n        self.graph_scene.vertex_double_clicked.connect(self._vert_double_clicked)\n        self.graph_scene.edge_added.connect(self._add_edge)\n\n        self._curr_vty = VertexType.Z\n        self._curr_ety = EdgeType.SIMPLE\n        super().__init__(graph, self.graph_scene)\n\n        self.sidebar = QSplitter(self)\n        self.sidebar.setOrientation(Qt.Vertical)\n        self.splitter.addWidget(self.sidebar)\n        self.vertex_list = self.create_list_widget(VERTICES, self._vty_clicked)\n        self.edge_list = self.create_list_widget(EDGES, self._ety_clicked)\n        self.sidebar.addWidget(self.vertex_list)\n        self.sidebar.addWidget(self.edge_list)"
+    ],
+    [
+        "if (drawable != null) {\n            drawable.setCallback(this);\n        }"
+    ],
+    [
+        "gene_wkname = 'clustalo_default-trim'\n        for wkname in [\"cog_all-alg_concat_default-raxml_default\", \"cog_all-alg_concat_default-fasttree\"]:\n            cmd = 'ete3 build -a %s/cog_seqs.fa --cogs %s/fake_cogs.tsv -w %s -m %s -o ete_test_tmp/etebuild_test2  -t0.5 --launch 0.5 --clearall --cpu %d' %(DIR, DIR, gene_wkname, wkname, CPUS)\n            args = cmd.split()\n            ete._main(args)                        \n            ctree, xtree, alg_used, alg, alg_trimmed, img, cmd = get_out_files(\"ete_test_tmp/etebuild_test2\", wkname, \"cog_seqs.fa\")\n            t1 = Tree(ctree)\n            t2 = Tree(xtree)"
+    ],
+    [
+        "for(var i=0; i<s.length; i++){"
+    ],
+    [
+        "class DisplayMaterial(object, IDisposable):\n    \"\"\"\n    Provides mechanisms for defining material properties for display purposes.\n    \"\"\"\n    def __init__(self, diffuse=None, specular=None, ambient=None, emission=None, shine=None, transparency=None):\n        self.diffuse = diffuse\n        self.specular = specular\n        self.ambient = ambient\n        self.emission = emission\n        self.shine = shine\n        self.transparency = transparency\n\n    def SetBitmapTexture(self, texture, front=True):\n        \"\"\"\n        Sets a bitmap texture for the material.\n        \"\"\"\n        pass\n\n    def SetBumpTexture(self, texture, front=True):\n        \"\"\"\n        Sets a bump map texture for the material.\n        \"\"\"\n        pass\n\n    def SetEnvironmentTexture(self, texture, front=True):\n        \"\"\"\n        Sets an environment map texture for the material.\n        \"\"\"\n        pass\n\n    def SetTransparencyTexture(self, texture, front=True):\n        \"\"\"\n        Sets a transparency map texture for the material.\n        \"\"\"\n        pass\n\n    def __enter__(self):\n        \"\"\"\n        Provides the implementation of __enter__ for objects which implement IDisposable.\n        \"\"\"\n        return self\n\n    def __exit__(self, exc_type, exc_value, exc_back):\n        \"\"\"\n        Provides the implementation of __exit__ for objects which implement IDisposable.\n        \"\"\"\n        self.Dispose()\n\n    def Dispose(self):\n        \"\"\"\n        Dispose this DisplayMaterial instance. You must call this function in order to\n        properly shut down the DisplayMaterial.\n        \"\"\"\n        pass"
+    ],
+    [
+        "        }\\n    }"
+    ],
+    [
+        "if (event.keyCode == 67) { // C key\n    ebi(\"P2P_selector\").style.display = \"inline\";\n    ebi(\"P2P_link\").style.display = \"none\";\n    ebi(\"projectSelector\").focus();\n  }"
+    ],
+    [
+        "def load_state_dict(self, state_dict):\n        #print(state_dict)\n        return t_utils."
+    ],
+    [
+        "function childrenTagsOf(element) {\n  var tags = [];"
+    ],
+    [
+        "while i < len(used):\n            if not used[i]:\n                j = i\n                while j < len(used) and not used[j]:\n                    j += 1\n                if j-i >= min_leftover:\n                    seq = contigs[name][i:j]\n                    io.write_fasta(leftover_f, name + ':' + str(i) + '-' + str(j), seq)\n                i = j\n            else:\n                i += 1"
+    ],
+    [
+        "    }"
+    ],
+    [
+        "coordinates.push([i, j]);"
+    ],
+    [
+        "elementType.buildFormattedString(nextPrefix, builder);"
+    ],
+    [
+        "@VisibleForTesting\n    void setPreference(Preference preference) {\n        mPreference = preference;\n    }"
+    ],
+    [
+        "        }"
+    ],
+    [
+        "open_parens -= 1"
+    ],
+    [
+        "(ref, issues);"
+    ],
+    [
+        "if (day < 1 || day > 31) return valid_date;\n            } else if (month == 4 || month == 6 || month == 9 || month == 11) {\n                if (day < 1 || day > 30) return valid_date;\n            } else {\n                if (day < 1 || day > 31) return valid_date;\n            }"
+    ],
+    [
+        "self.assertEqual(section.name, 'history')\n        self.assertEqual(section.maxLength, None)\n        self.assertEqual(section.tokens, 0.5)\n        self.assertEqual(section.required, True)\n        self.assertEqual(section.separator, \"\\\\n\")\n        self.assertEqual(section.userPrefix, \"user: \")\n        self.assertEqual(section.assistantPrefix, \"assistant: \")\n        self.assertEqual(section.text_prefix, \"> \")"
+    ],
+    [
+        "assert u.driver == \"asyncpg"
+    ],
+    [
+        "protected void getSession() throws ManifoldCFException {\n    if (!isInitialized) {\n        String x;\n        String emailAddress = params.getParameter(RSSConfig.PARAMETER_EMAIL);\n        if (emailAddress == null)\n            throw new ManifoldCFException(\"Missing email address\");\n        userAgent = \"Mozilla/5.0 (ApacheManifoldCFRSSFeedReader; \" + ((emailAddress == null) ? \"\" : emailAddress) + \")\";\n        from = emailAddress;\n        String robotsUsageString = params.getParameter(RSSConfig.PARAMETER_ROBOTSUSAGE);\n        robotsUsage = ROBOTS_ALL;\n        if (robotsUsageString == null || robotsUsageString.length() == 0 || robotsUsageString.equals(RSSConfig.VALUE_ALL))\n            robotsUsage = ROBOTS_ALL;\n        else if (robotsUsageString.equals(RSSConfig.VALUE_NONE))\n            robotsUsage = ROBOTS_NONE;\n        else if (robotsUsageString.equals(RSSConfig.VALUE_DATA))\n            robotsUsage = ROBOTS_DATA;\n        proxyHost = params.getParameter(RSSConfig.PARAMETER_PROXYHOST);\n        String proxyPortString = params.getParameter(RSSConfig.PARAMETER_PROXYPORT);\n        proxyAuthDomain = params.getParameter(RSSConfig.PARAMETER_PROXYAUTHDOMAIN);\n        proxyAuthUsername = params.getParameter(RSSConfig.PARAMETER_PROXYAUTHUSERNAME);\n        proxyAuthPassword = params.getObfuscatedParameter(RSSConfig.PARAMETER_PROXYAUTHPASSWORD);\n        proxyPort = -1;\n        if (proxyPortString != null && proxyPortString.length() > 0) {\n            try {\n                proxyPort = Integer.parseInt(proxyPortString);\n            } catch (NumberFormatException e) {\n                throw new ManifoldCFException(e.getMessage(), e);\n            }\n        }\n        // Read throttling configuration parameters\n        minimumMillisecondsPerBytePerServer = 0.0;\n        maxOpenConnectionsPerServer = 10;\n        minimumMillisecondsPerFetchPerServer = 0L;\n        x = params.getParameter(RSSConfig.PARAMETER_BANDWIDTH);\n        if (x != null && x.length() > 0) {\n            try {\n                int maxKBytesPerSecondPerServer = Integer.parseInt(x);\n                if (maxKBytesPerSecondPerServer > 0)\n                    minimumMillisecondsPerBytePerServer = 1.0 / (double) maxKBytesPerSecondPerServer;\n            } catch (NumberFormatException e) {\n                throw new ManifoldCFException(\"Bad number: \" + e.getMessage(), e);\n            }\n        }\n        x = params.getParameter(RSSConfig.PARAMETER_MAXOPEN);\n        if (x != null && x.length() > 0) {\n            try {\n                maxOpenConnectionsPerServer = Integer.parseInt(x);\n            } catch (NumberFormatException e) {\n                throw new ManifoldCFException(\"Bad number: \" + e.getMessage(), e);\n            }\n        }\n        x = params.getParameter(RSSConfig.PARAMETER_MAXFETCHES);\n        if (x != null && x.length() > 0) {\n            try {\n                int maxFetches = Integer.parseInt(x);\n                if (maxFetches == 0)\n                    maxFetches = 1;\n                minimumMillisecondsPerFetchPerServer = 60000L / ((long) maxFetches);\n            } catch (NumberFormatException e) {\n                throw new ManifoldCFException(\"Bad number: \" + e.getMessage(), e);\n            }\n        }\n        IThrottleGroups tg = ThrottleGroupsFactory.make(currentContext);\n        // Create the throttle group\n        tg.createOrUpdateThrottleGroup(rssThrottleGroupType, throttleGroupName, new ThrottleSpec(maxOpenConnectionsPerServer, minimumMillisecondsPerFetchPerServer, minimumMillisecondsPerBytePerServer));\n        isInitialized = true;\n    }\n}"
+    ],
+    [
+        "HistoricProcessInstanceQuery startedBy(String userId);"
+    ],
+    [
+        "function contains(arr, item) {\n    return angular.isArray(arr) && arr.indexOf(item) !== -1;\n  }"
+    ],
+    [
+        "t\\t\\tif (mapper) {\n\\t\\t\\t\\trows = data.map(function(d, idx) {\n\\t\\t\\t\\t\\treturn mapper(d, idx);\n\\t\\t\\t\\t});\n\\t\\t\\t} else {\n\\t\\t\\t\\trows = data;\n\\t\\t\\t}\n\\t\\t\\tvar me = {\n\\t\\t\\t\\t_meta: {\n\\t\\t\\t\\t\\tdimensions: [],\n\\t\\t\\t\\t\\tmeasures: []\n\\t\\t\\t\\t}\n\\t\\t\\t};\n\\t\\t\\t// Assuming data is an array of objects\n\\t\\t\\tif (Array.isArray(data) && data.length > 0) {\n\\t\\t\\t\\tObject.keys(data[0]).forEach(function(key) {\n\\t\\t\\t\\t\\tif (typeof data[0][key] === 'number') {\n\\t\\t\\t\\t\\t\\tme._meta.measures.push(key);\n\\t\\t\\t\\t\\t} else {\n\\t\\t\\t\\t\\t\\tme._meta.dimensions.push(key);\n\\t\\t\\t\\t\\t}\n\\t\\t\\t\\t});\n\\t\\t\\t}"
+    ],
+    [
+        "assertOrgLeader.shouldEffective(tenantId, leaderId);"
+    ],
+    [
+        "with myopen(input_file) as file_handle:\n        for line in file_handle:\n            if line.startswith('@'):\n                name = line.strip()[1:]\n                seq = next(file_handle).strip()\n                name2 = next(file_handle).strip()[1:]\n                qual = next(file_handle).strip()\n                yield Fastq(name, seq, name2, qual)"
+    ],
+    [
+        "this.app.$element().delegate('[' + this.href_attribute + ']', 'click', function(e) {\n        var new_location = $(this).attr(proxy.href_attribute);\n        e.preventDefault();\n        proxy.setLocation(new_location);\n      });"
+    ],
+    [
+        "contextValue.getId()"
+    ],
+    [
+        ""
+    ],
+    [
+        "def build_definitions(self):\n        for item in data:\n            definition = serializers.DefinitionSerializer(data=item)\n            if definition.is_valid():\n                definition.save()\n            else:\n                print(\"Error in data serialization\")"
+    ],
+    [
+        "String gitlabEventUUID = mrSimple.getGitlabEventUUID();\nif (gitlabEventUUID == null) {\n    gitlabEventUUID = \"replay-\" + new Random().nextInt(1000, 10000);\n}\nLog.infof(\"GitlabEvent: '%s' | Replay\", gitlabEventUUID);"
+    ],
+    [
+        "if (GroovyUtils.isGroovyCodeChanged(instanceName, groovyCode)) {"
+    ],
+    [
+        "map.put(val, (long)1);"
+    ],
+    [
+        "lcas.addAll(cas);\n        for (OWLObject ca : cas) {\n            Set<OWLObject> descendants = g.getDescendants(ca, overProps);\n            for (OWLObject descendant : descendants) {\n                if (cas.contains(descendant)) {\n                    lcas.remove(descendant);\n                }\n            }\n        }"
+    ],
+    [
+        "def process(self, device, results, log):\n        log.info('processing %s for device %s', self.name(), device.id)\n        getdata, tabledata = results\n\n        log.debug(\"Get Data= %s\", getdata,)\n        log.debug(\"Table Data= %s\", tabledata,)\n\n        table = tabledata.get(\"ogRpcStatusEntry\")\n        rm = self.relMap()\n\n        log.debug('Table Values= %s', table.values())\n        for info in table.values():\n\n            om = self.objectMap(info)\n            om.id = self.prepId(\"%s_rpcStatus_%s\" % (\n                device.id,\n                str(info['ogRpcStatusName']),\n            ))\n\n            rm.append(om)\n\n        return [rm]"
+    ],
+    [
+        "if num > 1:"
+    ],
+    [
+        "cprint('Test completed.')\n    cprint('Mean Loss: {:.4f}'.format(test_loss))\n    cprint('Mean IoU: {:.4f}'.format(mean_IoU))\n    cprint('Total Time: {:.2f} seconds'.format(time.time() - start_time))"
+    ],
+    [
+        ""
+    ],
+    [
+        "import {\n    kFilteredAlbums,\n    kAlbum,\n    setAlbum,\n    setAlbumFilter,\n    kAlbumFilter,\n} from \"../model/browsingModel\";\nimport {\n  kKeyboardFocus,\n  keyboardFocusOptions,\n} from \"../model/keyboardModel\";"
+    ],
+    [
+        "optimize_energy_efficiency(test_data)"
+    ],
+    [
+        ""
+    ],
+    [
+        "if not isinstance(inst, IPluginClass):\n            print(\"Instance is not of type IPluginClass\")\n            return False\n        if not inst.Name() or not callable(inst.Name):\n            print(\"Plugin class must have a callable Name method\")\n            return False\n        if not inst.Depends() or not isinstance(inst.Depends(), list):\n            print(\"Plugin class must have a Depends method that returns a list\")\n            return False\n        return True"
+    ],
+    [
+        "getHeaderString() {\n    if (!this.subKernels || this.subKernels.length === 0) {\n      return '';\n    }\n    const result = [];\n    for (let i = 0; i < this.subKernels.length; i++) {\n      result.push(`layout(location = ${i}) out vec4 data${i};`);\n    }\n    return result.join('\\\\n');\n  }"
+    ],
+    [
+        "for (let i = 0; i < notes.length; i++) {\n    let x = i * w;\n    if (i === song[index].note && autoplay) {\n      fill(255, 0, 0);\n    } else {\n      fill(255);\n    }\n    rect(x, height - 50, w - 2, 50);\n    fill(0);\n    noStroke();\n    textAlign(CENTER, CENTER);\n    text(song[i % song.length].display, x + w / 2, height - 25);\n  }"
+    ],
+    [
+        "def export_to_json(self, ids):\n        qs = self.model.objects(id__in=ids)\n\n        return Response(\n            qs.to_json(),\n            mimetype=\"text/json\",\n            headers={\n                \"Content-Disposition\":\n                \"attachment;filename=%s.json\" % self.model.__name__.lower()\n            }\n        )\n\n    @action('export_to_csv', 'Export as csv')\n    def export_to_csv(self, ids):\n        qs = json.loads(self.model.objects(id__in=ids).to_json())\n\n        def generate():\n            yield ','.join(list(max(qs, key=lambda x: len(x)).keys())) + '\\\\n'\n            for item in qs:\n                yield ','.join([str(i) for i in list(item.values())]) + '\\\\n'\n\n        return Response(\n            generate(),\n            mimetype=\"text/csv\",\n            headers={\n                \"Content-Disposition\":\n                \"attachment;filename=%s.csv\" % self.model.__name__.lower()\n            }\n        )"
+    ],
+    [
+        "return []"
+    ],
+    [
+        "await setBalance(cToken, redeemAmount);"
+    ],
+    [
+        ""
+    ],
+    [
+        "get(b, default_val=0) + 1"
+    ],
+    [
+        "upf_plan = pb_reader.read_plan(upf_problem, response.plan)"
+    ],
+    [
+        "function defineIteratorMethods(prototype) {\n    ['next', 'throw', 'return'].forEach(function(method) {\n        prototype[method] = function(arg) {\n            return this._invoke(method, arg);\n        };\n    });\n}"
+    ],
+    [
+        "}\\n            if (item > 1 && counter == 2) {\\n                if (number > largestPrime) {\\n                    largestPrime = number;\\n                }"
+    ],
+    [
+        ".infer(recordName).getSchema());"
+    ],
+    [
+        "protected void setLongitudeVisible(boolean visible) {\n        Style style = m_longitudeLabel.getElement().getParentElement().getStyle();\n        if (visible) {\n            style.clearDisplay();\n        } else {\n            style.setDisplay(Display.NONE);\n        }\n    }"
+    ],
+    [
+        "{\n        final String expected = \"Success\";\n        Callable<String> callable = () -> \"Success\";\n        HandlerThread handlerThread = mock(HandlerThread.class);\n        fetchThreadData.queueResponse(callable, result -> {\n            assertEquals(expected, result);\n            verify(handlerThread).quit();\n        });\n    }"
+    ],
+    [
+        "return result;"
+    ],
+    [
+        "private File logDir() {\n        if (logDir == null) {\n            throw new IllegalStateException(\"Log directory has not been initialized.\");\n        }\n        return logDir;\n    }"
+    ],
+    [
+        "assert condition == original_condition, f\"Extracted condition '{condition}' does not match original '{original_condition}'"
+    ],
+    [
+        "{\n    if (url.endsWith('/')) {\n        return url;\n    } else {\n        return url + '/';\n    }\n}"
+    ],
+    [
+        "{\n    if (sessionRegistry.has(sessionToken)) {\n        let session = sessions[sessionToken];\n        session.stop();\n        sessionRegistry.delete(sessionToken);\n        clearTimeout(timeouts[sessionToken]);\n        delete sessions[sessionToken];\n        delete timeouts[sessionToken];\n        console.log(`Session ${sessionToken} cleaned up.`);\n    } else {\n        console.log(`Session token ${sessionToken} not found for cleanup.`);\n    }\n}"
+    ],
+    [
+        "root.add_children(api_v1, version=1)"
+    ],
+    [
+        " = campaign.getGame();"
+    ],
+    [
+        "OutputWindow.print(\"Proxy server Listening on \" + bindAddress);"
+    ],
+    [
+        "const [addressCity, setCity] = useState(city || \\\"\\\")"
+    ],
+    [
+        "void dispose();"
+    ],
+    [
+        "public boolean addValue(String text, int score) {\n        if (scores.size() >= max_to_keep) {\n            int minScore = Integer.MAX_VALUE;\n            int minIndex = -1;\n            for (int i = 0; i < scores.size(); i++) {\n                if (scores.get(i) < minScore) {\n                    minScore = scores.get(i);\n                    minIndex = i;\n                }\n            }\n            if (score > minScore) {\n                strings.remove(minIndex);\n                scores.remove(minIndex);\n            } else {\n                return false;\n            }\n        }\n        strings.add(text);\n        scores.add(score);\n        return true;\n    }"
+    ],
+    [
+        "masks = glob.glob(os.path.join(MASKS_PATH, '*.tif'))"
+    ],
+    [
+        "{\n        // No additional configuration needed for this deserializer\n    }"
+    ],
+    [
+        "self.add_constraint(wb_dst_src, ('wb', 'dst0', 'src0'))"
+    ],
+    [
+        "try:\n                tmp_context_ftr_info = pickleload(tmp_cache_context_feature_path)\n            except:\n                print('--------------------------------------------------')\n                print(tmp_cache_context_feature_path)\n                print('--------------------------------------------------')"
+    ],
+    [
+        "generate_response(message_payload.conversation_id, message_payload.message)"
+    ],
+    [
+        ".setLegitimacy(realm.getLegitimacy());\n        userRealm.setDiplomaticReputation(realm.getDiplomaticReputation());\n        userRealm.setPowerProjection(realm.getPowerProjection());\n        userRealm.setPrestige(realm.getPrestige());\n        userRealm.setStability(realm.getStability());\n        userRealm.setRealmPathToGFX(realm.getRealmPathToGFX());"
+    ],
+    [
+        "String databaseName = mainConfig.getStorageType();\n            // Get the name of the current database"
+    ],
+    [
+        "9: 'ix',"
+    ],
+    [
+        "while parent is not None:\n            if isinstance(parent, JSONSchema):\n                return parent\n            parent = parent.parent\n        return None"
+    ],
+    [
+        "const strangeFiles = _.mapValues(files, file => {\n    return {\n      ...file,\n      filename: toWindows(file.filename)\n    };\n  });"
+    ],
+    [
+        "digits.sort()"
+    ],
+    [
+        "JSONObject response = new JSONObject(post());\nreturn response.toString();"
+    ],
+    [
+        ""
+    ],
+    [
+        "message = body.getMessages();\\n                  var messages = new ArrayList<>(message);"
+    ],
+    [
+        "String key = entry.getKey();\n    String value = entry.getValue();\n    AliyunPushLog.d(REC_TAG, \"Key: \" + key + \", Value: \" + value);"
+    ],
+    [
+        "try {\n    var decodedPacketInfo = uriResolver.apply(fullHttpRequest);\n    if (decodedPacketInfo == null) {\n        logger.error(\"No decoded packet info found for the request: {}\", fullHttpRequest.uri());\n        return;\n    }\n    var packet = decodedPacketInfo.getPacket();\n    var attachment = new HttpAttachment(fullHttpRequest);\n    list.add(new EncodedPacketInfo(packet, attachment));\n} catch (Exception e) {\n    logger.error(\"Error decoding HTTP request: {}\", fullHttpRequest.uri(), e);\n    var response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.BAD_REQUEST);\n    response.headers().set(HttpHeaderNames.CONTENT_TYPE, HttpHeaderValues.TEXT_PLAIN);\n    response.headers().set(HttpHeaderNames.CONTENT_LENGTH, 0);\n    list.add(response);\n}"
+    ],
+    [
+        "{\n        if (f.getBrain().getOutputZone().isActive()) {\n            f.setY(f.getY() + 1);\n        }\n    }"
+    ],
+    [
+        "Total de transferências realizadas = \" + conta.getTotalTransferencias();"
+    ],
+    [
+        "runDir = self.runDir if self.runDir else \".\"\n        logDir = self.logDir if self.logDir else \"/var/logs\"\n        sysConfig = SystemConfig(configFile, runDir, logDir)\n        self.assertEqual(sysConfig.isConstantMceChecking, False)"
+    ],
+    [
+        "async function setStatus(table, updateField, whereField) {\n  return mysql.transaction(async trx => {\n    const updatedRows = await trx(table)\n      .where(whereField)\n      .update(updateField);\n\n    if (updatedRows === 0) {\n      throw new Error('No rows updated');\n    }\n\n    return updatedRows;\n  });\n}"
+    ],
+    [
+        "对输入的整数进行因式分解"
+    ],
+    [
+        "def lsa_solve_lapjv(costs):\n    \\\"\\\"\\\"Solves the LSA problem using the LAPJV (Jonker-Volgenant) algorithm.\\\"\\\"\\\"\n    from lapjv import lapjv  # Ensure lapjv is imported\n\n    finite_costs = add_expensive_edges(costs)"
+    ],
+    [
+        "if (c == '\\n') {\n            line++;\n            column = 1;\n        } else {\n            column++;\n        }"
+    ],
+    [
+        "function LoginFormModal()"
+    ],
+    [
+        "parse_obj_as(RevokeEvent, values[\"revoke_event\"])"
+    ],
+    [
+        "// Set the series-specific animation: initially from 0 opacity, then the\n    // final plot size.\n    series.setClip(animation);\n\n    // Redraw graph, points and fill in the zones\n    series.redraw();\n\n    // Call afterAnimate to finalize animation\n    series.afterAnimate();"
+    ],
+    [
+        "level += 1l;"
+    ],
+    [
+        "function encodeAsBinary(obj, callback) {\n\n  function writeEncoding(bloblessData) {\n    var deconstruction = binary.deconstructPacket(bloblessData);\n    var pack = encodeAsString(deconstruction.packet);\n    var buffers = deconstruction.buffers;\n\n    buffers.unshift(pack); // add packet info to beginning of data list\n    callback(buffers); // write all the buffers\n  }\n\n  binary.removeBlobs(obj, writeEncoding);\n}"
+    ],
+    [
+        "res += \\\"x\\\";"
+    ],
+    [
+        "// valida o lote antes de enviar\n        DFXMLValidador.validaLote(lote.toString());\n        // gera o XML do lote\n        final String loteXml = this.config.getPersister().write(lote);\n        // assina o lote\n        final String loteAssinadoXml = new DFAssinaturaDigital(this.config).assinarDocumento(loteXml);\n        return this.enviaLoteAssinado(loteAssinadoXml, DFModelo.NFE);"
+    ],
+    [
+        "model = RandomForestClassifier(**params)\n        return model"
+    ],
+    [
+        "s += int(j)"
+    ],
+    [
+        "public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        System.out.print(\"Enter the number of digits: \");\n        long n = scanner.nextLong();\n        long result = startsOneEnds(n);\n        System.out.println(\"Count of \" + n + \"-digit numbers starting or ending with 1: \" + result);\n    }"
+    ],
+    [
+        "boolean filter(T type);"
+    ],
+    [
+        "challenge = challengeBiz.selectOne(challengeName);"
+    ],
+    [
+        "def get_index():\n    response = session.get(\"https://www.zhihu.com/\", headers=header)\n    with open(\"index_page.html\", \"wb\") as f:\n        f.write(response.text.encode(\"utf-8\"))\n    print(\"Index page saved.\")"
+    ],
+    [
+        "if(!c.defined(a.options.column)){"
+    ],
+    [
+        "get_closest_vertex"
+    ],
+    [
+        "var cell = row.getElementsByTagName(\"td\")[7];"
+    ],
+    [
+        "model(x)"
+    ],
+    [
+        "@Override\npublic boolean isAvailable() {\n    return CryptoProperties.type().orElse(CryptoProperties.type_values.NONE) == CryptoProperties.type_values.FILE;\n}"
+    ],
+    [
+        "self.com = serial.Serial()\n        self.com.port = self.portString\n        self.com.timeout = 0.1  # default timeout for serial communication\n        try:\n            self.com.open()\n            self.OK = True\n        except Exception as e:\n            self.OK = False\n            logging.error('Failed to open serial port: %s' % str(e))\n            retur"
+    ],
+    [
+        "def update(self, request, *args, **kwargs):"
+    ],
+    [
+        "function GetPatchString() {\n    var patchValues = [];\n    for (var i = 0; i < synth.controls.length; i++) {\n        patchValues.push($(synth.controls[i])[0].getValue());\n    }\n    return patchValues.join('/');\n}"
+    ],
+    [
+        ""
+    ],
+    [
+        "xhr.open('POST', 'https://api.example.com/verify', true);\nxhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');\nxhr.onreadystatechange = function() {\n    if (xhr.readyState == 4 && xhr.status == 200) {\n        var response = JSON.parse(xhr.responseText);\n        if (response.success) {\n            finish_setup();\n        } else {\n            logoff();\n            alert('Invalid code, please try again.');\n        }\n    }\n};\nxhr.setRequestHeader('Authorization', 'Basic ' + btoa(oauth_key + ':' + oauth_secret));"
+    ],
+    [
+        "@Override\n    public String getName() {\n        return \"asyncCallLuaFunction\";\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "ConfirmationRedirect as RequestConfirmationRedirect\\nfrom yookassa.domain.models.confirmation.request.confirmation_mobile_application import "
+    ],
+    [
+        ""
+    ],
+    [
+        "transform_normal = GeoUtils.get_world_normal\nvisualiza_normal = visualiza_normal\nwrite_image_lis = ImageUtils.write_image_lis\nensure_dir_existence = IOUtils.ensure_dir_existence\ncheckExistence = IOUtils.checkExistence\nread_image = ImageUtils.read_image\nwrite_image = ImageUtils.write_image"
+    ],
+    [
+        "if(s[i] === s[i-1] || s[i] === s[i-2] || s[i-1] === s[i-2]){"
+    ],
+    [
+        "count = 0"
+    ],
+    [
+        "function sepChange(val) {\n    flock_sep = val;\n}"
+    ],
+    [
+        "ColorUtils.blueFromArgb(pixel);"
+    ],
+    [
+        "function createAriaDomNode()"
+    ],
+    [
+        "tes()"
+    ],
+    [
+        "currentUser.getId().equals(id)) {\n            return \"redirect:/table-users\";\n        }"
+    ],
+    [
+        "{\n        return given(\"Given\");\n    }"
+    ],
+    [
+        "def _setup_ui_elements(self):\n        self.upscale_button = widgets.Button(description='Upscale Image')\n        self.clear_results_button = widgets.Button(description='Clear Results')\n        self.generate_button = widgets.Button(description='Generate')\n        self.generate_series_button = widgets.Button(description=self.SERIES_BUTTON_LABEL)\n        self.result_box = widgets.Box()\n        self.support_img_view = widgets.Image()\n        self.prompt_text = widgets.Text(description='Prompt:')\n        self.negative_prompt_text = widgets.Text(description='Negative Prompt:')\n        self.style_prompt_text = widgets.Text(description='Style Prompt:')\n        self._register_handlers()\n\n    def _register_handlers(self):\n        self.upscale_button.on_click(self.on_upscale)\n        self.clear_results_button.on_click(self.on_clear_results)\n        self.generate_button.on_click(self.on_generate)\n        self.generate_series_button.on_click(self.on_generate_series)"
+    ],
+    [
+        "        }\\n        else if(num == 6){\\n            arr3.push(\\\"Six\\\");\\n        }"
+    ],
+    [
+        "function numStonesToRemove(stones)"
+    ],
+    [
+        "state = helpers.initialize_state(defaults)"
+    ],
+    [
+        "generate_embeddings_context(context)\n        return embeddings"
+    ],
+    [
+        "return \"\";\n    }"
+    ],
+    [
+        "# Evaluate the model\n    logger.info(\"Evaluating the model...\")\n    if val_loader:\n        evaluator.evaluate(val_loader, cur_device)\n    else:\n        print(\"No validation loader presented. Skipping evaluation.\")\n\n    # Test the model\n    logger.info(\"Testing the model...\")\n    if test_loader:\n        evaluator.evaluate(test_loader, cur_device)\n    else:\n        print(\"No test loader presented. Skipping testing.\")\n\n    # Save the trained model\n    model_save_path = os.path.join(cfg.OUTPUT_DIR, \"final_model.pth\")\n    torch.save(model.state_dict(), model_save_path)\n    logger.info(f\"Model saved at {model_save_path}\")\n\n    # Clean up and finalize\n    logger.info(\"Training and evaluation completed successfully.\")"
+    ],
+    [
+        "ID, psUCorporateIDType, psUIPAddress, new AdditionalPsuIdData(psuIpPort, psUUserAgent, psUGeoLocation, psUAccept, psUAcceptCharset, psUAcceptEncoding, psUAcceptLanguage, psUHttpMethod, psUDeviceID));"
+    ],
+    [
+        "response = agent.process_request()"
+    ],
+    [
+        "for (String word : words) {"
+    ],
+    [
+        "{\n            return Integer.compare(o1.id, o2.id);\n        }"
+    ],
+    [
+        "dependency.getType(), dependency.getClassifier(), dependency.getScope());"
+    ],
+    [
+        "data_cls = Registry.get(vtab_dataname)"
+    ],
+    [
+        "def main():\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\n        \"--sanity_check\", action=\"store_true\", help=\"Only test that all tests and modules are accounted for.\"\n    )\n    parser.add_argument(\n        \"--output_file\", type=str, default=\"test_list.txt\", help=\"Where to store the list of tests to run\"\n    )\n    parser.add_argument(\n        \"--diff_with_last_commit\",\n        action=\"store_true\",\n        help=\"To fetch the tests between the current commit and the last commit\",\n    )\n    parser.add_argument(\n        \"--filters\",\n        type=str,\n        nargs=\"*\",\n        default=[\"tests\"],\n        help=\"Only keep the test files matching one of those filters.\",\n    )\n    args = parser.parse_args()\n    if args.sanity_check:\n        sanity_check()\n    else:\n        repo = Repo(PATH_TO_TRANFORMERS)\n\n        diff_with_last_commit = args.diff_with_last_commit\n        if not diff_with_last_commit and not repo.head.is_detached and repo.head.ref == repo.refs.master:\n            print(\"Master branch detected, fetching tests against last commit.\")\n            diff_with_last_commit = True\n\n        try:\n            infer_tests_to_run(args.output_file, diff_with_last_commit=diff_with_last_commit, filters=args.filters)\n        except Exception as e:\n            print(f\"\\nError when trying to grab the relevant tests: {e}\\n\\nRunning all tests.\")\n            with open(args.output_file, \"w\", encoding=\"utf-8\") as f:\n                if args.filters is None:\n                    f.write(\"./tests/\")\n                else:\n                    f.write(\" \".join(args.filters))"
+    ],
+    [
+        "assert validator_error_without_path.path is None"
+    ],
+    [
+        "private void updateCustomTemplates(Preferences prefs) {\n        try {\n            String[] keys = prefs.keys();\n            customTemplates = new HashMap<>();\n            for (String key : keys) {\n                customTemplates.put(key, prefs.get(key, null));\n            }\n        } catch (BackingStoreException e) {\n            logger.error(\"Failed to update custom templates from preferences\", e);\n        }\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "public boolean hasAnnotation(Class<? extends Annotation> clazz)"
+    ],
+    [
+        "debug(\\\"Starting to solve TSP for cities: {}\\\".format(cities))"
+    ],
+    [
+        "(state) {\n    state.open = false\n  }"
+    ],
+    [
+        "public static void main(String[] args) {\n    Scanner scanner = new Scanner(System.in);\n    System.out.println(\"Enter first binary string:\");\n    String a = scanner.nextLine();\n    System.out.println(\"Enter second binary string:\");\n    String b = scanner.nextLine();\n    System.out.println(\"Result of XOR:\");\n    System.out.println(stringXor(a, b));\n}"
+    ],
+    [
+        "// Define the Promise constructor and prototype methods\n    var Promise = function(executor) {\n        if (!(this instanceof Promise)) {\n            throw new TypeError('Promise constructor must be called with \"new\"');\n        }\n        if (typeof executor !== 'function') {\n            throw new TypeError('Promise constructor\\'s argument is not a function');\n        }\n\n        this._state = 'pending'; // 'pending', 'fulfilled', or 'rejected'\n        this._value = null; // value for fulfilled, reason for rejected\n        this._handlers = []; // handlers for then/catch\n\n        try {\n            executor(this._resolve.bind(this), this._reject.bind(this));\n        } catch (err) {\n            this._reject(err);\n        }\n    };\n\n    Promise.prototype._resolve = function(value) {\n        if (this._state !== 'pending') return;\n        this._state = 'fulfilled';\n        this._value = value;\n        this._handlers.forEach(handler => this._handle(handler));\n        this._handlers = null;\n    };\n\n    Promise.prototype._reject = function(reason) {\n        if (this._state !== 'pending') return;\n        this._state = 'rejected';\n        this._value = reason;\n        this._handlers.forEach(handler => this._handle(handler));\n        this._handlers = null;\n    };\n\n    Promise.prototype._handle = function(handler) {\n        if (this._state === 'pending') {\n            this._handlers.push(handler);\n        } else {\n            if (this._state === 'fulfilled' && typeof handler.onFulfilled === 'function') {\n                handler.onFulfilled(this._value);\n            }\n            if (this._state === 'rejected' && typeof handler.onRejected === 'function') {\n                handler.onRejected(this._value);\n            }\n        }\n    };\n\n    Promise.prototype.then = function(onFulfilled, onRejected) {\n        return new Promise((resolve, reject) => {\n            this._handle({\n                onFulfilled: value => {\n                    if (typeof onFulfilled === 'function') {\n                        try {\n                            resolve(onFulfilled(value));\n                        } catch (err) {\n                            reject(err);\n                        }\n                    } else {\n                        resolve(value);\n                    }\n                },\n                onRejected: reason => {\n                    if (typeof onRejected === 'function') {\n                        try {\n                            resolve(onRejected(reason));\n                        } catch (err) {\n                            reject(err);\n                        }\n                    } else {\n                        reject(reason);\n                    }\n                }\n            });\n        });\n    };\n\n    Promise.prototype.catch = function(onRejected) {\n        return this.then(null, onRejected);\n    };\n\n    // Static methods\n    Promise.resolve = function(value) {\n        if (value instanceof Promise) {\n            return value;\n        }\n        return new Promise(resolve => resolve(value));\n    };\n\n    Promise.reject = function(reason) {\n        return new Promise((_, reject) => reject(reason));\n    };\n\n    Promise.all = function(promises) {\n        return new Promise((resolve, reject) => {\n            let results = [];\n            let remaining = promises.length;\n            if (remaining === 0) resolve(results);\n            promises.forEach((promise, index) => {\n                Promise.resolve(promise).then(value => {\n                    results[index] = value;\n                    if (--remaining === 0) {\n                        resolve(results);\n                    }\n                }, reject);\n            });\n        });\n    };\n\n    Promise.race = function(promises) {\n        return new Promise((resolve, reject) => {\n            promises.forEach(promise => {\n                Promise.resolve(promise).then(resolve, reject);\n            });\n        });\n    };"
+    ],
+    [
+        "function setMassCentre(body, offset) {\n  body.position.x += offset.x;\n  body.position.y += offset.y;\n  body.positionPrev.x += offset.x;\n  body.positionPrev.y += offset.y;\n}"
+    ],
+    [
+        "return [s for s in strings if substring in s]"
+    ],
+    [
+        "log_test = logger.TestLogger(save_excel_path, ['DSC', 'PPV', 'SEN', 'ASD'])"
+    ],
+    [
+        "Artist artistObj = crudArtist.getArtistById(music.getArtist());\n            music.setArtistObj(artistObj);"
+    ],
+    [
+        "info(\\\"Starting download of data\\\")\\n            urlretrieve(url, file_path)\\n            self.logger.info(\\\"Data downloaded successfully\\\")"
+    ],
+    [
+        "channel.pipeline().addLast(\\\"proxy-protocol-handler\\\", this);"
+    ],
+    [
+        "i += 1; // Skip the '|' character after 'o'\n                } else {\n                    res.add((long)4l);\n                }\n            } else if (chars[i] == '.') {\n                if (i + 1 < chars.length && chars[i + 1] == '|') {\n                    res.add((long)1l);\n                    i += 1; // Skip the '|' character after '.'\n                }\n            }\n        }"
+    ],
+    [
+        "if (!dbHero.getId().equals(heroToUpdate.getId()))"
+    ],
+    [
+        "if self.with_conv:\n                h = self.Conv2d_0(x)\n            else:\n                h = up_or_down_sampling.upsample_2d(x, self.fir_kernel, factor=2)"
+    ],
+    [
+        "if(s === 'o'){\n            song.push(4);\n        } else if(s === 'o|'){\n            song.push(2);\n        } else if(s === '.|'){\n            song.push(1);\n        }"
+    ],
+    [
+        "return b"
+    ],
+    [
+        "self.para = get_path(self.para)"
+    ],
+    [
+        "if (Math.abs(hct.getHue() - chosenHct.getHue()) < differenceDegrees) {"
+    ],
+    [
+        ""
+    ],
+    [
+        "example_retriever = SimpleExampleRetriever(examples=[(\"Add 1 and 2\", parse(\"add_(1, 2)\"))])\n    chain = CodeChain(\n        llm=llm,\n        retriever=SimpleContextRetriever(),\n        interpreter=run_interpreter,\n        ast_printer=AstPrinter(),\n        example_retriever=example_retriever,\n    )"
+    ],
+    [
+        "inputs: List,\n    signature: str,\n    contract_code: str,\n    gd_code: str\n) -> None:\n    super().__init__(inputs, signature, contract_code)\n    self.gd_code = gd_code\n    self.prompt_messages = [\n        \"Please generate complex inputs to test the function.\",\n        \"Please generate corner case inputs to test the function.\",\n        \"Please generate difficult inputs to test the function.\",\n    ]\n    self.iteration = 20\n    openai.api_key = os.environ.get(\"OPENAI_API_KEY\", \"dummy\")"
+    ],
+    [
+        "super(MainWindow, self).__init__()\n        self.mainEngine = mainEngine\n        self.eventEngine = eventEngine\n        self.app = app\n        self.sheets = sheets\n        self.widgetDict = {}\n        \n        self.initUi()\n        self.initStatusBar()\n        \n        eventEngine.register(EVENT_LOG, self.signalStatusBar.emit)"
+    ],
+    [
+        "if(i % 6 == 1 || i % 6 == 5){\n                    if(number % i == 0 || number % (i + 2) == 0){\n                        return false;\n                    }\n                }\n            }\n        }\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "loadBalancePolicy.getClientIndex(addressSet.size());"
+    ],
+    [
+        "@CheckResult\n    public Observable<SwipeEvent> swipeEvents() {\n        return submissionAdapter.swipeEvents();\n    }"
+    ],
+    [
+        "for (var i = 0; i < trackedEvents.length; i++) {\n    if (trackedEvents[i].tabId === tabId) {\n        sendEvents.push(trackedEvents[i]);\n    }\n}"
+    ],
+    [
+        "for _ in range(iterations):\n            ModelAssigner.optimize_placement(\n                optimizer,\n                placement,\n                model_size,\n                size_capacity,\n                model_complexity,\n                complexity_capacity,\n                model_conn,\n                device_distance,\n                connection_weight,\n                size_match_weight,\n                complexity_match_weight,\n                entropy_weight,\n            )"
+    ],
+    [
+        "mTXVodPlayerWrapper.startPlay();"
+    ],
+    [
+        "test = response.id;\n    test = response.items ? response.items[0].name : 'asdf';"
+    ],
+    [
+        "get_channel_setting = db.get_channel_setting(ctx.channel.id, \\\"config_temp\\\", default=config['default_temp'])"
+    ],
+    [
+        "for (int j = 0; j < parameters.length; j++) {\n            Class paramClass = parameters[j];\n            Class argClass = pArgs[j].getClass();\n            if (paramClass.isAssignableFrom(argClass) || checkForPrimitive(argClass, paramClass)) {\n                continue;\n            }\n            return false;\n        }"
+    ],
+    [
+        ""
+    ],
+    [
+        "{\n  return sortBy(path(sortPath), list);\n}"
+    ],
+    [
+        ""
+    ],
+    [
+        "            }\\n        return letterGrades;\\n    }\\n}"
+    ],
+    [
+        "answer += Character.toUpperCase(string.charAt(i));"
+    ],
+    [
+        "extensions = kb.kb.get_all_known_extensions()\n    return set(extensions)"
+    ],
+    [
+        "id.date = date;"
+    ],
+    [
+        ""
+    ],
+    [
+        "public static List<QualitySourceMediaType> createQualitySourceMediaTypes(Produces mime) {\n        if (mime == null) {\n            return WILDCARD_QS_TYPE_SINGLETON_LIST;\n        }\n        return createQualitySourceMediaTypes(mime.value());\n    }"
+    ],
+    [
+        "} else {\n            return Math.ceil(value);\n        }\n    }"
+    ],
+    [
+        "cape(account_user_display(user))"
+    ],
+    [
+        "sum += operations[i];"
+    ],
+    [
+        "ribe(console.log);\\n}"
+    ],
+    [
+        "def test_parse_context_call_actions():\n    global called\n    called = [False, False]\n\n    actions[\"E\"][0] = act_sum(is_tree=True)\n    parser = Parser(g, actions=actions)\n\n    parser.parse(\"   1 + 2  \")\n\n    assert all(called)"
+    ],
+    [
+        ""
+    ],
+    [
+        "executor.shutdown();"
+    ],
+    [
+        ""
+    ],
+    [
+        "save_image = lambda path, img: Image.fromarray(img.astype(np.uint8)).save(path)\n\ndef visualiza_normal(path, normal, extrin=None):\n    if extrin is not None:\n        shape = normal.shape\n        normal = GeoUtils.get_world_normal(normal.reshape(-1, 3), extrin).reshape(shape)\n    pred_norm_rgb = ((normal + 1) * 0.5) * 255\n    pred_norm_rgb = np.clip(pred_norm_rgb, a_min=0, a_max=255)\n    if path is not None:\n        save_image(path, pred_norm_rgb)\n    return pred_norm_rgb"
+    ],
+    [
+        "format(self.formatters[k], **inputs) for k in self.output_keys}"
+    ],
+    [
+        ".getSaldo() > cont.getSaldo()"
+    ],
+    [
+        "{\n        return this.localPort;\n    }"
+    ],
+    [
+        "func, *args, **kwargs):"
+    ],
+    [
+        "ar arguments = THE_ANSWER;"
+    ],
+    [
+        "if burpsuite:\n        log.info(\"Using BurpSuite proxy settings.\")\n    else:\n        log.info(\"Not using BurpSuite proxy settings.\")\n\n    def reverse_shell(l):\n        log.info(\"Attempting to spawn reverse shell...\")\n        l.wait_for_connection()\n        l.sendline('python -c \"import pty; pty.spawn(\\'/bin/bash\\')\"')\n        l.sendline('export TERM=xterm')\n        l.sendline('stty rows 38 columns 132')"
+    ],
+    [
+        "70);"
+    ],
+    [
+        ".createAdHocDatasetExport(self.ADHOC_INPUT)"
+    ],
+    [
+        " self._root"
+    ],
+    [
+        "userRepository.findByEmail(principal.getName()).orElse(new User());"
+    ],
+    [
+        "10: \"x\",\n        9: \"ix\",\n        5: \"v\",\n        4: \"iv\",\n        1: \"i"
+    ],
+    [
+        "build(lr), stationary.build(lr))"
+    ],
+    [
+        "cookies = decoder.decodeCookies(parameters.get(\\\"Cookie\\\"));"
+    ],
+    [
+        "/**\n     * Test 1/p pure logarithm integral.\n     */\n    public void testPureLogarithm() {\n        for (int i = 0; i < 3; i++) {\n            a = qfac.random(kl, ll + i, el + i, q);\n            GenPolynomial<BigRational> p = a.den;\n            b = new Quotient<BigRational>(qfac, qfac.getONE().num, p);\n            rint = integrator.integrate(b);\n            assertTrue(\"isIntegral \", integrator.isIntegral(rint));\n        }\n    }"
+    ],
+    [
+        "print(\"Starting the ShadowsocksR speed test...\")\n    ssr_dict = ParseShadowsocksr.parse_shadowsocksr(ssr_url)\n    ssr_dict = ShadowsocksrTest.test_shadowsocksr_connect(ssr_dict)\n    ShadowsocksrTest.test_shadowsocksr_speed(ssr_dict)\n    print(\"ShadowsocksR speed test completed.\")"
+    ],
+    [
+        "try {\n            CommentWapper comment = cm.getCommentTimeline();\n            for (Comment c : comment.getComments()) {\n                Log.logInfo(c.toString());\n            }\n        } catch (WeiboException e) {\n            e.printStackTrace();\n        }"
+    ],
+    [
+        "for i in range(len(r)):\n        axis.plot((i, i),\n                  (0, r[i]),\n                  color=('#b512b8' if m is not None and i == m else 'black'),\n                  lw=(1 if m is not None and i == m else .5))\n\n    # Adjusts the upper band of the confidence interval to center it on the x axis.\n    upp_band = [confint[lag][1] - r[lag] for lag in range(1, max_lag + 1)]\n\n    axis.fill_between(np.arange(1, max_lag + 1), upp_band, [-x for x in upp_band], color='#003DFD', alpha=.25)\n    axis.plot((0, max_lag + 1), (0, 0), color='black')"
+    ],
+    [
+        "while (l < r) {\n    int mid = (l + r) / 2;\n    if (sum(mid) < D)\n        l = mid + 1;\n    else\n        r = mid;\n}"
+    ],
+    [
+        "id}/collections\\\", json={\\\"display_name\\\": display_name, \\\"description\\\": description if description else \\\"\\\"})"
+    ],
+    [
+        "if (!\"1\".equals(req.getParameter(\"appInfo\"))) {\n            return;\n        }\n        writer.append(Monitors.appInfo());\n        writer.append(TYPE_SPLIT);\n    }"
+    ],
+    [
+        "if (s.charAt(j) == '7') {"
+    ],
+    [
+        ""
+    ],
+    [
+        "function extendTree(node, segments) {\n    const segment = segments.shift();\n    if (!node[segment]) {\n      node[segment] = {};\n    }\n    if (segments.length) {\n      extendTree(node[segment], segments);\n    }\n  }"
+    ],
+    [
+        "alse;"
+    ],
+    [
+        "public static ResourceBundle getBundle(Object obj) {\n        String baseName = obj.getClass().getSimpleName() + \"Strings\";\n        return ResourceBundle.getBundle(baseName, Locale.getDefault());\n    }"
+    ],
+    [
+        "ilter))[0].label;"
+    ],
+    [
+        "let max = Math.max(a, b);"
+    ],
+    [
+        "function FilesApp(accessToken) {\n  this.url = \"http://example.com\";\n  this.fields = \"\";\n  this.pageSize = 1000;\n  this.headers = {\n    Authorization: 'Bearer ' + accessToken\n  };\n  this.maxSearchFolders = 20;\n  this.maxBatchRequests = 100;\n  this.additionalQuery = \"includeItemsFromAllDrives=true&supportsAllDrives=true\";\n  this.sharedDriveId = \"\";\n}"
+    ],
+    [
+        ""
+    ],
+    [
+        "def __init__(self, framework):\n        self.framework = framework\n        self.onionlandsearchengine = 'onionlandsearchengine.com'\n        self._pages = ''\n        self._links = []"
+    ],
+    [
+        "String[] ss = test.split(\" \");"
+    ],
+    [
+        "paths = binding.getValue().getLocator();"
+    ],
+    [
+        "self.argparser.add_argument(\n            \"--clearance_y\", action=\"store\", type=int, default=3,\n            help=\"clearance for the board in the box (y) in mm\"\n        )\n        self.argparser.add_argument(\n            \"--hole_diameter\", action=\"store\", type=float, default=3.5,\n            help=\"diameter of the holes in mm\"\n        )\n        self.argparser.add_argument(\n            \"--hole_dist_edge\", action=\"store\", type=float, default=5,\n            help=\"distance from the edge to the hole center in mm\"\n        )\n        self.argparser.add_argument(\n            \"--hole_grid_dimension_x\", action=\"store\", type=float, default=20,\n            help=\"horizontal distance between holes in mm\"\n        )\n        self.argparser.add_argument(\n            \"--hole_grid_dimension_y\", action=\"store\", type=float, default=20,\n            help=\"vertical distance between holes in mm\"\n        )\n        self.argparser.add_argument(\n            \"--thickness\", action=\"store\", type=float, default=3,\n            help=\"material thickness in mm\"\n        )\n        self.argparser.add_argument(\n            \"--clearance_z\", action=\"store\", type=int, default=18,\n            help=\"clearance for the board in the box (z) in mm\"\n        )"
+    ],
+    [
+        "203=9574;HillaryClintonAm5[9568]=204;HillaryClintonAm5[9552]=205;HillaryClintonAm5[9580]=206;HillaryClintonAm5[9575]=207;"
+    ],
+    [
+        "WebhookVerifier(WebhookSigner.hmacSha1(secret), Encoder.HEX);"
+    ],
+    [
+        "public final List<RequestedAttribute> getRequestedAttributes() {\n        return new ArrayList<>(requestedAttributes);\n    }"
+    ],
+    [
+        "if (propertyChangedListener != null) {\n        propertyChangedListener.onPropertyChanged(property);\n    }"
+    ],
+    [
+        "out = self.deconv(x, output_size=output_size)\n        out = F.relu(self.conv(out))\n        return out"
+    ],
+    [
+        "{\n        return Array.from(viewer.pages).every(page => page.dimensions[dimension] === viewer.pages[0].dimensions[dimension]);\n    }"
+    ],
+    [
+        "t\\t\\t}\\n\\t\\t}\\n\\t}"
+    ],
+    [
+        "public static void updateMenuScrollState(ActionBar actionBar, int state) {\n        if (actionBar instanceof ActionBarCallback) {\n            ((ActionBarCallback) actionBar).updateMenuScrollState(state);\n        }\n    }\n\n    public static void updateMenuScrollData(ActionBar actionBar) {\n        if (actionBar instanceof ColorBottomMenuCallback) {\n            ((ColorBottomMenuCallback) actionBar).updateMenuScrollData();\n        }\n    }\n\n    public static void setMenuUpdateMode(ActionBar actionBar, int mode) {\n        if (actionBar instanceof ColorBottomMenuCallback) {\n            ((ColorBottomMenuCallback) actionBar).setMenuUpdateMode(mode);\n        }\n    }\n\n    public static void lockMenuUpdate(ActionBar actionBar) {\n        if (actionBar instanceof ColorBottomMenuCallback) {\n            ((ColorBottomMenuCallback) actionBar).lockMenuUpdate();\n        }\n    }\n\n    public static void unlockMenuUpdate(ActionBar actionBar) {\n        if (actionBar instanceof ColorBottomMenuCallback) {\n            ((ColorBottomMenuCallback) actionBar).unlockMenuUpdate();\n        }\n    }\n\n    public static void setDropdownDismissCallback(ActionBar actionBar, DropdownDismissCallback callback) {\n        if (actionBar instanceof ColorSpinnerCallback) {\n            ((ColorSpinnerCallback) actionBar).setDropdownDismissCallback(callback);\n        }\n    }\n\n    public static void setDropdownItemClickListener(ActionBar actionBar, OnItemClickListener listener) {\n        if (actionBar instanceof ColorSpinnerCallback) {\n            ((ColorSpinnerCallback) actionBar).setDropdownItemClickListener(listener);\n        }\n    }\n\n    public static void setDropdownUpdateAfterAnim(ActionBar actionBar, boolean update) {\n        if (actionBar instanceof ColorSpinnerCallback) {\n            ((ColorSpinnerCallback) actionBar).setDropdownUpdateAfterAnim(update);\n        }\n    }\n\n    public static void setHasEmbeddedTabs(ActionBar actionBar, boolean hasEmbeddedTabs) {\n        if (actionBar instanceof ActionBarCallback) {\n            ((ActionBarCallback) actionBar).setEmbeddedTabs(hasEmbeddedTabs);\n        }\n    }\n\n    public static void setSplitActionBarOverlay(ActionBar actionBar, boolean overlay) {\n        if (actionBar instanceof ActionBarCallback) {\n            ((ActionBarCallback) actionBar).setSplitActionBarOverlay(overlay);\n        }\n    }\n\n    public static void setSplitHideWithActionBar(ActionBar actionBar, boolean hideWith) {\n        if (actionBar instanceof ActionBarCallback) {\n            ((ActionBarCallback) actionBar).setSplitHideWithActionBar(hideWith);\n        }\n    }\n\n    public static boolean hasEmbeddedTabs(ActionBar actionBar) {\n        if (actionBar instanceof ActionBarCallback) {\n            return ((ActionBarCallback) actionBar).hasEmbeddedTabs();\n        }"
+    ],
+    [
+        "return undefined;"
+    ],
+    [
+        "{\n        if (msg.what == ANConstants.UPDATE) {\n            Progress progress = (Progress) msg.obj;\n            mUploadProgressListener.onProgress(progress.currentBytes, progress.totalBytes);\n        }\n    }"
+    ],
+    [
+        "return [strid for strid, _ in self._application.actionController.getActions()]"
+    ],
+    [
+        "(listeners, retryOnReadTimeout, onRetry)"
+    ],
+    [
+        "state_save = badger_os.state_save"
+    ],
+    [
+        "def finalize_options(self):"
+    ],
+    [
+        "public void allServices(Map<String, Object> context) throws IOExceptio"
+    ],
+    [
+        "instance.sendMessage(sender, \"🔹 \" + backend.getName() + localization.get(locale, \"utils.click\"),\n                    \"RUN_COMMAND\", \"/np setbackend \" + backend.getId(),\n                    \"SHOW_TEXT\", localization.get(locale, \"hover.backend\", backend.getName(), backend.getId()));\n        }\n    }"
+    ],
+    [
+        "{\\n  const data = array2obj(raw);\\n  return {\\n    id: data.id,\\n    state: data.state,\\n    progress: data.progress,\\n    result: data.result,\\n    error: data.error,\\n    timestamp: data.timestamp\\n  };\\n}"
+    ],
+    [
+        "var oItem;\n    var aShouldReset = [];\n    var aTransitionCache = null;\n    (window.requestAnimationFrame || window.setTimeout)(function() {\n        while (oItem = aShouldReset.pop()) {\n            oItem.css(self._getCSSKey('transitionDuration'), '0');\n            oItem.css(self._getCSSKey('transitionProperty'), 'none');\n        }\n        aShouldReset = null;\n    }, 0);\n    self.fireEvent('transitionEnd');\n    if (--self._nIng === 0 && !bPause) {\n        self._requestAnimationFrame(function() {\n            self._flushQueue();\n        });\n    }"
+    ],
+    [
+        "config.getPerspectiveEnabled();"
+    ],
+    [
+        "{\n        String message = getInputData().getString(ARG_MESSAGE);\n        new Handler(Looper.getMainLooper()).post(() -> {\n            Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();\n        });\n        Log.i(\"ToastWorker\", \"Displayed toast with message: \" + message);\n        return Result.success();\n    }"
+    ],
+    [
+        "return result;"
+    ],
+    [
+        " + superior + \\\"' 的组织类型不是有效的！\\\"));\\n    }"
+    ],
+    [
+        "void scheduleTasksForLifecycle(Exercise exercise, ExerciseLifecycle lifecycle, Map<ZonedDateTime, Runnable> tasks) {\n        cancelScheduledTaskForLifecycle(exercise.getId(), lifecycle);\n        Set<ScheduledFuture<?>> futures = tasks.entrySet().stream()\n            .map(entry -> exerciseLifecycleService.scheduleTaskAt(exercise, lifecycle, entry.getValue(), entry.getKey()))\n            .collect(Collectors.toSet());\n        addScheduledTask(exercise, lifecycle, futures);\n    }"
+    ],
+    [
+        "job1.getJobDataMap().put(ColorJob.FAVORITE_COLOR, \"Green\");\n        job1.getJobDataMap().put(ColorJob.EXECUTION_COUNT, 1);\n\n        // job2 will also run 5 times, every 10 seconds\n        JobDetail job2 = newJob(ColorJob.class).withIdentity(\"job2\", \"group1\").build();\n        SimpleTrigger trigger2 = newTrigger().withIdentity(\"trigger2\", \"group1\").startAt(startTime).withSchedule(simpleSchedule().withIntervalInSeconds(10).withRepeatCount(4)).build();\n        job2.getJobDataMap().put(ColorJob.FAVORITE_COLOR, \"Red\");\n        job2.getJobDataMap().put(ColorJob.EXECUTION_COUNT, 1);\n\n        // Tell quartz to schedule the job using our trigger\n        sched.scheduleJob(job1, trigger1);\n        sched.scheduleJob(job2, trigger2);\n\n        Date scheduleTime1 = trigger1.getNextFireTime();\n        log.info(job1.getKey().toString() + \" will run at: \" + scheduleTime1 + \" and repeat: \" + trigger1.getRepeatCount() + \" times, every \" + trigger1.getRepeatInterval() / 1000 + \" seconds\");"
+    ],
+    [
+        "int lineCount = LineUtil.countLines(aClass);\n            postMetric(aClass, lineCount);"
+    ],
+    [
+        "if i > 0:"
+    ],
+    [
+        "if (s.length() % 2 == 0) {"
+    ],
+    [
+        "for (ChangeSet change : commitHistory.getChanges()) {"
+    ],
+    [
+        "if self._format_slot is None:\n            self._format_slot = 'before'"
+    ],
+    [
+        "return other is not None and self.image_set == other.image_set and self.index == other.index"
+    ],
+    [
+        "while (true) {\n                doSayRateLimiter(name, value + \\\"=\\\" + ++i);\n                if (i > 100) break; // Limit to 100 iterations\n            }"
+    ]
+]

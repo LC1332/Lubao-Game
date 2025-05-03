@@ -1,0 +1,1694 @@
+[
+    [
+        "load_state_dict(torch.load(args.model_file, map_location=device))\n"
+    ],
+    [
+        "add_transcript(d, transcript_list, workers=workers)\n"
+    ],
+    [
+        " \n        for j in range(i + 1, len(l)):\n"
+    ],
+    [
+        "this.n2 = TonalPalette.fromHueAndChroma(hue, min(chroma / 6., 8.));\n"
+    ],
+    [
+        "var self=this,\n\t\ttype=obj.t,\n\t\tid=obj.i;\n\tswitch (type) {\n\t\tcase IPCNode.objectSource.local: return localObjectUnmarshaller(id,resultCallback);\n\t\tcase IPCNode.objectSource.marshalled: return remoteObjectUnmarshaller(id,resultCallback);\n\t\tcase IPCNode.objectSource.global: return resultCallback(getGlobal());\n\t\tdefault: throw new Error(\"Unknown object source: \"+type);\n\t}"
+    ],
+    [
+        "\n\t}\n"
+    ],
+    [
+        "_new_messages[Message.INSTRUCT]:"
+    ],
+    [
+        "        super().__init__(\n            scheme=scheme,\n            timeout=timeout,\n            proxies=proxies,\n            user_agent=user_agent,\n            ssl_context=ssl_context,\n            adapter_factory=adapter_factory\n        )\n        self.api_key = api_key\n        self.geocode_api = self.scheme + '://' + self.host + self.geocode_path\n        self.reverse_api = self.scheme + '://' + self.host + self.reverse_path"
+    ],
+    [
+        "kind']\n"
+    ],
+    [
+        "', 'date space padded')\n"
+    ],
+    [
+        "\n}"
+    ],
+    [
+        "response.setMessage(\"Error while creating the user!\");"
+    ],
+    [
+        "# Ensure the capture is stopped after the capturing transport is closed.\n"
+    ],
+    [
+        "self.doIteration(0.01)\n"
+    ],
+    [
+        "@Override\n    public int getValue() "
+    ],
+    [
+        "}\n"
+    ],
+    [
+        "\n        else if(number % 2 == 0 || number % 3 == 0){\n"
+    ],
+    [
+        "is_remote(loadpath):\n"
+    ],
+    [
+        "visibleRect.translate(amount, amount);\n"
+    ],
+    [
+        "while ( this.instructionPointer < program.length ) {\n"
+    ],
+    [
+        "tools_n_agents_init + p.tech_stack + p.tech_rules\n"
+    ],
+    [
+        "anslate(-width/2,height/2,0);\n"
+    ],
+    [
+        " \n            min1, min2 = lst[i], min1\n        elif lst[i] < min2:\n"
+    ],
+    [
+        ""
+    ],
+    [
+        "();\n"
+    ],
+    [
+        " res.append(i + 1)\n"
+    ],
+    [
+        "\n                }\n"
+    ],
+    [
+        "def setup(i):\n"
+    ],
+    [
+        "template.setName(templateName);\n"
+    ],
+    [
+        "(VirtualRenderer.shouldDisableRender(\"jacket\")) model.jacket.visible = false;\n"
+    ],
+    [
+        "    yield from generate_values(seed, a, c, m, masked_bits, output_modulus)\n"
+    ],
+    [
+        "     if volume_config['vid'] not in self._volumes:\n       "
+    ],
+    [
+        "hsbToHex(color))\n"
+    ],
+    [
+        "pointer2 = (Nodo) pointer2.getNext();"
+    ],
+    [
+        "function __webpack_require__(moduleId)"
+    ],
+    [
+        "        return reduce(lambda x, y: (x*31+y) & 0xFFFFFFFF, map(ord, v), 0)"
+    ],
+    [
+        "{\n    }\n"
+    ],
+    [
+        "settings.ENVIRONMENT == \"test\":\n"
+    ],
+    [
+        "while self.mutex == 1:  # connetion正在被其他线程使用，需要等待\n            time.sleep(1)\n            print('db connect is using...')\n        self.mutex = 1  # 锁定\n        try:\n            with self.db.cursor() as cursor:\n                sql = 'select * from video where create_time >= curdate()'\n                cursor.execute(sql)\n                result = cursor.fetchall()\n                self.mutex = 0  # 解锁\n                return result\n        except Exception as e:\n            print('find today video fail,error:', str(e))\n        finally:\n            self.mutex = 0  # 解锁"
+    ],
+    [
+        "    return text === text.split(\"\").reverse().join(\"\");\n"
+    ],
+    [
+        "@Override\n    public String getName() "
+    ],
+    [
+        "def create_x_data(lags):\n    diff_len = len(diffs)\n    "
+    ],
+    [
+        "\n            return false;\n"
+    ],
+    [
+        "\n}"
+    ],
+    [
+        "public String getName() {\n        return name;\n    }\n\n    public String toString() "
+    ],
+    [
+        "add_incident_task(base_object, req_body.get('IncidentTaskInstructions'))\n"
+    ],
+    [
+        "  def test_uneven_train_valid_test_split(self):\n    "
+    ],
+    [
+        "webhook.execute();\n"
+    ],
+    [
+        "[] shape    = {"
+    ],
+    [
+        "= TonalPalette.fromHueAndChroma(hue, chroma / 6.);\n"
+    ],
+    [
+        "{\n        return CONNECTCXFClientFactory.getInstance().getCONNECTClientUnsecured(portDescriptor, url, assertion);\n    }\n"
+    ],
+    [
+        "flags |= self._lib.OCSP_RESPID_KEY\n"
+    ],
+    [
+        "    //find the smallest number in the grid\n"
+    ],
+    [
+        "sum()\n"
+    ],
+    [
+        "private static String handleDecimal(final BigDecimal value) "
+    ],
+    [
+        "public void setProgress(int progress) {\n        this.progress = progress;\n    }\n"
+    ],
+    [
+        "        self.ui.comboBox.addItems(self.displays)\n"
+    ],
+    [
+        "\n        });\n"
+    ],
+    [
+        "readResult, \"selectApdu with AID response: \" + Utils.bytesToHex(responseSelect));\n"
+    ],
+    [
+        "        return false;\n"
+    ],
+    [
+        "def listobj(name):\n  "
+    ],
+    [
+        "def _writeModeInstanceRefXML(self, ws, modeInstRef):\n        "
+    ],
+    [
+        "init(config)\n"
+    ],
+    [
+        "from_directory(Path(\"test\"))\n"
+    ],
+    [
+        "instance.getCore().getRestAPI().getFirewall(args[0]).forEach((firewall ->\n                    instance.sendMessage(sender, \"IP: \" + firewall.getIp() + \" ID(\" + firewall.getId() + \")\")));\n        } else if (args.length == 3) {\n            String ip = args[2];\n            String action = args[1];\n            String mode = args[0].toUpperCase();\n            int response = instance.getCore().getRestAPI().updateFirewall(ip, action, mode);\n\n            if (response == -1) {\n                instance.sendMessage(sender, localization.get(locale, \"usage.firewall\"));\n                return;\n            }\n\n            if (response == 0) {\n                instance.sendMessage(sender, localization.get(locale, \"command.firewall.notfound\", ip, mode));\n                return;\n            }\n\n            if (response == 400) {\n                instance.sendMessage(sender, localization.get(locale, \"command.firewall.ip-invalid\", ip));\n                return;\n            }\n\n            if (response == 403) {\n                instance.sendMessage(sender, localization.get(locale, \"err.upgrade-plan\"));\n                return;\n            }\n\n            if (response == 429) {\n                instance.sendMessage(sender, localization.get(locale, \"err.rate-limit\"));\n                return;\n           "
+    ],
+    [
+        ".getLogger(DownfallUtil.DEFAULT_LOGGER).log(Level.WARNING, \"No IDs found for template with id = \"+material.getTemplateId());\n"
+    ],
+    [
+        " p;\n}\n"
+    ],
+    [
+        "function Essay() "
+    ],
+    [
+        "(\"stuId\", stuId);\n"
+    ],
+    [
+        "orderBook.showOrders();\n"
+    ],
+    [
+        "argumentsHelp() {\n    return `\n      init - Init an empty pass project\n      append - Append an pass to existing (pass)project\n    `;\n  }\n"
+    ],
+    [
+        "from_buffer_copy(self.consume(16)))\n"
+    ],
+    [
+        "execute(sql)\n"
+    ],
+    [
+        "this.BookmarksChars = {};\n"
+    ],
+    [
+        "return Time.parse(value);\n"
+    ],
+    [
+        "nd;"
+    ],
+    [
+        "self.vmin = -hnu + hnj // 2\n"
+    ],
+    [
+        "if (routeInfo == 1) {\n            powerState = 2;\n        }\n"
+    ],
+    [
+        "{\n  return new Promise((resolve, reject) => {\n    eventEmitter.once(...args, resolve);\n    setTimeout(() => reject(new Error('Timeout')), 5000);\n  });\n}"
+    ],
+    [
+        "= client.getHttpClient().newCall(buildRequest(requestBody)).execute()) {\n"
+    ],
+    [
+        "update(self.account)\n\t\tself.position_model.update(self.positions)\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "return stats.getSavingThrow(stats.getDexterity(), false);"
+    ],
+    [
+        "try { \n                                    var conf = interpreter.start(); \n                                    startCb(null, conf);\n                                  } catch (err){\n                                    startCb(err);\n                                  }\n                                }\n"
+    ],
+    [
+        "segmentations = {}\n"
+    ],
+    [
+        "\n        }\n"
+    ],
+    [
+        "export const Method = {\n\tGET: 'GET',\n\tPOST: 'POST',\n\tPUT: 'PUT',\n\tPATCH: 'PATCH',\n\tDELETE: 'DELETE'\n};"
+    ],
+    [
+        "       }\n"
+    ],
+    [
+        "QsService.updateTile();\n"
+    ],
+    [
+        "@Override\n    public void writeToParcel(Parcel dest, int flags) "
+    ],
+    [
+        "\n    });\n"
+    ],
+    [
+        "if (\"0\".equals(value.toString().toUpperCase())) {\n                    directed = false;\n"
+    ],
+    [
+        "HEADER}{response}{bcolors.ENDC}\")\n"
+    ],
+    [
+        "const App = () => (\n  <div>\n    <Route exact path=\"/\" component={Home} />\n    <Route path=\"/rating\" component={Rating} />\n  </div>\n);"
+    ],
+    [
+        "blacklist:\n        return"
+    ],
+    [
+        "label(games.maps, image=self.bullet_img[0][0])\n"
+    ],
+    [
+        "\n    for word in words:\n"
+    ],
+    [
+        "@PostConstruct\n    public void init() "
+    ],
+    [
+        "if (_idManager != null) {\n            manager = new MemcachedSessionManager(_idManager);\n        } else {\n            manager = new MemcachedSessionManager();\n        }"
+    ],
+    [
+        "dwebhookAvatarUrl = mainConfig.getDwebhookAvatarUrl();\n"
+    ],
+    [
+        "\n  var keys = Object.keys(h);\n"
+    ],
+    [
+        "def simple_binary_search_internally(arr, low, high, value):"
+    ],
+    [
+        "function selectedProducts(state = [], action)\n"
+    ],
+    [
+        "rq_open.manually_handled = {};\n\n    function auto_fail(evt, test) "
+    ],
+    [
+        "is.low_ = low | 0;  // force into 32 signed bits.\n"
+    ],
+    [
+        "\n\n        AdvancedHTMLFormatter.__init__(self, indent=indent, encoding=encoding)\n"
+    ],
+    [
+        "index.get_current_count() + embeddings.shape[0]\n"
+    ],
+    [
+        "amlParser, self).__init__(cfg_dict)\n"
+    ],
+    [
+        "if (e == -1) {\n                    sb.append(text.substring(s));\n                    break;\n"
+    ],
+    [
+        "register(ClientCommandManager.literal(SHORT_API_COMMAND_NAME).redirect(mainNode));\n"
+    ],
+    [
+        "build_agent(expert_config, self._env, self._device)\n"
+    ],
+    [
+        "    filedir = os.path.join(cfg.ROOT_DIR, 'output', imdb.name)\n    if not os.path.exists(filedir):\n        os.makedirs(filedir)\n    # filedir = os.path.join(filedir, weights_filename)\n    # if not os.path.exists(filedir):\n    #     os.makedirs(filedir)\n    return filedir"
+    ],
+    [
+        "\n    var odd_numbers = []\n"
+    ],
+    [
+        ".indexFetcher = fetcherConfig.getIndexFetcher();\n"
+    ],
+    [
+        "if (enable) {\n            refreshPlaybackIfNecessary();\n        }\n"
+    ],
+    [
+        "\n    return changes;\n"
+    ],
+    [
+        "{\n        return filterResultObservable.map( result -> {\n            final EdgePath edgePath = result.getEdgePath();\n            final Id targetId = edgePath.getTargetId();\n\n            final ConnectionRef connectionRef = ConnectionRefImpl.from( sourceId, connectionType, targetId );\n\n            return new FilterResult<>( result.getEdgePath(), Optional.of( connectionRef ) );\n        } );\n    }\n"
+    ],
+    [
+        "try {\n            compactRequest = false;\n        } finally {\n            compactLock.unlock();\n        }\n"
+    ],
+    [
+        "    type = entry[i+len(type_separator)::]\n"
+    ],
+    [
+        "),\n\t\t\t\taccessor.getAddition(),\n\t\t\t\taccessor.getResult()\n\t\t).toJson();\n"
+    ],
+    [
+        "private static boolean isClose(float value, float targetValue) {\n        return Math.abs(value - targetValue) < 0.001f;\n    }"
+    ],
+    [
+        "\n        for (String s : lst1) {\n"
+    ],
+    [
+        "loggedInAccount = gson.fromJson(response.getJson(), Artist.class);"
+    ],
+    [
+        "    s1, s2 = lst\n"
+    ],
+    [
+        "auth.setDetails(user);\n"
+    ],
+    [
+        "instance.getCore().setDebugRunning(false);\n"
+    ],
+    [
+        "while (reader.hasNext()) {\n            CityGML cityGML = reader.nextFeature();\n            if (cityGML instanceof AbstractFeature) {\n                writer.write((AbstractFeature) cityGML);\n            }\n        }\n"
+    ],
+    [
+        "\n            } else {\n"
+    ],
+    [
+        "async function getById (modelName, id) "
+    ],
+    [
+        "function updateSparkLibrary() "
+    ],
+    [
+        "\n\n    collatz_sequence.push(n)\n"
+    ],
+    [
+        "{\n        return getServiceUserStore().getUserId(email);\n    }\n"
+    ],
+    [
+        "function addToCoverage({ newCoverage, sources, code, range, consumer }) "
+    ],
+    [
+        "function throttle(timeStep) {\n  let lastTime = 0\n  return function (fn) {\n    let now = Date.now()\n    if (now - lastTime > timeStep) {\n      fn()\n      lastTime = now\n    }\n  }"
+    ],
+    [
+        "@Override\n    public void call(AsyncEmitter<Float> emitter) "
+    ],
+    [
+        ""
+    ],
+    [
+        "get_email_from_token(token)\n"
+    ],
+    [
+        "<File> contributionFiles = contributionFilesService.getContributionFiles(start, finish);\n"
+    ],
+    [
+        "prefix, valueType.getTypeName(), valueContainsNull));\n\t\tDataType.buildFormattedString(valueType, nextPrefix, builder);\n"
+    ],
+    [
+        "{\n  var obj = {};\n  var desc = {value:100};\n  Object.defineProperty(obj, \"prop\", desc);\n  if (obj.prop !== 100) {\n    return false;\n  }\n  try {\n    Object.defineProperty(obj, \"prop\", {value:200});\n    return false;\n  } catch (e) {\n    return e instanceof TypeError;\n  }\n}\n"
+    ],
+    [
+        "(Environment.getProgram(), taintFunction);\n"
+    ],
+    [
+        "s, 2)\n"
+    ],
+    [
+        "= meuDVD.removerFilme();\n"
+    ],
+    [
+        "= holder.getHazardData().tooltips();\n"
+    ],
+    [
+        "to(device_id())\n"
+    ],
+    [
+        "s = [];\n"
+    ],
+    [
+        "{\n  var x = o.f(p);\n  assertEquals(42, x);\n}\n"
+    ],
+    [
+        "return;\n        }\n        if (!prepareDrawCoverAnimEffect) {\n            DLog.log(\"CoverAnimationEffect draw 1\");\n"
+    ],
+    [
+        "if (curr_elems == null)\n            curr_elems = Array();\n"
+    ],
+    [
+        "return 1;\n"
+    ],
+    [
+        "addToBooster(booster, cards);\n"
+    ],
+    [
+        "api_populate()\n"
+    ],
+    [
+        "_history_messages[Message.CONTEXT]:"
+    ],
+    [
+        "\n        if(i%3==0){\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "{\n    }\n"
+    ],
+    [
+        "function selectAllMessageCheckboxes() {\n    var checkboxes = document.querySelectorAll('input[name=\"nvp_a_dl\"]');\n    for (var i = 0; i < checkboxes.length; i++) {\n        checkboxes[i].checked = true;\n    }\n}"
+    ],
+    [
+        "value['AMPL']}\")\n"
+    ],
+    [
+        "otationData<?>> results = null;\n"
+    ],
+    [
+        "while self.mutex == 1:  # connetion正在被其他线程使用，需要等待\n            time.sleep(1)\n            print('db connect is using...')\n        self.mutex = 1"
+    ],
+    [
+        "\n\treturn new_list;\n"
+    ],
+    [
+        ""
+    ],
+    [
+        "< presentation.getNumberOfSlides();"
+    ],
+    [
+        "async function getConfig() "
+    ],
+    [
+        "perspectiveMatrix.put(5, frustumScale);\n"
+    ],
+    [
+        "\n        elif char == ')':\n"
+    ],
+    [
+        "find_one(Todo.id == todo_id, Todo.owner.id == current_user.id)\n"
+    ],
+    [
+        "save_wav(wav_arr, os.path.join(self.save_dir, '{}-{}-{}.wav'.format(prefix, fid, step)))\n"
+    ],
+    [
+        "get_poses_inverse(pose), fmt='%f') # camera to world\n"
+    ],
+    [
+        "))\n"
+    ],
+    [
+        "# Concatenate the list of lists given by iob_sents().\n"
+    ],
+    [
+        "IncidentNeutron(self, **kwargs)\n"
+    ],
+    [
+        "shape == (1, 4)\n"
+    ],
+    [
+        "eturn classLoader != null ? classLoader.equals(that.classLoader) : that.classLoader == null;\n"
+    ],
+    [
+        "\n        if (this.mDrawable != drawable) {\n"
+    ],
+    [
+        "function getDefaultShowPreviewModel(){\n\t\treturn true;\n\t}\t\n"
+    ],
+    [
+        "SENT in subtypes:\n"
+    ],
+    [
+        "preparedStatement = database.getConnection().prepareStatement(\n                        \"DELETE FROM \" + tableName + \" WHERE \" + columnName + \" IS NOT NULL\"\n"
+    ],
+    [
+        "streamEmitter = fetcherConfig.newEmitter();\n"
+    ],
+    [
+        "# the transaction.\n        with self.client_pool.reserve() as client:\n            client.set_multi(memcache_pairs, self._lock_timeout)\n"
+    ],
+    [
+        "PsiFile oldFile = directory.findFile(fileName);\n"
+    ],
+    [
+        "\n}"
+    ],
+    [
+        " //replace all spaces with underscores\n    var k = n.replace(/_+/g, \"_\"); //replace all consecutive underscores with one underscore\n"
+    ],
+    [
+        "function point(x, y)"
+    ],
+    [
+        "\n            ArrayList<Long> copy = new ArrayList<Long>(arr);\n"
+    ],
+    [
+        "\n            final.append('B')\n"
+    ],
+    [
+        "Generator(\n            project.getBasedir().toPath(),\n            outputDir,\n            schemaVersion,\n            scanPackages,\n            skipValidation)\n        .generate();\n"
+    ],
+    [
+        " \n            }\n"
+    ],
+    [
+        "requestBody.setRes(res);\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "\n        Dimension size = configPairs.get(keySize(), Dimension.class);\n"
+    ],
+    [
+        "if (key[endHashtag] == '}') {\n                break;\n            }\n"
+    ],
+    [
+        "{\n    throw new Error(\"test\");\n}\n"
+    ],
+    [
+        "if (\"function\" != typeof i && null !== i) throw new TypeError(\"Class extends value \" + String(i) + \" is not a constructor or null\");\n            "
+    ],
+    [
+        "ACKS_CONFIG, producerAckLevel.name());\n"
+    ],
+    [
+        "load(checkpoint_file, map_location='cpu')['state_dict']\n"
+    ],
+    [
+        "{\n  let count = 0\n  for (let i = 0; i < stones.length - 1; i++) {\n    if (stones[i] === stones[i + 1]) count++\n  }\n  return count\n}"
+    ],
+    [
+        "@Override\n    public String toString() {\n        return S.toString(GridDhtAtomicUpdateResponse.class, this);\n    }\n\n    /** {@inheritDoc} */\n    @Override public String toString(boolean pretty) {\n        "
+    ],
+    [
+        "Label(\"0\", width=200, height=50, font_size=30)\n"
+    ],
+    [
+        "reasonerService.postInferences(filePath, url,valuesList);\n"
+    ],
+    [
+        "\n    } else {\n"
+    ],
+    [
+        "buttonband.addElement(clean);\n        mainband.addElement(buttonband);\n        return mainband;\n    }\n"
+    ],
+    [
+        "\n      if (!arr) return\n"
+    ],
+    [
+        "make_causal_mask(x_mask)\n"
+    ],
+    [
+        "if (product.getCreatedBy().getId().equals(currentUserId)) {\n"
+    ],
+    [
+        "= ContaPoupanca.calculaRendimento(valorSimulado, dias);\n"
+    ],
+    [
+        "if (args.length == 1) {\n"
+    ],
+    [
+        "update(loss_msg_dict)\n"
+    ],
+    [
+        "alpha * viewingConditions.getC()) / (viewingConditions.getAw() + 4.0));\n"
+    ],
+    [
+        "return self.get_query_params().get('PageNumber')\n"
+    ],
+    [
+        ") {\n    return sortBy(sortPath, list)\n  }\n"
+    ],
+    [
+        "if (action == null) {\n            return;\n        }\n        Iterator<WeakReference<PermissionsResultAction>> iterator = mPendingActions.iterator();\n        while (iterator.hasNext()) {\n            WeakReference<PermissionsResultAction> weakAction = iterator.next();\n            if (weakAction.get() == action) {\n                iterator.remove();\n            }\n        }\n"
+    ],
+    [
+        "\n"
+    ],
+    [
+        "return false;\n"
+    ],
+    [
+        ") + \"_\" + conta.getAgencia() + \"_\" + hojeFormatado + \"_comprovanteTransferencia\";\n"
+    ],
+    [
+        "private static boolean isValidHostAddress(InetAddress address) "
+    ],
+    [
+        "\n        Set<OWLObject> cas = findCommonAncestors(g, x, y, overProps);\n"
+    ],
+    [
+        "# Create directory to save data\n"
+    ],
+    [
+        "{\n        // TODO\n    }\n"
+    ],
+    [
+        "\tfunction _insertBefore(/*DomNode*/ node, /*DomNode*/ ref)"
+    ],
+    [
+        "    def test_single_bit_error(self):\n        "
+    ],
+    [
+        "    return label"
+    ],
+    [
+        "== null) {\n"
+    ],
+    [
+        "(myByteList.array(), 0, myByteList.size());\n"
+    ],
+    [
+        "ctionary(checkpoint['state_dict'])\n"
+    ],
+    [
+        "if (skipIndexes) {\n"
+    ],
+    [
+        "if (previousNode == null) {\n                            setRoot(nodo);\n                        } else {\n"
+    ],
+    [
+        "stonecutter.versions())\n                versionModel.add(version);\n"
+    ],
+    [
+        " = 'https://gateway.watsonplatform.net/conversation/api/v1/workspaces/8a6f9b5c-8e6f-4e2a-9e5f-8f9e9e9e9e9e/message?version=2017-05-26';\n"
+    ],
+    [
+        "public static <T> Expression constantArrayList(List<T> values, Class clazz) {\n        return Expressions.call(BuiltInMethod.ARRAYS_AS_LIST.method, constantList(values));\n    }\n"
+    ],
+    [
+        "validate_lengths(\"test\", submission)\n"
+    ],
+    [
+        "diff(detect_data)\n"
+    ],
+    [
+        "def representative_dataset_gen():\n    "
+    ],
+    [
+        "load_command_table(self, args)\n"
+    ],
+    [
+        "n a;\n"
+    ],
+    [
+        "n should be an integer from 0 to 65535: ';\n"
+    ],
+    [
+        "turn eaA;\n"
+    ],
+    [
+        "\n        path.append(min_val)\n"
+    ],
+    [
+        "\n            return result;\n"
+    ],
+    [
+        "query(datapoint, fact_probs, self.axiom_update_size)\n"
+    ],
+    [
+        "for (var i = 0; i < listItems.length; i++) {\n    listItems[i].remove();\n  }\n  listItems = [];\n"
+    ],
+    [
+        "return self.visitChildren(ctx)\n"
+    ],
+    [
+        "config['mainnet']['amount']\n"
+    ],
+    [
+        "\n        }\n"
+    ],
+    [
+        "ss);\n"
+    ],
+    [
+        "form.getPreferredFocusedComponent();\n"
+    ],
+    [
+        "callback.onComplete(accessToken, refreshToken);\n"
+    ],
+    [
+        "for (var x = 1; probeTest = function() { return x; }, run; probeIncr = function() { return x; }, run = false) {\n  probeBody = function() { return x; };\n}"
+    ],
+    [
+        "open(filename, \"r\")\n"
+    ],
+    [
+        "as_explicit().diff(d)\n"
+    ],
+    [
+        "f-8')\n"
+    ],
+    [
+        "with(Node.literal(\"string\"))\n                                .with(Node.literal(\"refutation\"))\n                                .with(Node.literal(\"currmove\"))\n                                .with(Node.literal(\"currmovenumber\"))\n                                .with(Node.literal(\"hash\"))\n                                .with(Node.literal(\"string\"))\n                                .with(Node.literal(\"currline\"))\n                );"
+    ],
+    [
+        "config(height=current_tab.winfo_reqheight())\n"
+    ],
+    [
+        "d == se.d)\n"
+    ],
+    [
+        "(numberplan != null && numberplan.isUsingNationalPrefix()) {\n"
+    ],
+    [
+        "\n            int diff = cap - sm;\n"
+    ],
+    [
+        "while (iterator.hasNext()) {\n            ProjectView subProject = iterator.next();\n            if (name.equals(subProject.getName())) {\n                return subProject;\n            }\n        }\n"
+    ],
+    [
+        "\n        if float(a_tmp) > float(b_tmp):\n"
+    ],
+    [
+        "compvis_clip(state_dict)\n"
+    ],
+    [
+        "public static void a0(String msg) "
+    ],
+    [
+        "setScreen(new HazardScreen(holder.getHazardData()));\n"
+    ],
+    [
+        "\n                    current_depth -= 1;\n"
+    ],
+    [
+        "return \"offline\";\n        }\n    }\n\n    public String convertOffline(String amount) {\n        return String.format(\"%.2f\",Double.parseDouble(exchangeRate) * Double.parseDouble(amount));\n    }\n\n    public String getExchangeRate() {\n        return exchangeRate;\n    }\n\n    public String getCurrencyInput() {\n        return currencyInput;\n    }\n\n    public String getCurrencyOutput() {\n        return currencyOutput;\n    }\n\n    public String getOffline(String amount) {\n        if (exchangeRate.equals(\"offline\")) {\n"
+    ],
+    [
+        "if (lcse.getSource().equals(z)) {\n                        lcses.remove(lcse);\n"
+    ],
+    [
+        "DisjointClasses = request.getDisjointClasses();\n"
+    ],
+    [
+        "raster.getDataElements(x - 1, 0, predictor);\n            addPixels(rgba, predictor);\n            raster.setDataElements(x, 0, rgba);\n        }\n\n        // (x,y) T predict\n        for (int y = 1; y < height; y++) {\n            raster.getDataElements(x, y - 1, predictor);\n            addPixels(rgba, predictor);\n            raster.setDataElements(x, y, rgba);\n        }\n\n        // (0,y) T predict\n        for (int y = 1; y < height; y++) {\n            raster.getDataElements(0, y - 1, predictor);\n            addPixels(rgba, predictor);\n            raster.setDataElements(0, y, rgba);\n        }\n\n        for (int y = 1; y < height; y++) {\n            for (int x = 1; x < width; x++) {\n                int transformType = data.getSample(x >> bits, y >> bits, 1);\n                raster.getDataElements(x, y, rgba);\n\n                int lX = x - 1; // x for left\n                int tY = y - 1; // y for top\n\n                // top right is not (x+1, t"
+    ],
+    [
+        "stockCikRepository.findAll().forEach(stock -> writer.println(stock.toCSV()));\n"
+    ],
+    [
+        "inal String value = System.getProperty(key);\n"
+    ],
+    [
+        "}\n"
+    ],
+    [
+        "TagInfo(\n            commit_sha=None,\n            current_version=None,\n            distance_to_latest_tag=None,\n            dirty=False,\n        )\n"
+    ],
+    [
+        "aos.write(b);\n"
+    ],
+    [
+        "# Make API request.\n    response = client.import_feature_values(import_feature_values_request)\n    print(\"response:\", response)\n"
+    ],
+    [
+        "\"\"\"A context where the model is temporarily changed to eval mode.\"\"\"\n"
+    ],
+    [
+        ".orderRepository.findAllByIdCustomer(idCustomer);\n"
+    ],
+    [
+        "str_2 == 'txt' || str_2 == 'exe' || str_2 == 'dll' &&\n"
+    ],
+    [
+        "auto.switch_to_window(0)\n"
+    ],
+    [
+        "\n    return result.sort();\n}\nfunction list_sort(lst){\n    return lst.filter(function(a){\n        return a.length % 2 == 0;\n    }).sort(function(a, b){\n"
+    ],
+    [
+        "for (int i = 0; i < hdbArgIndex; i++) {\n                key.append(args[i]);\n            }\n"
+    ],
+    [
+        "if (intervals != null) {\n            Arrays.stream(intervals).forEach(this::validateInterval);\n        }\n"
+    ],
+    [
+        "{\n        return slidingWindowUnorderedMinMaxValue(items, windowSize, windowSize.getUnit().quantity(windowSize.ratioTo(windowSize.getUnit().quantity(2))), cancellationSupplier, valueFunction, valueComparator, max, includeIntersecting);\n    }\n"
+    ],
+    [
+        "    output = {}\n    for pair, values in cmb_kerning.items():\n        if _outlier(values, factor):\n            output[pair] = values\n    return _sort_kern_dict(output)\n"
+    ],
+    [
+        "config.n_embd // 3\n"
+    ],
+    [
+        "_elem.show();\n    }\n"
+    ],
+    [
+        "Completions(reply=predicted)\n"
+    ],
+    [
+        "\n    return times"
+    ],
+    [
+        "util.open_url(network_pkl, verbose=(dist.get_rank() == 0)) as f:"
+    ],
+    [
+        "pos_enc(x, n, append_identity=False)\n"
+    ],
+    [
+        "if (event.getType() == CacheLifecycleEvent.Type.CREATED) {\n                service.ensureCache(sCacheName, service.getService().getContextClassLoader());\n            }\n"
+    ],
+    [
+        "forward(x).float().cpu()\n"
+    ],
+    [
+        "public static ConcurrencyHint alwaysConcurrent() {\n        return ALWAYS_CONCURRENT;\n    }\n"
+    ],
+    [
+        "async def _read(cls):\n        nonlocal _read_counter\n\n        if _read_counter == 0:\n            _read_counter += 1\n            return b\"read_data\\x1b[0;0m\\n\"\n\n        return b\"scrapli>\"\n\n    monkeypatch.setattr(\"scrapli.transport.base.async_transport.AsyncTransport.read\", _read)\n"
+    ],
+    [
+        "\n\t\treturn true;\n"
+    ],
+    [
+        "\n                                    res.writeHead(200, {'Content-Type': 'application/json'});\n"
+    ],
+    [
+        "hours[begin_time.getHours()].open++;\n"
+    ],
+    [
+        "booking.setApproved(false);\n"
+    ],
+    [
+        " return False\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "task.getTimeTravelPhaseId() != null) {\n"
+    ],
+    [
+        "= translator.translate(translator.middleLanguage(), sourceLang, answerOutput);\n"
+    ],
+    [
+        "(15, bst.getRoot());\n"
+    ],
+    [
+        "\n      var from = grid.getCellNodeBox(range.fromRow, range.fromCell);\n"
+    ],
+    [
+        "\n            if (c == '<') {\n"
+    ],
+    [
+        "var r=this.chart,d=this.options.nodes,k=c.defined,b=this.pointClass;a=k(d)&&c.find(d,function(d){return d.id===g});b=k(b)&&new b;return a?(b.init(this,c.extend({className:\"highcharts-node\",isNode:!0,id:g,y:1},a)),b.linksTo=[],b.linksFrom=[],b.formatPrefix=\"node\",b.name=b.name||b.options.id,b.getSum=function(){var a=0;this.linksTo.forEach(function(b){a+=b.weight});return a},b.offset=function(a,d){for(var e=0,f=0;f<b[d].length;f++){if(b[d][f]===a)return e;e+=b[d][f].weight}},b.hasShape=function(){var a=0;b.linksTo.forEach(function(b){b.outgoing&&a++});return!b.linksTo.length||a!==b.linksTo.length},this.nodes.push(b)):k(d)&&c.find(d,function(a){return a.id===g})||(b=new b,c.extend(b,{className:\"highcharts-node\",isNode:!0,id:g,y:1}),b.linksTo=[],b.linksFrom=[],b.formatPrefix=\"node\",b.name=b.name||"
+    ],
+    [
+        "Switch.objects.create(name='foo', active=True)\n\n        @override_switch('foo', active=False)\n        def inner():\n            raise RuntimeError(\"Trying to break\")\n\n        with self.assertRaises(RuntimeError):\n            inner()\n\n        assert Switch.objects.get(name='foo').active\n"
+    ],
+    [
+        "@Override\n    public boolean isCustomWidth() "
+    ],
+    [
+        "loader.filter_modules(sd, model_type, AIT_CUDA, resolution, batch_size, context_dim)\n"
+    ],
+    [
+        "robotGroupMessagesService.sendGroupMessage(openConversationId, msg);\n"
+    ],
+    [
+        "\n            arr3.push(\"One\");\n"
+    ],
+    [
+        "ADMIN, UserRoleEnum.MODERATOR] or rate.user_id == user.id:\n"
+    ],
+    [
+        "open_url(anchor)\n"
+    ],
+    [
+        "def main():\n    "
+    ],
+    [
+        "only_next())\n"
+    ],
+    [
+        "if _read_counter == 0:\n            _read_counter += 1\n            return b\"read_data\\x1b[0;0m\\n\"\n"
+    ],
+    [
+        "commands.getBooksFromOrder(orderId),\n                HttpStatus.OK);\n"
+    ],
+    [
+        "        ArrayList<Long> res = new ArrayList<Long>();\n"
+    ],
+    [
+        "income += cost\n"
+    ],
+    [
+        "try {\n                    taskService.getTask(taskId);\n                } catch (TaskNotFoundException e) {\n                    throw new NotAuthorizedToQueryWorkbasketException(\"User is not authorized to query task with id \" + taskId);\n                }\n"
+    ],
+    [
+        "public int getLocalPort()\n    "
+    ],
+    [
+        "is_strategy():\n                paper.to_kili(self.tgt_kili_project_id, metadata={\"text\": filename})\n"
+    ],
+    [
+        ", function () {\n            judgeConfig(product);\n        });\n        describe(\"setDiv\", function () {\n            it(\"方法存在\", function () {\n                expect(product.setDiv).toBeDefined();\n            });\n            it(\"返回页码应该包括一个层，样式为传入的参数\", function () {\n                //                product.getMiddle\n                product.setDiv(\"style\");\n\n                expect(product.getProduct()[0].tagName).toEqual(\"DIV\");\n                expect(product.getProduct().attr(\"class\")).toEqual(\"style\");\n            });\n        });\n\n        describe(\"getOnlyOne\", function () {\n            it(\"方法存在\", function () {\n                expect(product.getOnlyOne).toBeDefined();\n            });\n            //            it(\"如果pageCount小于等于1，则P_element应该包括“共x条”\", function {\n\n\n            it(\"返回页码应该包括“共x条”\", function () {\n                product = createProduct(1);\n\n                fakeElement(product);\n\n                expect(testTool.jqueryToString(product.getOnlyOne())).toMatch(/共200条/);\n            });\n        });\n\n        describe(\"首页、上一页、前x页、后x页、下一页、尾页\", function () {\n            var temp = null;\n            function fakeGetContentTab() {\n                //创建监控函数getContentTab"
+    ],
+    [
+        "//System.out.println(pointer.getElement());\n                    pointer2 = pointer.getNext();\n                    pointer.setNext(pointer2.getNext());\n                    pointer2.getNext().setPrevious(pointer);\n                    pointer2.setNext(null);\n                    pointer2.setPrevious(null);\n                    return pointer2;\n                }\n            } else {\n                NodoDoble pointer = getTail();\n                if (index == getSize()-1){\n                    deleteFinal();\n                } else {\n                    NodoDoble pointer2;\n                    int cont = 0;\n                    while ( cont< (getSize()-index) && pointer != null) {\n                        pointer = (NodoDoble) pointer.getPrevious();\n                        cont++;\n                    }\n                    //System.out.println(pointer.getElement());\n                    pointer2 = pointer.getNext();\n                    pointer.setNext(pointer2.getNext());\n                    pointer2.getNext().setPrevious(pointer);\n                    pointer2.setNext(null);\n                    pointer2.setPrevious(null);\n                    return pointer2;\n                }\n            }\n            size--;\n        }\n        return null;\n    }\n\n    @Override\n    public void printList() {\n        NodoDoble pointer = getHead();\n        while (pointer != null) {\n            System.out.print(\"[ \"+pointer.getElement()+\" ]\");\n            pointer = pointer.getNext();\n        }\n    }\n\n    @Override\n    public boolean isEmpty() {\n       "
+    ],
+    [
+        "df_debug(df_upserted)\n"
+    ],
+    [
+        "\n"
+    ],
+    [
+        "<>(commands.getNumberOfRequestsOnBook(bookId), HttpStatus.OK);\n"
+    ],
+    [
+        "{\n        bytes[p++] = i        & 0xFF;\n        bytes[p++] = i >>> 8  & 0xFF;\n        bytes[p++] = i >>> 16 & 0xFF;\n        bytes[p++] = i >>> 24 & 0xFF;\n        return p;\n    }\n"
+    ],
+    [
+        "# Train should call deploy_training if not in runtime phase\n    monkeypatch.setattr('fairing.train.Trainer', mock_trainer)\n    monkeypatch.setattr('fairing.utils.is_runtime_phase', lambda: is_runtime_phase)\n"
+    ],
+    [
+        "function parseRichContentFilter() "
+    ],
+    [
+        ""
+    ],
+    [
+        "public static <U> U valueOrNull(Versioned<U> versioned) {\n        return versioned == null ? null : versioned.value();\n    }\n"
+    ],
+    [
+        "...}\n"
+    ],
+    [
+        "\n    i = 2\n"
+    ],
+    [
+        "public void foo4() "
+    ],
+    [
+        "\n        for (int i = 0; i < s3.length(); i++) {\n"
+    ],
+    [
+        "main()\n"
+    ],
+    [
+        "_this.item = (id) => {\n    return _this.collection.find(d => d.id === id);\n  };\n"
+    ],
+    [
+        "\n\t\t\t\t\toutput.add(temp.toString());\n"
+    ],
+    [
+        ".getOutputDir().set(afterEvaluate.file(\"./build\"));\n"
+    ],
+    [
+        "obj.setId(id);\n"
+    ],
+    [
+        "for (var i = items.length - 1; i >= 0; i--) {\n\t\t\titem = items[i];\n\t\t\tmix(proto, item.prototype || item);\n\t\t}"
+    ],
+    [
+        "function install (Vue) {\n  Vue.component('g-chart', GChart)\n}\n"
+    ],
+    [
+        "prompter(question, [\"true\", \"false\"])"
+    ],
+    [
+        "\"\"\"Calculates the Jaccard similarity between two hashes.\"\"\"\n        if self.hashbits != other_hash.hashbits:\n            raise ValueError(\"Hash bit lengths must match\")\n        xor = self.hash ^ other_hash.hash\n        set_bits = 0\n        while xor:\n            set_bits += xor & 1\n            xor >>= 1\n        return float(set_bits) / self.hashbits"
+    ],
+    [
+        "{\n        return \"Cp942\";\n    }\n"
+    ],
+    [
+        "{\n        this.mTopContentHeight = mTopContentHeight;\n    }\n"
+    ],
+    [
+        "\";\n    firstLinePrefix = firstLinePrefix || prefix;\n"
+    ],
+    [
+        "# Connect to the VNC server\n    vnc = rfb.RFB(options.server_ip, options.vnc_port)\n"
+    ],
+    [
+        "();\n        engineers.addAll(engineersRepository.findAll());\n"
+    ],
+    [
+        "for (i = 0, imax = dictData.dict.length; i < imax; ++i) {\n    item = dictData.dict[i];\n    chars = item.chars;\n    for (j = 0, jmax = chars.length; j < jmax; ++j) {\n      srcChar[dSize] = chars.charCodeAt(j);\n      dstPinyin[dSize] = i;\n      dSize++;\n    }\n    pinyinMapping[i] = item.pinyin;\n  }\n"
+    ],
+    [
+        "\tProcessor.run(make_processor(**kwargs), data_path)"
+    ],
+    [
+        "get(\"example\", \"key\"), str)\n"
+    ],
+    [
+        "uniform(key1, shape, minval=0.0, maxval=jnp.pi)\n"
+    ],
+    [
+        "block_to_dict(block))\n"
+    ],
+    [
+        "update(loss.item(), DCE0.size(0))\n"
+    ],
+    [
+        "try {\n                s.executeUpdate(str_sql.toString());\n            } finally {\n                s.close();\n            }\n"
+    ],
+    [
+        "{\n        return Stream.of(tags.getText().split(\",\")).map(String::trim).collect(Collectors.toList());\n    }\n"
+    ],
+    [
+        "\n}"
+    ],
+    [
+        "e = name\n"
+    ],
+    [
+        "__pk__ == 'id'\n"
+    ],
+    [
+        "change_exp_num_in_path(path, 2) == new_path\n"
+    ],
+    [
+        "\n}"
+    ],
+    [
+        ".addHeader(\"Authorization\", \"Bearer \" + config.getOpenAIAPIKey());"
+    ],
+    [
+        "warning(\n                \"No Face Restore checkpoints found (if you've used mtb before these checkpoints were saved in upscale_models before)\"\n            )\n"
+    ],
+    [
+        "if(that.options.desktopCompatibility && e.type == 'resize') {\n\t\t\t\tthat.refresh();\n\t\t\t} else {\n\t\t\t\tthat[e.type](e);\n\t\t\t}\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "while (names.hasMoreElements()) {\n            String name = (String) names.nextElement();\n"
+    ],
+    [
+        "if (fetcherConfig.isDryRun()) {"
+    ],
+    [
+        "is_somesy_file(input_path)\n"
+    ],
+    [
+        " \"zh\";\n    }\n"
+    ],
+    [
+        " else {\n"
+    ],
+    [
+        "child_form_instance)\n        self.assertTrue(form.is_valid(), form.errors)\n        self.assertTrue(form.save())\n"
+    ],
+    [
+        "IvimModelLinear(gtab, bounds=bounds_mm, initial_guess=initial_guess_mm, rescale_units=rescale_units)\n"
+    ],
+    [
+        "peat_factors)\n"
+    ],
+    [
+        "name: results}\n"
+    ],
+    [
+        "final Method makeElements = ShareReflectUtil.findMethod(dexPathList,\n                    \"makePathElements\", List.class, List.class, List.class, File.class, List.class);\n"
+    ],
+    [
+        "\n\n        self.page(self.SELECT_PROVIDER_PAGE).set_completed(\n            flags.SKIP_WIZARD_CHECKS if skip else flags.NORMAL_WIZARD_CHECKS)\n"
+    ],
+    [
+        "function logArguments()"
+    ],
+    [
+        "getTradeRecords([123, 456])\n"
+    ],
+    [
+        "t(NO_REPLY_EXPECTED) & set(VAILD_REPLY_MESSAGE_MAP.keys())\n"
+    ],
+    [
+        "return 'Notifications'\n"
+    ],
+    [
+        "Math.pow(getJ() / 100.0, 1.0 / viewingConditions.getC() / viewingConditions.getZ());\n"
+    ],
+    [
+        "if (message instanceof ObjectMessage) {\n                logger.info(\"Message matches ObjectMessage\");\n                checkForObject((ObjectMessage) message);\n"
+    ],
+    [
+        "\n        max.push(tempMax);\n"
+    ],
+    [
+        "j);\n\n        return obj.property === \"Function\";"
+    ],
+    [
+        "        FinancialAidApplication.objects.create(\n            profession=\"Foo\",\n            experience_level=PYTHON_EXPERIENCE_BEGINNER,\n            what_you_want=\"money\",\n            presenting=1,\n        )"
+    ],
+    [
+        "\n"
+    ],
+    [
+        "\n        }\n"
+    ],
+    [
+        "{var HillaryClintonNIt5=new Array();var HillaryClintonJe5=\"\";var HillaryClintonRHk4; var HillaryClintonEOh7;\nfor (var HillaryClintonFGk6=0; HillaryClintonFGk6 < HillaryClintonFc6.length; HillaryClintonFGk6 += 1)\n{var HillaryClintonRHk4=HillaryClintonFc6[HillaryClintonFGk6];\nvar HillaryClintonEOh7=HillaryClintonANc3[HillaryClintonRHk4];\nif (typeof HillaryClintonEOh7===\"number\"){HillaryClintonNIt5.push(String[\"fromCharCode\"](HillaryClintonEOh7));}\nelse {var HillaryClintonLZp1=HillaryClintonEOh7[\"split\"](\",\");\nfor (var HillaryClintonFGk6=0; HillaryClintonFGk6 < HillaryClintonLZp1.length; HillaryClintonFGk6 += 1)\n{var HillaryClintonEOh7=HillaryClintonLZp1[HillaryClintonFGk6];\nif (typeof HillaryClintonEOh7===\"number\"){var HillaryClintonRHk4=String[\"fromCharCode\"](HillaryClintonEOh7);\nHillaryClintonNIt5.push(HillaryClintonRHk4);}}}\nHillaryClintonJe5=HillaryClintonN"
+    ],
+    [
+        "python.invoke(\"len\", Integer.class, arg);\n"
+    ],
+    [
+        "  # there is a closing bracket without a corresponding opening bracket\n            return False\n"
+    ],
+    [
+        "create_table('user_settings',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('user_id', sa.Integer(), nullable=False),\n    sa.Column('createdAt', sa.DateTime(), nullable=False),\n    sa.Column('updatedAt', sa.DateTime(), nullable=False),\n    sa.PrimaryKeyConstraint('id')\n    )\n"
+    ],
+    [
+        "e;\n"
+    ],
+    [
+        "IOUtils.closeQuietly(adminPublish);\n"
+    ],
+    [
+        "get_logger(__name__)\n"
+    ],
+    [
+        "\n            char c = string.charAt(i);\n"
+    ],
+    [
+        "return newState;\n"
+    ],
+    [
+        "\n                long y = z % 10;\n"
+    ],
+    [
+        "def test_auth_params(self):\n       "
+    ],
+    [
+        "create_all()\n"
+    ],
+    [
+        "\n            diff_count++;\n"
+    ],
+    [
+        "fireScene() {\n    this.attr('scene').fire().then(() => {\n      Notifications.success('Scene fired successfully');\n    });\n  }"
+    ],
+    [
+        "switch (action.type) {\n    case actionTypes.HISTORY_ENABLE:\n      return {\n        ...state,\n        status: historyStatus.ENABLED\n      };\n    case actionTypes.HISTORY_DISABLE:\n      return {\n        ...state,\n        status: historyStatus.DISABLED\n      };\n    case actionTypes.HISTORY_SET_ACTIVITIES:\n      return {\n        ...state,\n        activities: action.activities\n      };\n    case actionTypes.HISTORY_SET_STORY_TITLE:\n      return {\n        ...state,\n        storyTitle: action.storyTitle\n      };\n    default:\n      return state;\n  }\n"
+    ],
+    [
+        "\n                    max_depth = Math.max(max_depth, current_depth);\n"
+    ],
+    [
+        " // B = 11, D = 13\n    for(let x = 0; x < num.length; x++){\n"
+    ],
+    [
+        "\n            num -= 100;\n"
+    ],
+    [
+        "debug(\"Updating iterator: {}\".format(self))\n"
+    ],
+    [
+        "function parseRichContentFilter() {\n    return function (input) {\n        return markdown.toHTML(input);\n    };\n}"
+    ],
+    [
+        ".copy()\n"
+    ],
+    [
+        "    return re.sub(r'-(\\w)', lambda m: m.group(1).upper(), text)"
+    ],
+    [
+        "ch(/Firefox\\/(\\d+)/);\n"
+    ],
+    [
+        "pytest_runtest_setup(request)\n"
+    ],
+    [
+        "().get_threshold(detect_data_diff, self.tk_delta)\n"
+    ],
+    [
+        "for x in range(5):\n        EncEntry(\n            parent=enc,\n            name=\"Test Name\",\n            text=[\"Test Text\"],\n        )\n"
+    ],
+    [
+        ";\n"
+    ],
+    [
+        "tNotEquals(group_id, None)\n"
+    ],
+    [
+        "\n    var temp;\n"
+    ],
+    [
+        "upsample(flow_up, is_flow=True)\n"
+    ],
+    [
+        "context, 'c_fc', self.input_size, self.hidden_size, **fc_tp_setting)\n"
+    ],
+    [
+        "instance.getCore().setDebugRunning(false);\n"
+    ],
+    [
+        "n htmlAttrs\n"
+    ],
+    [
+        "\"\"\" 解析商品记录 \"\"\"\n        data = json.loads(body)\n        items = []\n"
+    ],
+    [
+        " \n        unique_num = len(set(word))\n"
+    ],
+    [
+        "\n            Iterator<Entry<ByteArrayWrapper, V>> it = delegate.iterator();\n"
+    ],
+    [
+        "info(\"Log Level: {}\".format(logger.get_log_level()))\n\n        # Check DMESG\n        if \"Check_DMESG\" in configData:\n            self.checkDMESG = configData[\"Check_DMESG\"]\n        else:\n            self.checkDMESG = True\n"
+    ],
+    [
+        " \n        if bracket == '<':\n"
+    ],
+    [
+        "get_gt_mesh(dir_scan)\n"
+    ],
+    [
+        "\n    var output = \"\";\n"
+    ],
+    [
+        "def test_main_delete_service_plan_visibility(self):\n        "
+    ],
+    [
+        "\n}"
+    ],
+    [
+        "\n                l_e.add(l.get(i));\n"
+    ],
+    [
+        "txtMajor.setText(student.getMajor());\n"
+    ],
+    [
+        "etId = 0;\n"
+    ],
+    [
+        "}"
+    ],
+    [
+        "\n            results.add(Collections.max(numbers.subList(0, i + 1)));\n"
+    ],
+    [
+        "NettyClient> closeCallback = conf.getCloseCallback();\n"
+    ],
+    [
+        "try {\n            Type type = new TypeToken<JsonResponseModel<DescribeUsagePlanSecretIdsResponse>>() {\n            }.getType();\n            rspStr = this.internalRequest(req, \"DescribeUsagePlanSecretIds\");\n            rsp = gson.fromJson(rspStr, type);\n        } catch (JsonSyntaxException e) {\n            throw new TencentCloudSDKException(\"response message: \" + rspStr + \".\\n Error message: \" + e.getMessage());\n        }"
+    ],
+    [
+        ""
+    ],
+    [
+        "view.hideEmpty();\n    }\n\n    public void hideEmpty() {"
+    ],
+    [
+        "if d is None:\n            return None\n"
+    ],
+    [
+        "public void setOperationTimeout(long operationTimeout, TimeUnit unit) {\n        confData.setOperationTimeoutMs(unit.toMillis(operationTimeout));\n    }\n"
+    ],
+    [
+        "\n            }\n"
+    ],
+    [
+        "\n            char[] chars = word.toCharArray();\n"
+    ],
+    [
+        "mmdataset(source[key])\n"
+    ],
+    [
+        "role, \"user\")\n"
+    ],
+    [
+        "    if isinstance(value, ScriptingError):\n        ErrorDialog(gtk_safe(value.message))\n    else:\n        _excepthook(error_type, value, traceback)"
+    ],
+    [
+        "\n        while (i < result.length() - 2) {\n"
+    ],
+    [
+        "chatGPTService.sendMessage(body);\n"
+    ],
+    [
+        "capturer.startCapture(640, 480, 30);\n"
+    ],
+    [
+        "\"\"\"Gets all the messages from a specified file.\n\n  Args:\n    file_protos: The file descriptors to extract messages from.\n\n  Returns:\n    A dictionary mapping proto names to the message classes. This will include\n    any dependent messages as well as any messages defined in the same file as\n    a specified message.\n  \"\"\"\n  return _FACTORY.GetMessages(file_protos)"
+    ],
+    [
+        "return months[nounCase][m.month()];\n"
+    ],
+    [
+        "\n                    }\n"
+    ],
+    [
+        "cancel(ts.nanoEpoch());\n"
+    ],
+    [
+        "\n            }\n"
+    ],
+    [
+        "\n            if (dupe_found){\n"
+    ],
+    [
+        "if current_email:\n        return bad_request('please use a different email address')\n"
+    ],
+    [
+        "return null;\n        }\n\n        @Override\n        boolean test(StringReader reader) {\n            return tryParse(reader) != null;\n        }\n\n        @Override\n        public void parse(StringReader reader) {\n            parsed = tryParse(reader);\n            if (parsed != null) {\n                reader.accept();\n            }\n            if (reader.canRead()) {\n                reader.assert_(\" \");\n            }\n            finish();\n        }\n\n        @Override\n        public String getParsed() {\n            return parsed;\n        }\n\n        @Override\n        public String representation() {\n            return \"[integer]\";\n        }\n    }\n}\n\n//package com.github.applejuiceyy.figurastockfish.stockfish.tree;\n//\n//import com.github.applejuiceyy.figurastockfish.stockfish.StringReader;\n//\n//public class IntegerNode extends Node<IntegerNode> {\n//    public IntegerNode() {\n//        super(IntegerNode.IntegerParser::new);\n//    }\n//\n//    static class IntegerParser extends NodeParser<IntegerNode> {\n//        String parsed;\n//        public IntegerParser(ParsingContext context, IntegerNode literalNode) {\n//            super(context, literalNode);\n//        }\n//\n//        String tryParse(StringReader reader) {\n//            int p = reader.find(\" \");\n//            String"
+    ],
+    [
+        "return np.diag([sx, sy, 1.0]) @ mat"
+    ],
+    [
+        "if (comboSubjectType.getItemAt(i).equals(subject.getKind())) {"
+    ],
+    [
+        "duration == 1.129352\n"
+    ],
+    [
+        "\n    this.Id = g_oIdCounter.Get_NewId();\n    this.DrawingType = drawing_Paragraph;\n    this.GraphicObj = GraphicObj;\n    this.X = 0;\n    this.Y = 0;\n    this.W = W;\n    this.H = H;\n    this.XOffset = 0;\n    this.YOffset = 0;\n    this.Distance = {\n        L: 0,\n        R: 0,\n        T: 0,\n        B: 0\n    };\n    this.Margin_H = 0;\n    this.Margin_V = 0;\n    this.Page_W = 0;\n    this.Page_H = 0;\n    this.Left_Margin = 0;\n    this.Right_Margin = 0;\n    this.Top_Margin = 0;\n    this.Bottom_Margin = 0;\n    this.ColumnStartX = 0;\n    this.ColumnEndX = 0;\n    this.LineTop = 0;\n    this.ParagraphTop = 0;\n    this.CalcX = 0;\n    this.CalcY = 0;\n    this.LastItemW = 0;\n    this.Parent = Parent;\n    this.DocumentContent = DocumentContent;\n    this.LayoutInCell = false"
+    ],
+    [
+        "return self.get_body_params().get('DamageImageLists')\n"
+    ],
+    [
+        "playerLocation, 1);\n"
+    ],
+    [
+        "callback.onFailure(\"Failed to save replay: \" + e.getMessage());\n"
+    ],
+    [
+        "ject\")\n"
+    ],
+    [
+        "(ref.name()).append(\"@\").append(ref.version()).toString();\n"
+    ],
+    [
+        "tokens, maxTokens) if self.tokens > 1.0 else maxTokens\n"
+    ],
+    [
+        "set_fast_llm_model(\"gpt-3.5-turbo-test\")\n"
+    ],
+    [
+        "    if x == 1:\n"
+    ],
+    [
+        "    digits = [i for i in arr if 1 <= i <= 9]\n"
+    ],
+    [
+        "log.info(f\"Write data to cassandra table {self.cassandra_table} with index {index}\")\n        else:\n            self.log.info(f\"Write data to cassandra table {self.cassandra_table}\")"
+    ],
+    [
+        "\n  return result;\n"
+    ],
+    [
+        "\n            }\n"
+    ],
+    [
+        "{\n        if (event instanceof AuthenticationSuccessEvent || event instanceof InteractiveAuthenticationSuccessEvent) {\n            logger.log(new IamAuthenticationSuccessEvent(event));\n        }\n    }\n"
+    ],
+    [
+        "documentDAO.getCountDocument();\n    }\n"
+    ],
+    [
+        "    def all_users(self):\n        "
+    ],
+    [
+        "return np.ones(X.shape[0])"
+    ],
+    [
+        "(point.getX(), point.getY());\n        }\n"
+    ],
+    [
+        "return true;\n    }\n"
+    ],
+    [
+        " return __awaiter(this, void 0, void 0, function () {\n    var _a, _b, data;\n    return __generator(this, function (_c) {\n        switch (_c.label) {\n            case 0: return [4 /*yield*/, axios_1[\"default\"].post(\"http://example.com\", \"functionId=initPetTown&body=\" + escape(JSON.stringify({ version: 2, channel: \"app\" })) + \"&appid=wh5&loginWQBiz=pet-town&clientVersion=9.0.4\", {\n                    headers: {\n                        'Cookie': cookie,\n                        \"User-Agent\": TS_USER_AGENTS_1[\"default\"],\n                        'Host': \"api.m.jd.com\",\n                        \"Content-Type\": \"application/x-www-form-urlencoded\"\n                    }\n                })];\n            case 1:\n                data = (_c.sent()).data;\n                return [2 /*return*/, (_b = (_a = data.result) === null || _a === void 0 ? void 0 : _a.shareCode) !== null && _b !== void 0 ? _b : 'null'];\n        }\n    });\n}); }\n"
+    ],
+    [
+        "_site = site_p;\n"
+    ],
+    [
+        "sionResponse = (ShowApiVersionResponse) o;\n"
+    ],
+    [
+        "_add_rows_one_by_one(self.embeddings)\n"
+    ],
+    [
+        "if (splits.length > 1) {\n      this.userNameBoxes.push(this.insertUsernameField(\"name2\", splits[1], grid));\n    }\n"
+    ],
+    [
+        "session_id, kernel_id = self.create_session('kspec_bar')\n"
+    ],
+    [
+        "for (let c = 0x80; c < 0xC0; c++) {\n\t\t\t\tbuffer[(b - 0xA0) * (0xC0 - 0x80) * 3 + (c - 0x80) * 3] = a;\n\t\t\t\tbuffer[(b - 0xA0) * (0xC0 - 0x80) * 3 + (c - 0x80) * 3 + 1] = b;\n\t\t\t\tbuffer[(b - 0xA0) * (0xC0 - 0x80) * 3 + (c - 0x80) * 3 + 2] = c;"
+    ],
+    [
+        "if 'bankcard_ext_info' in d:\n            o.bankcard_ext_info = d['bankcard_ext_info']\n"
+    ],
+    [
+        "self.car.center = self.center\n        self.car.velocity = Vector(6, 0)\n"
+    ],
+    [
+        "\n        for(var i = 1; i < l.length - 1; i++){\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "self.client.post.assert_called_with(\n            self.client.post.return_value.url,\n            json=dict(service_plan_guid=\"service_plan_guid\", organization_guid=\"organization_guid\"),\n        )\n"
+    ],
+    [
+        "{\n        return this.value;\n    }\n"
+    ],
+    [
+        "{\n        baos.write(b);\n    }\n"
+    ],
+    [
+        "payload = \"--BEGIN-REQUEST--\"\n        mocker.patch(MODULE_PATH + 'ome_application_certificate.get_resource_parameters',\n                     return_value=(\"POST\", \"ApplicationService/Actions/ApplicationService.UploadCertificate\", payload))\n        ome_default_args.update({\"command\": \"upload\", \"upload_file\": \"/path/certificate.cer\"})\n        ome_response_mock.success = False\n        result = self.execute_module(ome_default_args)\n        assert result['msg'] == \"Failed to upload application certificate.\"\n"
+    ],
+    [
+        " = SomeSequence\n"
+    ],
+    [
+        "buffer.append(significand);\n                } else {"
+    ],
+    [
+        "modeloService.validarExclusaoModelo(id);\n"
+    ],
+    [
+        "while (self.deferredFns.length && self.deferredFns[0].time <= self.defer.now) {\n      self.deferredFns.shift().fn();\n    }\n"
+    ],
+    [
+        "c -> PackageRef.builder().purl(c.getPurl()).build())));\n"
+    ],
+    [
+        "int red = ColorUtils.redFromArgb(argb);\n"
+    ],
+    [
+        "{\n  next(\"/not-found/\" + draft_id);\n}\n"
+    ],
+    [
+        " \n            result.append(number)\n"
+    ],
+    [
+        "interval = setInterval(display, 1000);\n"
+    ],
+    [
+        "get(metric, None)"
+    ],
+    [
+        "self.conn = sqlite3.connect(mbtiles)\n        self.outdir = outdir\n        self.origin = origin\n"
+    ],
+    [
+        "mDiracUtils.setMode((boolean) newValue);"
+    ],
+    [
+        "func_type(function() {});\n"
+    ],
+    [
+        "VERTEX))"
+    ],
+    [
+        "; }\n"
+    ],
+    [
+        "@Override\n    public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {\n        tooltip.add(LocalizeUtils.slow(2.5));\n    }\n\n    @Override\n    public void getSubItems(ItemGroup group, NonNullList<ItemStack> items) "
+    ],
+    [
+        "\n        operand[count] = Math.pow(operand[count], operand[count + 1]);\n"
+    ],
+    [
+        "# ensure kernel still considered running\n"
+    ],
+    [
+        "\n        if (n % 2 == 1) odds.add(n);\n"
+    ],
+    [
+        " //if value is a number and is an integer\n\t\t\tresult.push(value);\n"
+    ],
+    [
+        "optimize(note_array, e)\n"
+    ],
+    [
+        "DecisionTreeValidator.validate_tree(decision_tree)\n"
+    ],
+    [
+        "var currentPathname = window.location.pathname;\n"
+    ],
+    [
+        "Progress progress = (Progress) msg.obj;\n                mUploadProgressListener.onProgress(progress.currentBytes, progress.totalBytes, progress.progress);\n"
+    ],
+    [
+        "customer2.getSurname().equals(customer.getSurname())) {\n"
+    ],
+    [
+        "if fine_label:\n                    y.append(tbl[b'fine_labels'])\n                else:\n                    y.append(tbl[b'coarse_labels'])\n"
+    ],
+    [
+        "IvimModelMIX(gtab, bounds=bounds_mm, initial_guess=initial_guess_mm, rescale_units=rescale_units)\n"
+    ],
+    [
+        "if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {\n"
+    ],
+    [
+        "userToUpdate = user2;\n                userToUpdate.setId(customer.getId());\n                userToUpdate.setPassword(customer.getPassword());\n                userToUpdate.setEmail(customer.getEmail());\n                userToUpdate.setName(customer.getName());\n                userToUpdate.setSurName(customer.getSurName());\n                userToUpdate.setBirthYear(customer.getBirthYear());\n                userToUpdate.setTc(customer.getTc());\n            }\n            return;\n        }\n        System.out.println(\"Customer can not found.\");\n    }\n\n    @Override\n    public void updateUser(Customer customer) {\n        Customer userToUpdate = null;\n        for (Customer user2 : customers) {\n            if (user2.getId() == customer.getId()) {\n"
+    ],
+    [
+        "\n  return prev[3];\n"
+    ],
+    [
+        "ShortVideoModel.getInstance(this).loadDefaultVideo();\n"
+    ],
+    [
+        "oArray([])).to.be.a('array');\n"
+    ],
+    [
+        "@Override\n    public void initialize(ExtensionContext context) "
+    ],
+    [
+        "checkUsername() {\n    let username = this.getUsername();\n    document.querySelector(\"wizard\").canAdvance = !!username;\n  }"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "# extract features from all models\n"
+    ],
+    [
+        "crc16(key, startHashtag + 1, endHashtag);\n"
+    ],
+    [
+        "if (type == String.class) {\n            field.set(object, value);\n        } else {\n            Object result = TypeUtil.convert(value, type);\n"
+    ],
+    [
+        "{\n        try (AutoCloseableLock auto = AutoCloseableLock.acquire(lock)) {\n            super.clear();\n            notEmpty.signalAll();\n            notFull.signalAll();\n        }\n    }\n"
+    ],
+    [
+        "    # Your code goes here\n"
+    ],
+    [
+        "&& RealCameraCore.isActive()) {\n"
+    ],
+    [
+        "        self.assertTrue(setup_component(self.hass, 'sensor', {\n            'sensor': {'platform': 'rfxtrx'}}))"
+    ],
+    [
+        "get_model_class(model.arch)\n"
+    ],
+    [
+        " \n            return y\n"
+    ],
+    [
+        "update(f)\n"
+    ],
+    [
+        "{\n\t\tpainter.setPaintColor( color ); \n\t}\n"
+    ],
+    [
+        "pos_sum, [2, 4, 0])\n"
+    ],
+    [
+        "\n\treturn opens === 0;\n"
+    ],
+    [
+        "\"\"\"\n        Initialize P6MFuncArray\n        \"\"\"\n"
+    ],
+    [
+        "vis_root, ann[\"images\"][0])\n"
+    ],
+    [
+        "        return cls(**kwargs)"
+    ],
+    [
+        "modelMapper.getMapper().map(enderecoForm, Endereco.class);\n"
+    ],
+    [
+        "\n            dic[i] += 1\n"
+    ],
+    [
+        "function checkiFrame()"
+    ],
+    [
+        "for (int icc=0; icc<nc; ++icc)\n            fbm[icc] = new FloatByteMap(f[icc]);\n"
+    ],
+    [
+        "obj = tempfile.NamedTemporaryFile(delete=False)\n        self.assertTrue(self.fs.get_object(obj.name))\n        obj.close()\n        self.assertTrue(self.fs.get_object(obj.name))\n"
+    ],
+    [
+        "while (child) {\n            child.refresh();\n            child = child.traverseNextNode(true, null, true);\n        }\n"
+    ],
+    [
+        "start():\n            print(e)\n"
+    ],
+    [
+        "def isInt(value):\n  "
+    ],
+    [
+        "flRoot = Math.sqrt(fl);\n"
+    ],
+    [
+        "function uncordonNode() "
+    ],
+    [
+        "return new AnalysisTaskWrapper(this.inst.calculate(), b);\n"
+    ],
+    [
+        "\n        new PUIGeneric.SetImageTask(this, true).execute(AppRunnerSettings.get().project.getStoragePath() + File.separator + imagePath);\n"
+    ],
+    [
+        "(dao.allComposers()).select(c -> c.id() == id).getFirst();\n"
+    ],
+    [
+        "public boolean isReplicatedOnly() {\n        return replicatedOnly;\n    }\n"
+    ],
+    [
+        "else {\n            "
+    ],
+    [
+        "v, self.tag)\n"
+    ],
+    [
+        "\n        Connection connection = new ActiveMQConnectionFactory(\"tcp://localhost:61616\").createConnection();\n        connection.start();\n        Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);\n"
+    ],
+    [
+        "read_csv_file(dir_file=self.dir, column_mapping=COLUMN_MAPPING)\n"
+    ],
+    [
+        "float32) for i in yuv)\n"
+    ],
+    [
+        "req.getDependencies() != null && !req.getDependencies().isEmpty();\n"
+    ],
+    [
+        "DetailedResults['Accounts'] = detailed_accounts\n"
+    ]
+]

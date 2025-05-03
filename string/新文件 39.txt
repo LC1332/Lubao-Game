@@ -1,0 +1,1 @@
+{"prefix": "import scraperwiki\nfrom BeautifulSoup import BeautifulSoup\nimport dateutil.parser\nfrom datetime import datetime\nimport re\n\n\n\ndef strip_tags(html):\n    ", "keywords": "\"def strip_tags(html):\" \"import scraperwiki\" \"from BeautifulSoup import BeautifulSoup\" \"import dateutil.parser\""}

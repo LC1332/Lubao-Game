@@ -1,0 +1,77 @@
+根据Code，结果图片，向我更详细的解释 分析结果 中的内容
+
+# Code
+
+```python
+from scipy.stats import laplace
+
+pl_train = pl.read_parquet(train_parquets, columns=["date_id", "time_id", "symbol_id", 'weight']+responder_cols)
+
+hist, bin_edges = np.histogram(pl_train['weight'].to_numpy(), bins=100)
+
+cut_labels = (bin_edges[:-1] + bin_edges[1:]) / 2
+cut_labels = ["0"] + [str(x) for x in cut_labels] + [str(bin_edges[-1])]
+
+pl_train = pl_train.with_columns(pl.col('weight').cut(bin_edges, labels=cut_labels).alias('weight_cut'))
+
+for resp_col in responder_cols:
+
+    N, bins = np.histogram(pl_train[resp_col].to_numpy(), bins=100, density=True)
+    loc, scale = laplace.fit(pl_train[resp_col].to_numpy())
+    x_vals = (bins[:-1] + bins[1:]) / 2
+
+    resp_bin = pl_train.group_by('weight_cut').agg([
+        pl.col(resp_col).mean().alias(f'{resp_col}_mean'),
+        pl.col(resp_col).std().alias(f'{resp_col}_std'),
+        pl.col(resp_col).count().alias(f'{resp_col}_count'),
+        ((pl.col(resp_col) - loc)/scale).abs().mean().alias(f'{resp_col}_zscore')
+    ]).sort('weight_cut')
+    
+    x_ticks = [float(x) for x in resp_bin['weight_cut']]
+
+    fig, axes = plt.subplots(1, 4, figsize=(20, 4))
+    axes[0].scatter(x_ticks, resp_bin[f'{resp_col}_mean'] )
+    axes[0].set_ylim(-0.05, 0.05)
+    axes[0].set_title(f'{resp_col}_mean')
+    axes[0].set_ylabel(f'{resp_col}_mean')
+
+    axes[1].scatter(x_ticks, resp_bin[f'{resp_col}_std'] )
+    axes[1].set_title(f'{resp_col}_std')
+    axes[1].set_ylabel(f'{resp_col}_std')
+
+    axes[2].scatter(x_ticks, resp_bin[f'{resp_col}_zscore'] )
+    axes[2].set_title(f'{resp_col}_zscore')
+    axes[2].set_ylabel(f'{resp_col}_zscore')
+
+    axes[3].plot(x_vals, laplace.pdf(x_vals, loc=loc, scale=scale), 'r-', lw=2, alpha=0.6, label='laplace pdf')
+    axes[3].bar(x_vals, N, alpha=0.3, width=x_vals[2]-x_vals[1], color='b', label='Histogram')
+    axes[3].legend()
+    axes[3].set_title(f"{resp_col} | loc={loc:.4f}; scale={scale:.4f}")
+    axes[3].grid(True, ls="--")
+    axes[3].set_xlabel(resp_col)
+    axes[3].set_ylabel('Density')
+
+    for ax in axes[:-1]:
+        ax.grid(True, ls="--")
+        ax.set_xlabel("weights")
+        ax_r = ax.twinx()
+        ax_r.bar(x_ticks, resp_bin[f'{resp_col}_count'], alpha=0.3, width=x_ticks[2]-x_ticks[1], color='k', label='Count')
+        ax_r.legend()
+        ax.set_xlim(0.1, 6)
+
+    fig.tight_layout()
+    plt.show()
+```
+
+# 分析结果
+
+```
+Weights ~ Responders¶
+It seems that higher weights is related to lower dispersion of responders, especially for responder_6. Assume weight is the weight of instrument in a portfolio and responder_6 is some kind of return, this implies that a higher weight is applied if the expected return is more stable.
+```
+
+解释各张图里面蓝色散点和灰度的直方图分别表示什么。
+
+解释std vs. weights 是怎么计算的
+
+这里分析结果说随着weights的增大 std在下降，但是从第一张图上看，weights大的时候mean的散点波动很剧烈 这是为什么

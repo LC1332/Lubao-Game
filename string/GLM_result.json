@@ -1,0 +1,1694 @@
+[
+    [
+        "resize(images, new_height, new_width, is_flow=False)\n"
+    ],
+    [
+        "int alphaBits = (int) lsbBitInputStream.readBits(2);\n"
+    ],
+    [
+        "\n}"
+    ],
+    [
+        "try {\n                    newCtx = MessageHelper.cloneMessageContext(synCtx);\n                } catch (AxisFault e) {\n                    handleException(\"Error cloning the message context\", e);\n                    return;\n                }\n"
+    ],
+    [
+        "indexer.index_document(code_doc)\n"
+    ],
+    [
+        "    def guide_classify(self, xs, ys=None):\n       "
+    ],
+    [
+        "result.setExistingBranchDeleteError(e.getMessage());\n"
+    ],
+    [
+        "     name=\"prefetch-with-select-related\"),\n"
+    ],
+    [
+        "coin_to_asset[\"ETH\"]][\"position\"][\"leverage\"], indent=2))\n"
+    ],
+    [
+        "if (i % 5 == 0) {\n"
+    ],
+    [
+        "        return getattr(self._state, \"transactions\", [])\n\n    def delete(self, key):\n        if self.in_transaction:\n            self.current_transaction._push_keys([key])\n            return self.adapter.delete(key)\n\n        with self._bust([key]):\n            return self.adapter.delete(key)"
+    ],
+    [
+        ".add(Prompt.of(\"Explain\", \"help me enhance the readability of the following code snippet, without adding any additional information except for the optimized code. Here is the code snippet:{"
+    ],
+    [
+        "ChatGPTAgent(\n        token=os.environ[\"CHATGPT_TOKEN\"], start_chat=start_chat, model=model\n    )\n"
+    ],
+    [
+        "global gitNoteHome, gitNoteNoteHome, userName, password, gitUrl, gitExist, myGitNote, updateStatus\n"
+    ],
+    [
+        "void checkKey(K key) {\n    }\n"
+    ],
+    [
+        "# if it is not a json, then it is a key-value pair\n                k, v = re.split('=', value, maxsplit=1)\n"
+    ],
+    [
+        "{\n    setCurrentPage(page);\n  }\n"
+    ],
+    [
+        "if (!event.ctrlKey && !event.altKey && !event.metaKey) {\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "function Start ()\n{\n    // Set the target intensity to the high intensity.\n    targetIntensity = highIntensity;\n}"
+    ],
+    [
+        "self.engine = engine\n        self.in_assign = False\n"
+    ],
+    [
+        "        record.getOffset() + record.getLength() - 1);\n"
+    ],
+    [
+        "String dembedFooter = mainConfig.getDembedFooter();\n"
+    ],
+    [
+        "l(WebKit.WKPermissionDecisionDeny, 2)\n"
+    ],
+    [
+        "    for server in cluster.values():\n        manager.create_server(server)"
+    ],
+    [
+        "function Console(consoleId, motd) {\n      this.consoleObj = document.getElementById(consoleId);\n      this.inputLine = null;\n      this.inputMode = Enum.consoleInputMode.NONE;\n      this.shell = new Shell(this);\n      this.lastDiv = null;\n\n      //Print the MOTD.\n      this.print(motd, Enum.textColorClass.WHITE);\n    }\n"
+    ],
+    [
+        "return stack.join('\\n');\n"
+    ],
+    [
+        "void promptDenied();\n"
+    ],
+    [
+        "characterCount++;\n"
+    ],
+    [
+        "function Node(value) {\n  // -------------------- Your Code Here --------------------\n  \n  \n\n\n  // -------------------- End Code Area ---------------------\n}\n\n\n// `DoublyLinkedList` constructor\n// The `head` and `tail` default to null when initialised\nfunction DoublyLinkedList() {\n  // -------------------- Your Code Here --------------------\n  \n  \n\n\n  // -------------------- End Code Area ---------------------\n\n  \n  // The `insertBefore` method takes a value and a node as argument and inserts a new node containing the argument value before the argument node\n  this.insertBefore = function (value, node) {\n    // -------------------- Your Code Here --------------------\n    \n    \n\n\n    \n    \n    // -------------------- End Code Area ---------------------\n  }\n\n\n  // The `insertBefore` method takes a value and a node as argument and inserts a new node containing the argument value after the argument node\n  this.insertAfter = function (value, node) {\n    // -------------------- Your Code Here --------------------\n    \n    \n\n\n    \n    \n    // -------------------- End Code Area ---------------------\n  }\n}\n\n\nmodule.exports = {\n  Node: Node,\n  DoublyLinkedList: DoublyLinkedList\n}\n\n\n// Doubly Linked List\n\n\n// `Node` constructor that can initialize with a value\n// If not given a value when initializing, `value` defaults to null\n// `left`"
+    ],
+    [
+        "def md5_hex(message):\n    "
+    ],
+    [
+        "new RtcMsg(subject, application, content, to, RtcMsgType.RTC_MSG)\n        );\n"
+    ],
+    [
+        "for start, end in zip(span_starts, span_ends):\n            candidate_mentions.append(text[start : end + 1])\n"
+    ],
+    [
+        "\n            group += paren_string[i];\n"
+    ],
+    [
+        "\n    return True"
+    ],
+    [
+        "while (i < length) {\n            String str2 = strArr[i];\n            if (i == 0) {\n                stringBuilder = stringBuilder + \" and (bucket_display_name=\\\"\" + str2 + \"\\\"\";\n            } else {\n                stringBuilder = stringBuilder + \" or bucket_display_name=\\\"\" + str2 + \"\\\"\";\n            }\n            i++;\n        }\n        stringBuilder = stringBuilder + \")\";\n"
+    ],
+    [
+        "def adjust_learning_rate(optimizer, new_lr):\n    "
+    ],
+    [
+        "{\n        ObjectGraph.create(new MyModule()).inject(this);\n    }\n"
+    ],
+    [
+        "\n}"
+    ],
+    [
+        "while (i < n && typePath.charAt(i) >= '0' && typePath.charAt(i) <= '9') {\n                    typeArg = typeArg * 10 + typePath.charAt(i++) - '0';\n                }\n                out.put11(TYPE_ARGUMENT, typeArg);\n            } else {\n                throw new IllegalArgumentException();\n            }\n        }\n        out.data[0] = (byte) (out.length / 2);\n        return new TypePath(out.data, 0);\n    }\n\n    /**\n     * Converts a type path in string form, in the format used by\n     * {@link #toString()}, into a TypePath object.\n     *\n     * @param typePath\n     *            a type path in string form, in the format used by\n     *            {@link #toString()}. May be null or empty.\n     * @return the corresponding TypePath object, or null if the path is empty.\n     */\n    public static TypePath fromString(final String typePath, final Type type) {\n        if (typePath == null || typePath.length() == 0) {\n            return null;\n        }\n        int n = typePath.length();\n        ByteVector out = new ByteVector(n);\n        out.putByte(0);\n"
+    ],
+    [
+        "orderBook.showLevels();\n\t\t\n\t\t/*\n\t\t   200 @    150.44 (orders=1)\n\t\t   500 @    149.44 (orders=1)\n\t\t-------- \n\t\t*/\n\t\t\n\t\torderBook.showOrders();\n\t\t\n\t\t/*\n\t\t   200 @    150.44 (id=1)\n\t\t   500 @    149.44 (id=2)\n\t\t-------- \t\t\t  \n\t\t*/\n\t\t\n\t\torderBook.createLimit(String.valueOf(++orderId), orderId, Side.SELL, 100, 153.24, TimeInForce.GTC);\n\t\t\n\t\t//"
+    ],
+    [
+        "\n        with mocked_gateway:\n            response = self.request('POST', '/api/kernels/' + kernel_id + '/interrupt')\n            self.assertEqual(response.status_code, 204)\n"
+    ],
+    [
+        "TimeConverter.toTicks(delay, unit),\n                        TimeConverter.toTicks(period, unit))\n        );\n"
+    ],
+    [
+        "apply_stft(denoised_estimate, self.args.tester.blind_bwe.NFFT)\n"
+    ],
+    [
+        "state_load(\"qrcodes\", state)\n"
+    ],
+    [
+        "parameter.setInitImage("
+    ],
+    [
+        ", \"Command {"
+    ],
+    [
+        "while (match = getterRegex.exec(injectedScriptSource)) {\n      getters.add(match[0].substring(1));\n    }\n"
+    ],
+    [
+        "get();\n"
+    ],
+    [
+        "    try:\n      other = as_dimension(other)\n    except (TypeError, ValueError):\n      return NotImplemented\n    if self._value is None or other.value is None:\n      return None\n    return self._value == other.value"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "instance.getCore().severe(\"Cannot inject proxy address\", exception);\n"
+    ],
+    [
+        "parsedReport.getAverages().get(test.getTestName())\n                    );\n"
+    ],
+    [
+        "install(new RemoteQueryCancellationModule());\n    }\n"
+    ],
+    [
+        "item(), 1))\n"
+    ],
+    [
+        "512, 512], [1024, 1024]]\n"
+    ],
+    [
+        "#TODO: This is a bit of a hack, but it works for now.\n"
+    ],
+    [
+        "  return block(x, 'h%d' % layer, past=past, params=params, train=train, attn=attn, **kwargs)\n"
+    ],
+    [
+        "\n\t\t} else if (i % 4 == 0){\n"
+    ],
+    [
+        "\n            while (x % i == 0) {\n"
+    ],
+    [
+        "for (int i = 0; i < K; i++) {\n            st = new StringTokenizer(br.readLine());\n            int A = Integer.parseInt(st.nextToken());\n            int B = Integer.parseInt(st.nextToken());\n            int C = Integer.parseInt(st.nextToken());\n            rules[i] = new Rule(A, B, C);\n        }\n"
+    ],
+    [
+        "if pushdomains:\n                        for domain in pushdomains:\n                            domain.popState()\n                    if not queue:\n                        return\n                    variable, values, pushdomains = queue.pop()\n                    if pushdomains:\n                        for domain in pushdomains:\n                            domain.popState()\n                    continue"
+    ],
+    [
+        ".prototype.map.call(months, function(month) {\n        return month.querySelector('.month-day').id;\n      }).join(', ');\n    }\n"
+    ],
+    [
+        "{\n    if(bytes == 0) return '0 Bytes';\n    var k = 1024, // or 1024 for binary\n        dm = decimals + 1 || 3,\n        sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],\n        i = Math.floor(Math.log(bytes) / Math.log(k));\n    return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];\n}"
+    ],
+    [
+        "find_by_chain_id(1) == chain.chains[0]\n    assert chain.find_by_chain_id(2) == chain.chains[1].cases[\"case1\"]\n    assert chain.find_by_chain_id(3) == chain.chains[1].cases[\"case2\"].chains[0]\n    assert chain.find_by_chain_id(4) == chain.chains[1].cases[\"case2\"].chains[1]\n    assert chain.find_by_chain_id(5) == chain.chains[1].default_case\n    assert chain.find_by_chain_id(6) is None"
+    ],
+    [
+        "for (int i = 0; i < len; i++) {\n            m1 += adapter1.getDouble(data1, i);\n            m2 += adapter2.getDouble(data2, i);\n        }\n"
+    ],
+    [
+        "box.get(object.getName()));\n        bindings.remove(key);\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "public String getName() "
+    ],
+    [
+        "\n            } else if (currentGrade > 1.3f) {\n"
+    ],
+    [
+        "\"\"\"\n        Get the 'tensorflow.dtype' equivalent to this MLRun data type.\n\n        :return: The 'tensorflow.dtype' equivalent to this MLRun data type.\n\n        :raise ValueError: If tensorflow is not supporting this data type.\n        \"\"\"\n"
+    ],
+    [
+        "{\n        TweetListFragment fragment = new TweetListFragment();\n        Bundle args = new Bundle();\n        args.putInt(ARG_COLUMN_COUNT, columnCount);\n        fragment.setArguments(args);\n        return fragment;\n    }\n"
+    ],
+    [
+        "\n\tvar vowels = ['a', 'e', 'i', 'o', 'u'];\n"
+    ],
+    [
+        "orderedDish.setStatus(status);\n"
+    ],
+    [
+        "CONTEXT]:"
+    ],
+    [
+        " //end of group\n"
+    ],
+    [
+        "if (user.get().getRole().equals(role)) {\n            events = getUserEvents(userId);\n        }\n"
+    ],
+    [
+        "// Our service worker won't work if PUBLIC_URL is on a different origin\n    // from what our page is served on. This might happen if a CDN is used to\n    // serve assets; see https://github.com/facebookincubator/create-react-app/issues/2374\n    if (publicUrl.origin !== window.location.origin) {\n      // Our service worker won't work if PUBLIC_URL is on a different origin\n      // from what our page is served on. This might happen if a CDN is used to\n      // serve assets; see https://github.com/facebookincubator/create-react-app/issues/2374\n      return\n    }\n"
+    ],
+    [
+        "public Long getSimCardId() {\n        return simCardId;\n    }\n"
+    ],
+    [
+        "private static void preparingCloudResources(Context context) {\n        Set<Map.Entry<String, String>> entries = SCENE_RESOURCES.entrySet();\n        for (Map.Entry<String, String> entry : entries) {\n            String key = entry.getKey();\n            String value = entry.getValue();\n            uploadFile(context, key, value);\n        }\n    }\n"
+    ],
+    [
+        "if (argv._.length > 0) {\n    params.push(argv._[0]);\n}"
+    ],
+    [
+        "locust_task_weight == 1\n"
+    ],
+    [
+        "\n\n}"
+    ],
+    [
+        "function removeMarkdownStar (s) {\n  if (s.indexOf('* ') === 0) {\n    return s.substring(2)\n  }\n  return s\n}"
+    ],
+    [
+        "pop('package_name', base_name)\n"
+    ],
+    [
+        "infer(query)\n"
+    ],
+    [
+        ".get(uuid).forEach(request -> request.getFuture().complete(response));\n"
+    ],
+    [
+        "    return arr / linalg.norm(arr, axis=axis, keepdims=True)\n"
+    ],
+    [
+        "Iterator<Script> getScripts();\n"
+    ],
+    [
+        "(pointer.getNext() != pointer2) {\n"
+    ],
+    [
+        "return name.startswith('_')\n"
+    ],
+    [
+        "{ self.monitorClient.info(self._updateInfo.bind(self)) }\n"
+    ],
+    [
+        "try:\n            s += next(i)\n        except StopIteration:\n            return s\n        for bs in i:\n            s += self\n            s += bs\n"
+    ],
+    [
+        "if(!isGM) {\n\t\tif(LOG) console.log(LOG_PREFIX+'Greasemonkey API not found. Using native GM functions.');\n\t\tGM_getValue = function(name, def) { return localStorage.getItem(name) || def; }\n\t\tGM_setValue = function(name, value) { return localStorage.setItem(name, value); }\n\t\tGM_deleteValue = function(name) { return localStorage.removeItem(name); }\n\t\tGM_xmlhttpRequest = function(details) {\n\t\t\tvar xhr = new XMLHttpRequest();\n\t\t\txhr.open(details.method, details.url, true);\n\t\t\tif(details.headers) for(var i = 0; i < details.headers.length; i++) xhr.setRequestHeader(details.headers[i][0], details.headers[i][1]);\n\t\t\txhr.onreadystatechange = function() {\n\t\t\t\tif(xhr.readyState == 4) {\n\t\t\t\t\tif(details.onload) details.onload({responseText:xhr.responseText, responseXML:xhr.responseXML, status:xhr.status, statusText:xhr.statusText});\n\t\t\t\t}\n\t\t\t}\n\t\t\txhr.send(details.data);\n\t\t}\n\t}\n}\n"
+    ],
+    [
+        "n degrees * radConst;\n"
+    ],
+    [
+        "\n        if (selected instanceof Item) {"
+    ],
+    [
+        "show_single_comment(1, session)\n"
+    ],
+    [
+        "@Override\n    public String getMystromFriendlyName(String itemName) {\n        MyStromEcoPowerBindingConfig config = (MyStromEcoPowerBindingConfig) bindingConfigs.get(itemName);\n        return config != null ? config.mystromFriendlyName : null;\n    }\n"
+    ],
+    [
+        "end('okay');\n  }"
+    ],
+    [
+        ""
+    ],
+    [
+        "    var new_lst = [];\n"
+    ],
+    [
+        "] cmdLenNew = new byte[2];\n                cmdLenNew[0] = (byte) (ndefLenIntRequest >> 8);\n                cmdLenNew[1] = (byte) (ndefLenIntRequest & 0xFF);\n"
+    ],
+    [
+        "{\n  var fruit = fruitInput.value();\n  var total = totalInput.value();\n  var ref = database.ref(\"fruits\");\n  var data = {\n    fruit: fruit,\n    total: total\n  };\n  ref.push(data);\n}"
+    ],
+    [
+        "(block.getLevel().isClientSide){\n"
+    ],
+    [
+        "    page = request.args.get('page', 1, type=int)\n    per_page = min(request.args.get('per_page', 10, type=int), 100)\n    data = User.to_collection_dict(User.query, page, per_page, 'api.get_users')\n    return jsonify(data)\n"
+    ],
+    [
+        "urlpatterns)\n"
+    ],
+    [
+        "building_type == 'residential':"
+    ],
+    [
+        "        raise NotImplementedError('Must define log function to use this base class')"
+    ],
+    [
+        "        // Write your code here\n"
+    ],
+    [
+        "ocessing data for device %s', device.id)\n"
+    ],
+    [
+        "= engineersService.findOne(id);\n"
+    ],
+    [
+        "});\n"
+    ],
+    [
+        "ray[n];\n"
+    ],
+    [
+        "etwork;\n    }\n"
+    ],
+    [
+        "return decode(value, getDefaultCharset());\n"
+    ],
+    [
+        "\n        return new HeavyWeightWindow(getParentWindow(owner));\n    }\n\n    /**\n     * Creates the Component to use as the parent of the <code>Popup</code>.\n     * The default implementation creates a <code>Window</code>, subclasses\n     * should override.\n     */"
+    ],
+    [
+        "return \"installed\"\n"
+    ],
+    [
+        "if (method === \"read\") {\n        resp = TAP.getList(prefix + \"-\" + model.config.adapter.collection_name);\n    } else if (method === \"create\") {\n        resp = TAP.getList(prefix + \"-\" + model.config.adapter.collection_name);\n        resp.push(model.toJSON());\n        TAP.setList(prefix + \"-\" + model.config.adapter.collection_name, resp);\n    } else if (method === \"update\") {\n        resp = TAP.getList(prefix + \"-\" + model.config.adapter.collection_name);\n        var id = model.get(\"id\");\n        var index = _.findIndex(resp, function(item) {\n            return item.id === id;\n        });\n        resp[index] = model.toJSON();\n        TAP.setList(prefix + \"-\" + model.config.adapter.collection_name, resp);\n    } else if (method === \"delete\") {\n        resp = TAP.getList(prefix + \"-\" + model.config.adapter.collection_name);\n        var id = model.get(\"id\");\n        var index = _.findIndex(resp, function(item) {\n            return item.id === id;\n        });\n        resp.splice(index, 1);\n        TAP.setList(prefix + \"-\" + model.config.adapter.collection_name, resp);\n    }\n"
+    ],
+    [
+        "+= product.get().getValue() * quantidade;\n"
+    ],
+    [
+        "check (sum) {\n    if (!(sum instanceof Buffer)) {\n      throw new Error('sum must be a Buffer')\n    }\n\n    if (sum.length !== SHA256_BYTE_SIZE) {\n      throw new Error('sum must be ' + SHA256_BYTE_SIZE + ' bytes long')\n    }\n\n    return xor(this.sum, sum).toString('hex') === '0000000000000000000000000000000000000000000000000000000000000000'\n  }\n"
+    ],
+    [
+        "if CONF_FEATURE_LIST in config:\n"
+    ],
+    [
+        "initialize(config=config)\n"
+    ],
+    [
+        "{\n  return Buffer.from(input).toString('hex')\n}"
+    ],
+    [
+        "\n            if (n % i == 0 || n % (i + 2) == 0) return false;\n"
+    ],
+    [
+        "runLater(() -> allTags.getItems().setAll(database.comments().getAllTags()));\n"
+    ],
+    [
+        "if __name__=='__main__':\n    with tf.Graph().as_default():\n        a = tf.placeholder(tf.float32, shape=(32,1024,3))\n        net, _ = get_model(a, tf.constant(True))\n        with tf.Session() as sess:\n            init = tf.global_variables_initializer()\n            sess.run(init)\n            b = sess.run(net, feed_dict={a:np.random.rand(32,1024,3)})\n            print(b.shape)"
+    ],
+    [
+        " \n                times += 1\n"
+    ],
+    [
+        "pe)"
+    ],
+    [
+        "run_dinov2_inference(file, model)\n"
+    ],
+    [
+        "flow.getContext());\n"
+    ],
+    [
+        "\n            song.push(1);\n"
+    ],
+    [
+        "set['actions']\n"
+    ],
+    [
+        "def main():\n    "
+    ],
+    [
+        "ntifier;\n    }\n"
+    ],
+    [
+        "    def __repr__(self) -> str:\n    "
+    ],
+    [
+        "JsonHelper json = new JsonHelper(data.getResponse().getBody());\n"
+    ],
+    [
+        "toStr(methodInfo.getActionInfo().getBatchSql()));\n"
+    ],
+    [
+        "{\n\tMagicPuzzleTrail.push({ X: MouseX, Y: MouseY });\n\tif (MagicPuzzleTrail.length > MagicPuzzleTrailLimit) MagicPuzzleTrail.shift();\n}\n"
+    ],
+    [
+        "# Extrapolate\n        D1 = abs(results[-1]-results[-2])\n        D2 = abs(results[-2]-results[-3])"
+    ],
+    [
+        "function doSave()"
+    ],
+    [
+        " else{\n        return prod;\n    }\n"
+    ],
+    [
+        "@SuppressWarnings(\"serial\")\n    private void createSelectMappedStatement(String mappedStatement, SqlSource sqlSource, Class<?> resultType) "
+    ],
+    [
+        " methodLog.setDesc(finishedDesc);\n        methodLog.setStartTime(startTime);\n        methodLog.setEndTime(endTime);\n        methodLog.setTimeConsuming(timeConsuming);\n        methodLog.setMethodName(methodName);\n        methodLog.setAllParams(args);\n        methodLog.setResult(returning);\n        methodLog.setIpAddress(ipAddress);\n        methodLog.setExceptionInfo(exceptionInfo);\n        methodLog.setCreateTime(startTime);\n        methodLog.setMethod(methods);\n        methodLog.setModule(module);\n        if (StringUtils.isNotEmpty(url)) {\n            methodLog.setUrl(url);\n        } else {\n            methodLog.setUrl(request.getRequestURI());\n        }\n        String logOperator = request.getParameter(CommonConstants.FINEELY_LOG_OPERATOR);\n        if (StringUtils.isNoneEmpty(logOperator)) {\n            methodLog.setOperator(logOperator);\n        } else {\n            methodLog.setOperator(\"system\");\n        }\n        methodLogDao.saveLog(methodLog);\n    }\n}\n\nclass MethodLogEntity {\n    private String desc;\n    private LocalDateTime startTime;\n    private LocalDateTime endTime;\n    private double timeConsuming;\n    private String methodName;\n    private String allParams;\n    private String result;\n    private String ipAddress;\n    private String exceptionInfo;\n    private LocalDateTime createTime;\n    private RequestMethod[] method;\n    private String module;\n   "
+    ],
+    [
+        "public void setTabId(int tabId) "
+    ],
+    [
+        "def oneVsAll(X, y, num_labels, the_lambda):\n    # X is a m x n matrix\n    # y is a m x 1 vector\n    # num_labels is an integer\n    # the_lambda is a float\n    # all_theta is a num_labels x (n+1) matrix\n    m, "
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "DEFAULT_API_URL\n"
+    ],
+    [
+        "classify_boundary_nodes(example_graph, nodes)\n"
+    ],
+    [
+        "public abstract String getCanonicalName();\n"
+    ],
+    [
+        "validate_user(user.uid, user.token)\n"
+    ],
+    [
+        "get_header_value_from_response(response, self.rule.HEADER_NAME), \"0\")\n"
+    ],
+    [
+        "    sum = 0\n"
+    ],
+    [
+        "ue;\n    }\n"
+    ],
+    [
+        " {\n  return degrees * radConst;\n}\n"
+    ],
+    [
+        "make_morton3d_descriptor(length)\n"
+    ],
+    [
+        "cookieStore.updateCookies(response);\n"
+    ],
+    [
+        "ap;this._dirtyMaterials=new Set;this._model=a}Object.defineProperty(d.prototype,\"residentLayerCount\",{get:function(){return this._residentGeomRecords.size},enumerable:!0,configurable:!0});Object.defineProperty(d.prototype,\"residentObjectCount\",{get:function(){var a=0;this._residentGeomRecords.forEach(function(b){a+=\nb.size});return a},enumerable:!0,configurable:!0});d.prototype.getDirtyMaterials=function(){return 0<this._dirtyMaterials.size?this._dirtyMaterials:null};d.prototype.clearDirtyMaterials=function(){this._dirtyMaterials.clear()};d.prototype.hasDirtyGeometryRecords=function(){var a=!1;this._dirtyGeomRecords.forEach(function(b){a||b.forEach(function(b){b&&0<b.size&&(a=!0)})});return a};d.prototype.handleUpdate=function(a,b,c){r.assert(this[b],\"ModelDirtySet doesn't know how to process \"+b);return this[b](a,\nc)};d.prototype.shaderTransformationChanged=function(a){var b=this;(a=this._residentGeomRecords.get(a.id))&&a.forEach(function(a,n){(n=b._model.content[q.OBJECT][n])&&n.hasVolativeTransformation()&&a.forEach(function(a"
+    ],
+    [
+        "ncrypt_unprotect_secret(enc_blob)\n"
+    ],
+    [
+        "join_lists(list_data(), list_data2(), 'Description', 'MergedData')\n"
+    ],
+    [
+        "parser.add_argument(\"-c\", \"--config\", metavar=\"FILE\",\n                        help=\"path to config file\")\n"
+    ],
+    [
+        "if (history.done.length > 1000) history.done.shift();\n"
+    ],
+    [
+        "\n\n        q = super().get_es_django_indexable(force_reindexing).prefetch_related(\"tags\").prefetch_related(\"forum\")\n"
+    ],
+    [
+        "attributes()[classname]\n"
+    ],
+    [
+        "hct.getChroma();\n"
+    ],
+    [
+        "get_generic_source(text)\n"
+    ],
+    [
+        "    def create_default_items(self):\n       "
+    ],
+    [
+        "if (typeof Promise.unhandledRejection === 'function') {\n            try {\n                Promise.unhandledRejection(event);\n            } catch (e) {\n            }\n        }\n"
+    ],
+    [
+        "var streamer   = new saxpath.SaXPath(saxParser, '//1test:node', recorder);\n"
+    ],
+    [
+        "mySettingsComponent.isAutoReplaceCode() != settings.autoReplaceCode;\n"
+    ],
+    [
+        "pass\n"
+    ],
+    [
+        "public abstract boolean setStretch (org.drip.spline.stretch.MultiSegmentStretch mss);\n"
+    ],
+    [
+        "\n}"
+    ],
+    [
+        ""
+    ],
+    [
+        "    def test_send(self):\n        "
+    ],
+    [
+        "model.addAttribute(\"newStaff\", staff);\n            return \"staff\";\n        }\n"
+    ],
+    [
+        "constructor() {\n\t\t/**\n\t\t * Map of all markers in the collection. Key is a marker name, value is a {@link module:engine/model/markercollection~Marker}.\n\t\t *\n\t\t * @readonly\n\t\t * @protected\n\t\t * @member {Map.<String, module:engine/model/markercollection~Marker>} module:engine/model/markercollection~MarkerCollection#_markers\n\t\t */\n\t\tthis._markers = new Map();\n\t}\n"
+    ],
+    [
+        "\n        String strongest = \"\";\n"
+    ],
+    [
+        "@Override\n    public String getId() "
+    ],
+    [
+        "public String getProcessName() {\n        return this.processName;\n    }\n"
+    ],
+    [
+        "Main.getLogger().error(\"The callable didn't return a value when trying to run 'joke'\");\n"
+    ],
+    [
+        "public int getFaultCode() {\n        return this.faultCode;\n    }\n"
+    ],
+    [
+        "public Object encode(Object value) throws EncoderException "
+    ],
+    [
+        " (game.getId() == id) {"
+    ],
+    [
+        ""
+    ],
+    [
+        "neg_sum, [2, 0, 4])\n"
+    ],
+    [
+        "\n        }\n"
+    ],
+    [
+        "atureID = function() { return this._sFeatureID; }\n"
+    ],
+    [
+        " \n        words = sentence.split()\n"
+    ],
+    [
+        "try {\n                threads.get(i).join();\n            } catch (InterruptedException e) {\n                throw new RuntimeException(e);\n            }\n"
+    ],
+    [
+        "etail(problem);\n    handleVisible();\n  }\n"
+    ],
+    [
+        ""
+    ],
+    [
+        "user(\"Consider the following recipe explanation:\")\n    recipe_chat.user(recipe_text.content)\n"
+    ],
+    [
+        "\n    for(var i = 0; i < lst.length; i++){\n"
+    ],
+    [
+        "this.onWaitStart();\n"
+    ],
+    [
+        "  (buffer, sender) -> buffer.append(config.getMessages().getHelpCmd().getHelpMessage()));\n"
+    ],
+    [
+        "this.renderToScreen = true;\n}\n"
+    ],
+    [
+        "apnConnection.on('connected', function() {\n      console.log(\"Connected\");\n  });\n"
+    ],
+    [
+        "for (int i = 0; i < expected.length; i++) {\n            sumExpected += expected[i];\n            sumObserved += observed[i];\n        }\n"
+    ],
+    [
+        "parse()\n"
+    ],
+    [
+        "function TranslationPluralHelper() "
+    ],
+    [
+        "void dfs(char[][] board, int x, int y) "
+    ],
+    [
+        "udget, progression } = props;\n"
+    ],
+    [
+        "constructor(instance) {\n    super(instance);\n    this.type = \"container\";\n    this.uid = uid();\n    this.animation = null;\n    this.bounds = new Boundings();\n    this.children = [];\n  }\n"
+    ],
+    [
+        "rmsd_by_chainmap(structure,structure_ref,chainmaps[cl],verbose=False)\n"
+    ],
+    [
+        "      audio.setStreamVolume(AudioManager.STREAM_RING, audio.getStreamMaxVolume(AudioManager.STREAM_RING), AudioManager.FLAG_REMOVE_SOUND_AND_VIBRATE);\n  "
+    ],
+    [
+        "{\n        JdiModelTargetModule module = getTargetModuleIfPresent(name);\n        if (module != null) {\n            changeElements(List.of(module), List.of(), Map.of(), \"Unloaded\");\n        }\n    }\n"
+    ],
+    [
+        "add_constraint(sum_lt_val, ('listvar',))\n"
+    ],
+    [
+        " \n            num--;\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "return Response(\n                generate(),\n                mimetype=\"text/csv\",\n                headers={\n                    \"Content-Disposition\":\n                    \"attachment;filename=%s.csv\" % self.model.__name__.lower()\n                }\n            )"
+    ],
+    [
+        "\n        operand.splice(count + 1, 1);\n"
+    ],
+    [
+        "logger.error(f'Exceeded the number of retries for request {request_id}')\n"
+    ],
+    [
+        "iterator.remove();\n"
+    ],
+    [
+        "generate_registers_I(len(pep))\n"
+    ],
+    [
+        "\n    var result = [];\n"
+    ],
+    [
+        "change_summary(curr)\n"
+    ],
+    [
+        "if (coverSlideDirection != AnimHelper.SLID_DIRECTION_UNKNOWN) {\n"
+    ],
+    [
+        "oob = OOB()\n        self.assertIsNotNone(oob)"
+    ],
+    [
+        "public static int getHomeId(ActionBar actionBar) "
+    ],
+    [
+        "calls.push('nop called');\n"
+    ],
+    [
+        "public static String findPrivate(NestMates f) {\n            "
+    ],
+    [
+        "testUtils.assertTrue(Object.isSealed(el), \"SecureElement should be sealed\");\n"
+    ],
+    [
+        "return ' '.join(html.findAll(text=True))\n"
+    ],
+    [
+        "{\n        return SIZE;\n    }\n"
+    ],
+    [
+        "CHECKBOX.value):\n                dpg.set_value(ID_MCB_CHECKBOX, set_checked)\n            else:\n                on_mcb_check(set_checked)\n        else:\n            dpg.delete_item(ID_MCB_CHECKBOX)\n            dpg.add_image_button(before=ID_MCB_LABEL, tag=ID_MCB_CHECKBOX, texture_tag=TEX_PARTIAL_CHECK, height=19, width=19, callback=lambda: on_mcb_check(init_state=True), show=True)\n            dpg.bind_item_theme(ID_MCB_CHECKBOX, ID_CHECKBOX_THEME)\n\n    # build dialog\n    with dpg.window(label=title, \n                    tag=ID_MODAL,\n                    modal=True, \n                    show=True, \n                    no_title_bar=True, \n                    pos=dpg.get_mouse_pos(local=False), \n                    width=210, \n                    height=320):\n\n        with dpg.group(tag=ID_HEADER, horizontal=False):\n            with dpg.group(horizontal=True):\n                dpg.add_text(field)\n                dpg.add_combo(items=[\"is in\", \"is not in\"], default_value=\"is in\", width=100)\n                # summary_checked = dpg.add_text(\"[2022, 2023]\")\n            # summary_checked = dpg.add_text(\"[2022, 2023"
+    ],
+    [
+        "\n            long current_depth = 0;\n"
+    ],
+    [
+        "display.getMode().name().toLowerCase()));\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "    return ipfshttpclient.connect(daemonMultiaddr)"
+    ],
+    [
+        "\n            }\n"
+    ],
+    [
+        "dto.setUserName(userName);\n"
+    ],
+    [
+        "{\n        return \"Column{\" +\n                \"name='\" + name + '\\'' +\n                \", value=\" + value +\n                '}';\n    }\n"
+    ],
+    [
+        "for i in range(1, 7):\n            e = tkinter.Entry(right_frame, bg='blue', fg='white')\n            name = 'Player' + str(i)\n            e.insert(0, name)\n            e.pack()\n"
+    ],
+    [
+        "solve(evidence=a)\n"
+    ],
+    [
+        " \n        if key > maxValue and value >= key:\n"
+    ],
+    [
+        "get_model(self.config['fix_model'])\n"
+    ],
+    [
+        "for name in fnmatch.filter(filelist, filepat):\n            yield os.path.join(path, name)\n"
+    ],
+    [
+        "add(embedding, i)\n"
+    ],
+    [
+        "if self._root:\n      content += f\"root={self._root}\"\n"
+    ],
+    [
+        "add_result(probility.detach().cpu())\n"
+    ],
+    [
+        "perCore), numCores)\n"
+    ],
+    [
+        "raster.getDataElements(lX, y, predictor);\n"
+    ],
+    [
+        "info(f\"Start Loading packets of {pcap}\")\n"
+    ],
+    [
+        "double exchangeRate = conversion.getExchangeRate();\n"
+    ],
+    [
+        " \n        return True\n"
+    ],
+    [
+        "async function _export(address, format) "
+    ],
+    [
+        "his.canvasHeight = Math.floor(this.canvasWidth / this.pageRatio);\n"
+    ],
+    [
+        "{\n  return name.replace(/\\//g, '\\\\');\n}\n"
+    ],
+    [
+        "Of.number('distance', distance);\n        }"
+    ],
+    [
+        "n this;\n"
+    ],
+    [
+        "{\n        return logbookLifeCycleParameters;\n    }\n"
+    ],
+    [
+        ""
+    ],
+    [
+        "\n      arrayXOR.push(0);\n"
+    ],
+    [
+        "String json = request.getJson();\n"
+    ],
+    [
+        "nn.VectorQuant:\n"
+    ],
+    [
+        "function gen_commit(kmsgs) "
+    ],
+    [
+        "{\n    alert($.avLabel.text);\n}\n"
+    ],
+    [
+        "\"foo\") === false;\n"
+    ],
+    [
+        "while True:\n                string_custom_id = string_custom_ids[index]\n                repr_parts.append(repr(string_custom_id))\n                \n                index += 1\n                if index == limit:\n                    break\n                \n                repr_parts.append(', ')\n                continue"
+    ],
+    [
+        "if is_numeric(x):\n        return \"0x\" + encode_hex(zpad(big_endian_int.serialize(x), 20))\n"
+    ],
+    [
+        "dataset_df[\"symbol\"]):\n            for name in dataset_names:\n                if symbol in raw_datasets[name].frames:\n                    continue\n                raw_datasets[name].append_frame(symbol)\n                raw_datasets[name].save_frames()\n        for name in dataset_names:\n            raw_datasets[name].set_dataset_df()\n            raw_datasets[name].to_hf_datasets()\n    elif mode == \"on-demand\":\n        print(\"Updating list of stocks...\")\n        stocks = Stocks(username=username)\n        stocks.set_dataset_df()\n        stocks.to_hf_datasets()\n"
+    ],
+    [
+        " else {\n"
+    ],
+    [
+        "this.handle1.addClass(handle);\n\t\tif (this.range) {\n\t\t\tthis.handle2.addClass(handle);\n\t\t} else {\n\t\t\tthis.handle2.addClass('hide');\n\t\t}\n"
+    ],
+    [
+        "messageHandler.destroySession(username);\n"
+    ],
+    [
+        "Mapping = {};\n\n  this.add = function add(literal, valueArg) {\n    let node = _root;\n    let value = valueArg;\n    if (value === undefined) {\n      value = literal;\n    }\n\n    let args = literal;\n\n    if (literal instanceof List) {\n      args = literal.flatten();\n    } else if (literal instanceof Functor || literal instanceof Timable) {\n      createSubtreeIfNotExist(node, literal.getName());\n      node = node._tree[literal.getName()];\n      args = literal.getArguments();\n    }\n\n    let lastNodeRep = args.length;\n    createSubtreeIfNotExist(node, args.length);\n    if (args.length === 0) {\n      _count += 1;\n      node._size += 1;\n      node._tree[lastNodeRep] = value;\n      return;\n    }\n\n    args.forEach((arg, idx) => {\n      node = node._tree[lastNodeRep];\n      let nodeRep = null;\n      let argIsValue = arg instanceof Value;\n      let argIsVariable = arg instanceof Variable;\n\n      if (!argIsValue && !argIsVariable) {\n        // use another tree to index this argument\n        if (_argumentTreeSymbol === null) {\n          _argumentTreeSymbol"
+    ],
+    [
+        "\n}"
+    ],
+    [
+        "newValue = getPropertyValue(newKey, mavenProjectProperties, environment, circularDefinitionPreventer);\n"
+    ],
+    [
+        "MOVE_TEMPLATE_4, self._move_template)\n"
+    ],
+    [
+        "\"\"\"\n        @return: A list of words as iob word/iob/other tag pairs.\n        @rtype: C{list} of C{tuple}\n        @param fileids: A list of corpus files.\n        @type fileids: C{list} of C{str} or regular expression \n        @kwparam depth: Depth of chunk parsing for nested chunks.\n        @type depth: C{int}        \n        \"\"\""
+    ],
+    [
+        "return (\n    <thead>\n      <tr>\n        {columns.map((column) => (\n          <th key={column.key}>\n            {column.label}\n            {filters && (\n              <TableHeaderActions\n                column={column}\n                columnValues={columnValues}\n                columnQueries={columnQueries}\n                sort={sort}\n                onFilter={onFilter}\n                onSort={onSort}\n                onSearch={onSearch}\n              />\n            )}\n          </th>\n        ))}\n      </tr>\n    </thead>\n  );\n}\n"
+    ],
+    [
+        "return toJSON();\n   "
+    ],
+    [
+        "  return new Promise((resolve, reject) => {\n    const xhr = new XMLHttpRequest();\n    xhr.open(method, url);\n    xhr.setRequestHeader('Content-Type', 'application/json');\n    xhr.onload = () => {\n      if (xhr.status >= 200 && xhr.status < 300) {\n        resolve(xhr.response);\n      } else {\n        reject(xhr.statusText);\n      }\n    };\n    xhr.onerror = () => reject(xhr.statusText);\n    xhr.send(JSON.stringify(data));\n  });\n}\n"
+    ],
+    [
+        "if (type == EventType.STARTED) {\n                transferredBytes = 0L;\n            }\n"
+    ],
+    [
+        "}\n"
+    ],
+    [
+        "@Override\n    protected void addParameterDefinitions(List<ParameterDefinition> paramList) {\n        paramList.add(new ParameterDefinitionImpl(PARAM_TYPE, DataTypeDefinition.QNAME, true, getParamDisplayLabel(PARAM_TYPE), false));\n    }\n"
+    ],
+    [
+        "\n  }\n"
+    ],
+    [
+        "while (count !== index) {\n        current = current.next;\n        count++;\n"
+    ],
+    [
+        ""
+    ],
+    [
+        "inference(z)\n"
+    ],
+    [
+        "1;\n"
+    ],
+    [
+        "@RestrictTo(RestrictTo.Scope.LIBRARY)\n    public boolean isClickable() {\n        return mOnClickListener != null;\n    }\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "def compute_accuracy(self, dataloader):\n        "
+    ],
+    [
+        "b, 2)\n"
+    ],
+    [
+        "if request.user.is_anonymous or not request.user.is_staff:\n"
+    ],
+    [
+        "\n      if (left_to_right[i] === right_to_left[j]) {\n"
+    ],
+    [
+        "from_json(res)\n"
+    ],
+    [
+        "fs.mkdir(path, mask, function(err) {\n        if (err) {\n            if (err.code == 'EEXIST') cb(null); // ignore the error if the folder already exists\n            else cb(err); // something else went wrong\n        } else cb(null); // successfully created folder\n    });\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "if (applicationId == 0) {\n"
+    ],
+    [
+        "get_similarity_matrix(sentences)"
+    ],
+    [
+        "\n        break;\n"
+    ],
+    [
+        "iapApiCallback.onFail(e);\n"
+    ],
+    [
+        "\tvar result = [];\n"
+    ],
+    [
+        "println(\"Depósito realizado com sucesso.\");\n"
+    ],
+    [
+        "= client.transport\n"
+    ],
+    [
+        "for (int i = 0; i < columnCount; i++) {\n                idealWidths[i] = td.getOffsetWidth();\n                td = td.getNextSiblingElement();\n            }"
+    ],
+    [
+        "return False\n"
+    ],
+    [
+        "{\n            return \"User{\" +\n                    \"name='\" + name + '\\'' +\n                    \", surname='\" + surname + '\\'' +\n                    '}';\n        }\n"
+    ],
+    [
+        "= botsAPI.getOnlineBots();\n"
+    ],
+    [
+        "callback_manager.register_post_instruction_callback(trace_inst)\n"
+    ],
+    [
+        "request.getInput().getTimeout());\n"
+    ],
+    [
+        "while(el.parentNode) {\n        el = el.parentNode;\n        if(el === this.container) {\n          isPicker = true;\n          break;\n        }\n        if(el.hasAttribute(`data-date-input`)) {\n          break;\n        }\n      }\n"
+    ],
+    [
+        "  var numString = numbers.split(\" \");\n"
+    ],
+    [
+        "    return [hcl.loads(block) for block in parse_tf_file_for_block_strings(path)]\n"
+    ],
+    [
+        "function SubClass() "
+    ],
+    [
+        "@GET\n    @AnonymousAllowed\n    @Path(\"/{id}\")\n    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })\n    public Response getCategory(@PathParam(\"id\") Long id) "
+    ],
+    [
+        "\"\"\"\n    Given a project and user, create notification policy for it.\n    \"\"\"\n"
+    ],
+    [
+        "edge_double_clicked.connect(self._edge_double_clicked)\n"
+    ],
+    [
+        "if (this.mDrawable != null) {\n            this.mDrawable.setCallback(this);\n        }\n    }\n"
+    ],
+    [
+        "_default'\n"
+    ],
+    [
+        "\n\tfor(var i=0;i<s.length-1;i++){\n"
+    ],
+    [
+        "\n  pass\n"
+    ],
+    [
+        "\n        }\n"
+    ],
+    [
+        "\n  // We don't want to interfere with any other shortcuts\n"
+    ],
+    [
+        "load_state_dict(self, state_dict)\n"
+    ],
+    [
+        "\n  var tags = [];\n"
+    ],
+    [
+        "while i < len(used):\n            if not used[i]:\n                j = i\n                while j < len(used) and not used[j]: j += 1\n                if j-i >= min_leftover:\n                    io.write_fasta(leftover_f, name + '_' + str(i), contigs[name][i:j])\n                i = j\n            else:\n                i += 1\n"
+    ],
+    [
+        "\n    }\n"
+    ],
+    [
+        "\n                coordinates.push([i, j]);\n"
+    ],
+    [
+        "elementType.buildFormattedString(nextPrefix, builder);\n\t}\n"
+    ],
+    [
+        "}\n"
+    ],
+    [
+        " // add the number of stones in each level\n        }\n"
+    ],
+    [
+        "\n                    open_parens -= 1\n"
+    ],
+    [
+        "(ref.toString(), issues);\n"
+    ],
+    [
+        "\n            } else {\n"
+    ],
+    [
+        "name, 'history')\n"
+    ],
+    [
+        "driver == \"asyncpg\"\n"
+    ],
+    [
+        "while (true) {\n                if (pos == text.length())\n                    return new EvaluatorToken();\n"
+    ],
+    [
+        "HistoricProcessInstanceQuery startedBy(String userId);\n"
+    ],
+    [
+        "function contains(arr, item) {\n    if (angular.isArray(arr)) {\n      for (var i = 0; i < arr.length; i++) {\n        if (angular.equals(arr[i], item)) {\n          return true;\n        }\n      }\n    }\n    return false;\n  }\n"
+    ],
+    [
+        "//console.log(data);\n\t\t\tif (data instanceof sap.viz.ext.data.MultiAxisDataAdapter) {\n\t\t\t\trows = this._multiAxis(data, mapper);\n\t\t\t} else if (data instanceof sap.viz.ext.data.CrosstableDataset) {\n\t\t\t\trows = this._crossTable(data, mapper);\n\t\t\t} else if (data instanceof sap.viz.ext.data.FlattableDataset) {\n\t\t\t\trows = this._flatTable(data, mapper);\n\t\t\t} else {\n\t\t\t\trows = data;\n\t\t\t}\n"
+    ],
+    [
+        "assertOrgLeader.shouldEffective(tenantId, leaderId);\n"
+    ],
+    [
+        "    with myopen(input_file) as infile:\n        while True:\n            name = infile.readline().strip()\n            if not name:\n                break\n            seq = infile.readline().strip()\n            name2 = infile.readline().strip()\n            qual = infile.readline().strip()\n            yield Fastq(name, seq, name2, qual)"
+    ],
+    [
+        "if (this.href_attribute) {\n        this.app.$element().delegate('[' + this.href_attribute + ']', 'click', function(e) {\n          proxy.setLocation($(this).attr(proxy.href_attribute));\n          e.preventDefault();\n        });\n      }\n"
+    ],
+    [
+        "contextValue.getId());\n    }\n\n    @Override\n    public void enterContext(VersionedIdentifier contextValue) {"
+    ],
+    [
+        "= mainConfig.getDembedTitle();\n"
+    ],
+    [
+        "        return serializers.BotDefListInfoSerializer(data=data).data"
+    ],
+    [
+        "String gitlabEventUUID = mrSimple.getGitlabEventUUID();\n"
+    ],
+    [
+        "if (Objects.nonNull(groovyCode)) {"
+    ],
+    [
+        "\n                map.put(val, (long)1);\n"
+    ],
+    [
+        "lcas.addAll(cas);\n"
+    ],
+    [
+        "def process(self, device, results, log):\n        "
+    ],
+    [
+        "\n    if num > 1:\n"
+    ],
+    [
+        "cprint('*****Test Loss: {0} | Test IoU: {1}*****'.format(test_loss, mean_IoU))\n"
+    ],
+    [
+        "categories = ['a', 'b']\n        c1 = CategoricalDtype(categories, ordered=ordered)\n        c2 = CategoricalDtype(categories, ordered=ordered)\n        assert c1 is c2\n"
+    ],
+    [
+        ""
+    ],
+    [
+        "energy_efficiency_optimization(test_data)\n"
+    ],
+    [
+        "try {\n\t\t\t\tobj = JSON.parse(data);\n\t\t\t} catch (e) {\n\t\t\t\treturn null;\n\t\t\t}\n"
+    ],
+    [
+        "return IsFunctionExists(inst, 'Name') and IsFunctionExists(inst, 'Depends') and IsFunctionExists(inst, 'SetEnvoriment')"
+    ],
+    [
+        "_getHeader() {\n    return '';\n  }\n"
+    ],
+    [
+        "for (let i = 0; i < notes.length; i++) {\n    let x = i * w;\n    let y = height - midiToFreq(notes[i]);\n    fill(0);\n    rect(x, height, w, -y);\n    fill(255);\n    textAlign(CENTER, BOTTOM);\n    text(notes[i], x + w/2, height - y - 5);\n  }\n"
+    ],
+    [
+        "def export_to_json(self, ids):\n        "
+    ],
+    [
+        " \n        return []\n"
+    ],
+    [
+        "await setBalance(cToken, redeemer, redeemTokens);\n}\n"
+    ],
+    [
+        "\"\"\"将点按照极角排序.\n        Returns\n        -------\n        type\n            Description of returned object.\n\n        \"\"\"\n"
+    ],
+    [
+        "get(b, default_val=0.0) + 1\n"
+    ],
+    [
+        "from_plan(response.plan)\n"
+    ],
+    [
+        "function defineIteratorMethods(prototype) {\n    [\"next\", \"throw\", \"return\"].forEach(function(method) {\n      prototype[method] = function(arg) {\n        return this._invoke(method, arg);\n      };\n    });\n  }\n"
+    ],
+    [
+        "\n            }\n"
+    ],
+    [
+        "recordName).inferSchema(object));\n        writer.write(object, encoder);\n        encoder.flush();\n        return ByteBuffer.wrap(outputStream.toByteArray());\n    }\n\n    /**\n     * Writes the given object to a ByteBuffer based on the provided Avro schema.\n     *\n     * @param object The object to be written.\n     * @param schema The Avro schema to use for writing.\n     * @return A ByteBuffer containing the written Avro data.\n     * @throws IOException If an error occurs during writing.\n     */\n    public ByteBuffer write(Object object, Schema schema) throws IOException {\n        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();\n        BinaryEncoder encoder = EncoderFactory.get().binaryEncoder(outputStream, null);\n        DatumWriter writer = new MapDatumWriter(schema);"
+    ],
+    [
+        "protected void setHeightVisible(boolean visible) {\n        Style style = m_heightLabel.getElement().getParentElement().getStyle();\n        if (visible) {\n            style.clearDisplay();\n        } else {\n            style.setDisplay(Display.NONE);\n        }\n    }\n"
+    ],
+    [
+        "{\n        fetchThreadData.queueResponce(\"test\");\n    }\n"
+    ],
+    [
+        "\n    return result;\n"
+    ],
+    [
+        "public File logDir() "
+    ],
+    [
+        "original == original_condition\n"
+    ],
+    [
+        "{\n    if (url.endsWith(\"/\")) {\n        return url;\n    }\n    return url + \"/\";\n}\n"
+    ],
+    [
+        "{\n    delete sessions[sessionToken];\n    delete timeouts[sessionToken];\n}\n"
+    ],
+    [
+        "pi_v1, version=1)\n"
+    ],
+    [
+        "Name(campaign.getGameName());\n"
+    ],
+    [
+        "OutputWindow.print(\"Proxy server Listening on \" + bindAddress);\n"
+    ],
+    [
+        "const [addressCity, setCity] = useState(city || \"\")\n"
+    ],
+    [
+        "void dispose();\n"
+    ],
+    [
+        "public boolean addValue(String text, int score) {\n        return addValue(text, score, true);\n    }\n"
+    ],
+    [
+        "masks = glob.glob(MASKS_PATH + '*')"
+    ],
+    [
+        "{\n    }\n"
+    ],
+    [
+        "add_constraint(wb_dst_src, ('wb', 'dst0', 'src0'))\n"
+    ],
+    [
+        "try:\n                tmp_context_ftr_info = pickleload(tmp_cache_context_feature_path)\n            except:\n                print('--------------------------------------------------')\n                print(tmp_cache_context_feature_path)\n                print('--------------------------------------------------')\n"
+    ],
+    [
+        "converse(\n        conversation_id=message_payload.conversation_id,\n        message=message_payload.message,\n    )\n"
+    ],
+    [
+        ".setStockpile(realm.getStockpile());\n        userRealm.setOwnedBuildings(realm.getOwnedBuildings());\n        userRealm.setTags(realm.getTags());"
+    ],
+    [
+        "String databaseName = mainConfig.getStorageType();\n           "
+    ],
+    [
+        ""
+    ],
+    [
+        "while node.parent is not None:\n            keys.appendleft(node.key)\n            node = node.parent\n"
+    ],
+    [
+        "const strangeFiles = {};\n\n  _.each(files, (f, filename)=> {\n    const fn = toWindows(filename);\n    strangeFiles[fn] = f;\n  });\n"
+    ],
+    [
+        "\n    digits.sort()\n"
+    ],
+    [
+        "return post();\n"
+    ],
+    [
+        "}"
+    ],
+    [
+        "messages = body.getMessages();\n"
+    ],
+    [
+        "AliyunPushLog.e(REC_TAG, \"showNotificationNow key:\" + entry.getKey() + \" value:\" + entry.getValue());"
+    ],
+    [
+        "try {\n            list.add(uriResolver.apply(fullHttpRequest));\n        } catch (Exception e) {\n            logger.error(\"[{}]解码exception异常\", JsonUtils.object2String(fullHttpRequest), e);\n            throw e;\n        } catch (Throwable t) {\n            logger.error(\"[{}]解码throwable错误\", JsonUtils.object2String(fullHttpRequest), t);\n            throw t;\n        }\n"
+    ],
+    [
+        "{\n        if (f.nerve.getOutput(this) > 0.5) f.y++;\n    }\n"
+    ],
+    [
+        "\"Total de tranferências realizadas = \" + conta.getTotalTransferencias();\n"
+    ],
+    [
+        "runDir, \"/home/user/la-hacienda\")\n"
+    ],
+    [
+        "const setStatus = (table, updateField, whereField) => {\n  return mysql.update(updateField).from(table).where(whereField);\n};"
+    ],
+    [
+        "行因式分解\n\"\"\"\n\nx = int(input(\"输入小于1000的整数\"))\ntemp = x\ni = 2\nresult = []\nwhile True:\n    if temp == 1:\n        break\n    if temp%i == 0:\n        result.append(i)\n        temp = temp//i\n    else:\n        i += 1\nprint(x, '=', '*'.join(map(str, result)))\n"
+    ],
+    [
+        "\"\"\"Solves the LSA problem using the lapjv library.\"\"\"\n"
+    ],
+    [
+        "if (c == '\\n') {\n            line++;\n            column = 1;\n        } else\n            column++;\n"
+    ],
+    [
+        "const LoginFormModal = () => "
+    ],
+    [
+        "parse_obj(values[\"revoke_event\"])\n"
+    ],
+    [
+        "function limitedRange(value) {\n            return Math.max(Math.min(value, 1), -1);\n        }\n"
+    ],
+    [
+        "\n                    level += 1l;\n"
+    ],
+    [
+        "exports.encodePacket(packet, true, true, function (data) {\n                return doneCallback(null, data);\n              });"
+    ],
+    [
+        "\n\n            res += \"x\";\n"
+    ],
+    [
+        "{\n        return this.enviaLoteAssinado(this.getLoteAssinado(lote).toString(), lote.getNotas().get(0).getInfo().getIdentificacao().getModelo());\n    }\n"
+    ],
+    [
+        "evaluate_sampled_model(\"classification\", RandomForestClassifier, params)\n"
+    ],
+    [
+        " # j is a string\n                s += int(j)\n"
+    ],
+    [
+        "\n}"
+    ],
+    [
+        "boolean filter(T type);\n"
+    ],
+    [
+        "challenge = challengeBiz.selectOne(challengeName);\n"
+    ],
+    [
+        "def get_index():\n    "
+    ],
+    [
+        "for(d=0;d<b.length;d++)for(g=0;g<b[d].length;g++)if(b[d][g].id===a.id){e=d;break}e===-1&&(e=b.length,b[e]=this.createNodeColumn());b[e].push(a)},this);for(var e=0;e<b.length;e++)void 0===b[e]&&(b[e]=this.createNodeColumn());return b},pointAttribs:function(b,e){var a=this.options.linkOpacity,d=b.color;\ne&&(a=this.options.states[e].linkOpacity||a,d=this.options.states[e].color||b.color);return{fill:b.isNode?d:c.color(d).setOpacity(a).get()}},generatePoints:function(){var b={},e=this.chart;c.Series.prototype.generatePoints.call(this);this.nodes||(this.nodes=[]);this.colorCounter=0;this.nodes.forEach(function(a){a.linksFrom.length=0;a.linksTo.length=0});this.points.forEach(function(a){g(a.from)&&(b[a.from]||(b[a.from]=this.createNode(a.from)),b[a.from].linksFrom.push(a),a.fromNode=b[a.from]);g(a.to)&&(b[a.to]||(b[a.to]=this"
+    ],
+    [
+        "get_closest_vertex((0, 0, 0))\n"
+    ],
+    [
+        "if(cell.getElementsByTagName(\"img\").length > 1)\n\t\tmergeUnits(cell);\n}\n"
+    ],
+    [
+        " model(x)\n"
+    ],
+    [
+        "@VisibleForTesting\n    public FileEncryptionPreferenceController(Context context, IStorageManager storageManager) {\n        super(context);\n        mStorageManager = storageManager;\n    }\n\n    @Override\n    public boolean isAvailable() "
+    ],
+    [
+        "if self.portString:\n            self.com = serial.Serial(self.portString, timeout=0.1)\n"
+    ],
+    [
+        "def update(self, request, *args, **kwargs):\n        "
+    ],
+    [
+        "function GetPatchString() {\n\t\tvar s = '';\n\t\tfor (var i = 0; i < synth.controls.length; i++) {\n\t\t\ts += $(synth.controls[i])[0].value + '/';\n\t\t}\n\t\treturn s"
+    ],
+    [
+        "= collisionsService.findOne(id);\n"
+    ],
+    [
+        "xhr.open('POST', 'http://example.com', true);\n"
+    ],
+    [
+        "@Override\n    public String getName() {\n        return \"asyncCallLuaFunction\";\n    }\n"
+    ],
+    [
+        "    if 3 != len( obj):\n        raise TypeError( len( obj), \"obj not 3-array\")\n"
+    ],
+    [
+        "\\\n    ConfirmationRedirect as RequestConfirmationRedirect\n"
+    ],
+    [
+        "geometry_combo.currentText()\n"
+    ],
+    [
+        "get_world_normal(normal.reshape(-1,3), np.linalg.inv(extrin)).reshape(shape)\n"
+    ],
+    [
+        "\n        if(s[i] == s[i-1] || s[i] == s[i-2] || s[i-1] == s[i-2]){\n"
+    ],
+    [
+        "    count = 0\n"
+    ],
+    [
+        "{\n    flock_sep = val\n}\n"
+    ],
+    [
+        "ColorUtils.blueFromArgb(pixel);\n"
+    ],
+    [
+        "function createAriaDomNode() "
+    ],
+    [
+        "teIO()\n"
+    ],
+    [
+        "(!currentUser.getId().equals(id)) {\n"
+    ],
+    [
+        "{\n        return given(\"Given\");\n    }\n"
+    ],
+    [
+        "generate_series_button.layout.display = \"none\"\n"
+    ],
+    [
+        "\n            arr3.push(\"Six\");\n"
+    ],
+    [
+        "function solve(stones)"
+    ],
+    [
+        "get_initial_state(defaults)\n"
+    ],
+    [
+        "generate_embeddings_context(context)\n"
+    ],
+    [
+        "\n        return \"\"\n"
+    ],
+    [
+        "eval_classifier(val_loader, test_loader)\n"
+    ],
+    [
+        "ID, psUCorporateIDType, psUIPAddress);\n        String consentIdFromPath = consentId;\n        String consentIdFromBody = consentModelMapper.mapToConsentIdFromBody((Map) body);\n        consentId = consentIdFromPath != null ? consentIdFromPath : consentIdFromBody;\n"
+    ],
+    [
+        "think()\n"
+    ],
+    [
+        " // split the string into words\n        for (String word : words) {\n"
+    ],
+    [
+        "{\n            return o1.id - o2.id;\n        }\n"
+    ],
+    [
+        "dependency.getType(),\n                dependency.getClassifier(),\n                dependency.getScope()\n        );\n"
+    ],
+    [
+        "get(vtab_dataname)\n    elif vtab_dataname == \"cifar\":\n        data_cls = cifar.CIFAR100\n"
+    ],
+    [
+        "    return get_module_dependencies(test_fname.replace(\"test_\", \"\", 1).replace(\"_test\", \"\", 1))"
+    ],
+    [
+        "path == ValidatorPath()\n"
+    ],
+    [
+        "void updateCustomTemplates(Preferences preferences) {\n        customTemplates = new HashMap<>();\n        try {\n            String[] keys = preferences.keys();\n            for (String key : keys) {\n                customTemplates.put(key, preferences.get(key, null));\n            }\n        } catch (BackingStoreException e) {\n            logger.warn(\"Error reading code templates from preferences\", e);\n        }\n    }\n"
+    ],
+    [
+        "# run command in a subshell\n    proc = subprocess.Popen(cmd, shell=shell, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,\n                            executable=exec_cmd)\n"
+    ],
+    [
+        "public <T extends Annotation> boolean hasAnnotation(Class<T> clazz) "
+    ],
+    [
+        "debug(\"TSP solver: solve the problem for cities = {}\".format(cities))\n"
+    ],
+    [
+        ""
+    ],
+    [
+        "\n}"
+    ],
+    [
+        "}\n"
+    ],
+    [
+        "function mouseDragged()"
+    ],
+    [
+        "    return [s for s in strings if substring in s]"
+    ],
+    [
+        "Logger(save_excel_path, 'test_all')\n"
+    ],
+    [
+        ".setArtistObj(crudArtist.getArtistById(music.getArtist()));\n"
+    ],
+    [
+        "info(f\"Downloading data from {url}\")\n"
+    ],
+    [
+        "return;\n                }\n"
+    ],
+    [
+        "\n                } else {\n"
+    ],
+    [
+        "(!id.equals(heroToUpdate.getId())) {\n"
+    ],
+    [
+        "upsample_2d(x, self.fir_kernel, factor=2)\n"
+    ],
+    [
+        "\n        if(s === 'o'){\n"
+    ],
+    [
+        " return b\n"
+    ],
+    [
+        "get_path(self.para)\n"
+    ],
+    [
+        "if (Math.abs(hct.getHue() - chosenHct.getHue()) < differenceDegrees) {"
+    ],
+    [
+        "if __name__ == \"__main__\":\n    import doctest\n    doctest.testmod()"
+    ],
+    [
+        "from_defaults(llm=llm, language_name=\"kork\")\n"
+    ],
+    [
+        "inputs, min(5, len(self.inputs)))\n"
+    ],
+    [
+        "        super(MainWindow, self).__init__()\n        \n        self.mainEngine = mainEngine\n        self.eventEngine = eventEngine\n        self.app = app\n        self.sheets = sheets\n        self.widgetDict = {}\n        self.sid = None\n        self.initUi()\n        self.initStatusBar()\n        self.showLogin()"
+    ],
+    [
+        "\n                if(number % i == 0 || number % (i + 2) == 0){\n"
+    ],
+    [
+        "instance.sendMessage(sender, \" - /np help\");\n"
+    ],
+    [
+        "loadBalancePolicy.getClientIndex(addressSet.size());\n"
+    ],
+    [
+        "Events();\n"
+    ],
+    [
+        "for(var i=0;i<trackedEvents.length;i++) {\n\t\tif (trackedEvents[i].tabId == tabId) {\n\t\t\tsendEvents.push(trackedEvents[i]);\n\t\t}\n\t}"
+    ],
+    [
+        "for _ in range(iterations):\n            self.optimize_placement(\n                optimizer,\n                placement,\n                model_size,\n                size_capacity,\n                model_complexity,\n                complexity_capacity,\n                model_conn,\n                device_distance,\n                connection_weight,\n                size_match_weight,\n                complexity_match_weight,\n                entropy_weight,\n            )\n"
+    ],
+    [
+        "mTXVodPlayerWrapper.startPlay();"
+    ],
+    [
+        "if (err) {\n        test = err.response.debug_id;\n        test = err.stack;\n        return;\n    }\n"
+    ],
+    [
+        "get_channel_setting(ctx.channel.id, \"config_temp\", default=config['default_temp'])\n"
+    ],
+    [
+        "for (int i = 0; i < parameters.length; i++) {\n            if (!checkForPrimitive(parameters[i], pArgs[i].getClass())) {\n                return false;\n            }\n        }"
+    ],
+    [
+        "@Override\n    public String getServerInfo() "
+    ],
+    [
+        " {\n  return sortBy((item) => path(item, sortPath), list)\n}"
+    ],
+    [
+        "\n        if type(self) is not type(other):\n            return NotImplemented\n        \n        return (self._command_function is other._command_function) and (self._string_custom_ids == other._string_custom_ids) and (self._regex_custom_ids == other._regex_custom_ids)\n"
+    ],
+    [
+        "\n        }\n"
+    ],
+    [
+        "\n                answer += Character.toUpperCase(string.charAt(i));\n"
+    ],
+    [
+        "    return kb.kb.get('url_bruteforce', 'extensions')"
+    ],
+    [
+        "id.date = date;\n"
+    ],
+    [
+        "    def add_dataset(\n        self,\n        reflection_table,\n        experiment,\n        wavelength,\n        dataset_id,\n        batch_offset,\n        force_static_model,\n    ):\n       "
+    ],
+    [
+        "public static List<QualitySourceMediaType> createQualitySourceMediaTypes(Produces mime) {\n        return createQualitySourceMediaTypes(mime.value());\n    }\n"
+    ],
+    [
+        " //Math.floor(value) * -1\n        }else{\n"
+    ],
+    [
+        ""
+    ],
+    [
+        "\n    sum += operations[i];\n"
+    ],
+    [
+        "ribe(msg => console.log(msg));\n"
+    ],
+    [
+        "    parser = Parser(g, actions=actions)"
+    ],
+    [
+        "\n}"
+    ],
+    [
+        "executor.shutdown();\n"
+    ],
+    [
+        "\n}"
+    ],
+    [
+        "write_image(path, pred_norm_rgb.astype(np.uint8), color_space='RGB')\n"
+    ],
+    [
+        "format(v) for k, v in inputs.items()}"
+    ],
+    [
+        ".getSaldo() < cont.getSaldo()) {\n"
+    ],
+    [
+        "{\n        return localPort;\n    }\n"
+    ],
+    [
+        "func, *args, **kwargs)\n"
+    ],
+    [
+        "ar arguments = THE_ANSWER;\n"
+    ],
+    [
+        "def reverse_shell(l):\n        "
+    ],
+    [
+        "40);  \n"
+    ],
+    [
+        "createAdHocDatasetExport(self.ADHOC_INPUT)\n"
+    ],
+    [
+        " self._root\n"
+    ],
+    [
+        "userRepository.findByUsername(principal.getName());\n"
+    ],
+    [
+        "\n        40: \"xl\",\n"
+    ],
+    [
+        "build(lr), stationary.build(lr))\n"
+    ],
+    [
+        "cookies = decoder.decodeParameters(parameters.get(\"Cookie\"));\n\t\t\telse"
+    ],
+    [
+        "public void testPureLogarithm() {\n        for (int i = 0; i < 3; i++) {\n            a = qfac.random(kl, ll + i, el + i, q);\n            b = integrator.deriviative(a);\n            d = new Quotient<BigRational>(qfac, qfac.getONE().num, a.den);\n            e = b.sum(d);\n            rint = integrator.integrate(e);\n            assertTrue(\"isIntegral \", integrator.isIntegral(rint));\n        }\n    }\n"
+    ],
+    [
+        "cD1WMWRYTmVrWjJWVUZSTW1Fd05EUTJOVlZsTkdGbE5EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVUZSTW1Fd05EVTJWVU"
+    ],
+    [
+        "try {\n            CommentWapper comment = cm.getCommentByMe(0l, 0l, 0l, 50);\n            for (Comment c : comment.getComments()) {\n                Log.logInfo(c.toString());\n            }\n        } catch (WeiboException e) {\n            e.printStackTrace();\n        }\n"
+    ],
+    [
+        "for i in range(len(r)):\n        axis.plot((i, i),\n                  (0, r[i]),\n                  color=('#b512b8' if m is not None and i == m else 'black'),\n                  lw=(1 if m is not None and i == m else .5))\n"
+    ],
+    [
+        "while (l <= r) {\n            int m = (l + r) / 2;\n            if (sum(m) >= D) {\n                r = m - 1;\n            } else {\n                l = m + 1;\n            }\n        }"
+    ],
+    [
+        "id}/collections\", model=CollectionPostRequest(**locals()))"
+    ],
+    [
+        "{\n        if (!\"1\".equals(req.getParameter(\"appInfo\"))) {\n            return;\n        }\n        writer.append(Monitors.appInfo());\n        writer.append(TYPE_SPLIT);\n    }\n"
+    ],
+    [
+        "\n                    if (s.charAt(j) == '7') {\n"
+    ],
+    [
+        "= helixWrapper.fetchChatters(channelId, accessToken);\n"
+    ],
+    [
+        "function extendTree(node, segments) {\n      const segment = segments.shift();\n      if (segments.length) {\n        node[segment] = node[segment] || {};\n        extendTree(node[segment], segments);\n      } else {\n        node[segment] = null;\n      }\n    }\n"
+    ],
+    [
+        "alse;\n    }\n"
+    ],
+    [
+        "public static ResourceBundle getResourceBundle(Object obj) {\n        return ResourceBundle.getBundle(obj.getClass().getSimpleName() + \"Strings\", Locale.getDefault());\n    }\n"
+    ],
+    [
+        ""
+    ],
+    [
+        "\tlet max = Math.max(a, b)\n"
+    ],
+    [
+        "function getAllInFolder(folderId, mimeType, fields, accessToken) {\n  var fa = new FilesApp(accessToken);\n  return fa.getAllInFolder(folderId, mimeType, fields);\n}"
+    ],
+    [
+        "= openAIModel.chat(fullPrompt, tokenLimit - tokenCount);\n"
+    ],
+    [
+        "\t\tself.q = q\n\t\tself.limit = limit\n\t\tself._pages = ''\n\t\tself._links = []"
+    ],
+    [
+        "\n            String[] ss = test.split(\" \");\n"
+    ],
+    [
+        "locator = ((Locator) binding.getValue()).getLocator();\n"
+    ],
+    [
+        "self.argparser.add_argument(\n            \"--clearance_y\", action=\"store\", type=int, default=3,\n            help=\"clearance for the board in the box (y) in mm\"\n        )\n"
+    ],
+    [
+        "203;"
+    ],
+    [
+        "WebhookVerifier(WebhookSigner.hmacSha1(secret), Encoder.BASE64);\n"
+    ],
+    [
+        "public final List<RequestedAttribute> getRequestedAttributes() {\n        return requestedAttributes;\n    }\n"
+    ],
+    [
+        "{\n        if (propertyChangedListener != null) {\n            propertyChangedListener.onPropertyChanged(property);\n        }\n    }\n"
+    ],
+    [
+        "out = F.relu(self.deconv(x, output_size=output_size))\n        out = F.relu(self.conv(out))\n        return out\n"
+    ],
+    [
+        "{\n        let pages = viewer.getPages();\n        let firstPage = pages[0];\n        let firstPageDimension = firstPage.getBoundingClientRect()[dimension];\n        for (let i = 1; i < pages.length; i++)\n        {\n            if (pages[i].getBoundingClientRect()[dimension] !== firstPageDimension)\n            {\n                return false;\n            }\n        }\n        return true;\n    }\n"
+    ],
+    [
+        "\n\t\t\t\t}\n"
+    ],
+    [
+        "return false;\n"
+    ],
+    [
+        "\n\t\treturn undefined;\n"
+    ],
+    [
+        "{\n        mUploadProgressListener.onProgress((Progress) msg.obj);\n    }\n"
+    ],
+    [
+        "return self._application.actionController.getActionsStrId()\n"
+    ],
+    [
+        "(listeners, requestBody.isRetryOnReadTimeout(), this::createNewEventSource));\n  }\n\n  protected void onReadTimeout(CompletionEventListener listeners) {\n"
+    ],
+    [
+        "load_state(state)\n"
+    ],
+    [
+        "    def finalize_options(self):\n        "
+    ],
+    [
+        "public void services(Map<String, Object> context) throws IOException "
+    ],
+    [
+        "if(backend.isGeyser())continue;\n"
+    ],
+    [
+        "{\n  return array2obj(raw);\n}"
+    ],
+    [
+        "// Transition CSS 가 적용된 객체들을 0ms 로 바꿔줌\n\t\t\t\tfor (var i = 0; i < nLen; i++) {\n\t\t\t\t\toItem = aTransitionCache[i];\n\t\t\t\t\tif (oItem.css(self._getCSSKey('transitionDuration')) !== '0ms') {\n\t\t\t\t\t\taShouldReset.push(oItem);\n\t\t\t\t\t}\n\t\t\t\t\toItem.css(self._getCSSKey('transitionDuration'), '0ms');\n\t\t\t\t}\n"
+    ],
+    [
+        "config.isEnabled();\n            //config.setEnabled(!enabled);\n"
+    ],
+    [
+        "{\n        String message = getInputData().getString(ARG_MESSAGE);\n        new Handler(Looper.getMainLooper()).post(() -> Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show());\n        return Result.success();\n    }\n"
+    ],
+    [
+        "\n        return result;\n"
+    ],
+    [
+        "+ \"' 的上级组织的类型不是有效的类型！\"));\n"
+    ],
+    [
+        "void scheduleTask(Exercise exercise, ExerciseLifecycle lifecycle, Map<ZonedDateTime, Runnable> tasks) {\n        // no exercise should be scheduled more than once.\n        cancelScheduledTaskForLifecycle(exercise.getId(), lifecycle);\n        Set<ScheduledFuture<?>> scheduledTasks = exerciseLifecycleService.scheduleTask(exercise, lifecycle, tasks);\n        addScheduledTask(exercise, lifecycle, scheduledTasks);\n    }\n"
+    ],
+    [
+        "job1.getJobDataMap().put(\"jobSays\", \"Hello World!\");\n"
+    ],
+    [
+        "if (!aClass.isInterface()) {\n                setMetricResult(aClass, LineUtil.countLines(aClass));\n"
+    ],
+    [
+        " \n        if i > 0:\n"
+    ],
+    [
+        "\n            if (s.length() % 2 == 0) {\n"
+    ],
+    [
+        "commitHistory.getChanges()) {\n"
+    ],
+    [
+        "        return self._format_slot"
+    ],
+    [
+        "return id(self.image_set) == id(other.image_set) and self.index == other.index\n"
+    ],
+    [
+        "while (true) {\n                    doSayRateLimiter(name, value, ++i);\n"
+    ]
+]

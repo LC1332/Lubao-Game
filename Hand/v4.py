@@ -48,7 +48,7 @@ def draw_eqn(image, display_eqn_str, screen_height):
 # 主程序
 def main():
     cap = cv2.VideoCapture(0)
-    desired_screen_height = 550
+    desired_screen_height = 1200
     csv_file = 'hand_record_data/hand_data.csv'
     img_dir = 'hand_record_data/imgs'
     os.makedirs(img_dir, exist_ok=True)
@@ -130,17 +130,21 @@ def main():
             draw_landmarks(image, max_hand, handedness, classification_result)
 
         # 调整图像大小
-        resized_image, new_width = screen_height(image, desired_screen_height)
+        # resized_image, new_width = screen_height(image, desired_screen_height)
+        resized_image = image
+        height = image.shape[0]
 
         # 如果有分类概率，显示在左侧
         if probabilities is not None:
-            resized_image = draw_probabilities(resized_image, probabilities, desired_screen_height)
+            resized_image = draw_probabilities(resized_image, probabilities, height)
         else:
             zero_probabilities = [0.1 for _ in range(10)]
-            resized_image = draw_probabilities(resized_image, zero_probabilities, desired_screen_height)
+            resized_image = draw_probabilities(resized_image, zero_probabilities, height)
 
         # 显示等式在屏幕右侧
-        resized_image = draw_eqn(resized_image, display_eqn_str, desired_screen_height)
+        resized_image = draw_eqn(resized_image, display_eqn_str, height)
+
+        resized_image, _ = screen_height(resized_image, desired_screen_height)
 
         # 显示图像
         cv2.imshow('MediaPipe Hands with Classification', resized_image)

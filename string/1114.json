@@ -1,0 +1,1694 @@
+[
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "try {\n                    newCtx = MessageHelper.cloneMessageContext(synCtx);\n                } catch (AxisFault e) {\n                    handleException(\"Error cloning the message context\", e);\n                    return;\n                }"
+    ],
+    [
+        "indexer.index_document(code_doc)"
+    ],
+    [
+        "def model_classify(self, xs, ys=None):\n    "
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "coin_to_asset[\"ETH\"]][\"position\"][\"leverage\"], indent=2))"
+    ],
+    [
+        "// \u6ed1\u52a8\u5230\u4e0b\u4e00\u4e2a\u89c6\u9891"
+    ],
+    [
+        "        if not hasattr(self._state, \"transactions\"):\n            self._state.transactions = []"
+    ],
+    [
+        ".add(Prompt.of(\"List Steps\", \"help me add comments to the key steps of the following code snippet and return the optimized code with comments. without adding any additional information except for the optimized code. Here is the code snippet:{"
+    ],
+    [
+        "ChatGPTAgent(token=os.environ[\"CHATGPT_TOKEN\"], model=model)"
+    ],
+    [
+        "os.environ['GIT_ASKPASS'] = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'askpass.py')\n    os.environ['GIT_USERNAME'] = userName\n    os.environ['GIT_PASSWORD'] = password"
+    ],
+    [
+        "K checkKey(K key) {\n        return key;\n    }"
+    ],
+    [
+        "k, v = re.match(r'([^=]+)=(.*)', value).groups()"
+    ],
+    [
+        "{\n    if (page === 0) {\n      setCurrentPage(1);\n    } else if (page > pages) {\n      setCurrentPage(pages);\n    } else {\n      setCurrentPage(page);\n    }\n  }"
+    ],
+    [
+        "if (event.ctrlKey || event.altKey || event.metaKey) {\n    return true;\n  }"
+    ],
+    [
+        ""
+    ],
+    [
+        "function Start ()\n{\n    // Set the target intensity to the low intensity.\n    targetIntensity = lowIntensity;\n}"
+    ],
+    [
+        "self.engine = engine\n        self.in_assign = False"
+    ],
+    [
+        "record.getLength());"
+    ],
+    [
+        "String dembedFooter = mainConfig.getDembedFooter();"
+    ],
+    [
+        "l(WebKit.WKPermissionDecisionDeny, 2)"
+    ],
+    [
+        "    for server in cluster.values():\n        server.create()"
+    ],
+    [
+        "function Console(consoleId, motd) {\n      this.consoleObj = document.getElementById(consoleId);\n      this.shell = new Shell(this);\n      this.inputMode = Enum.consoleInputMode.NONE;\n      this.inputLine = null;\n      this.lastDiv = null;\n\n      //Print the motd.\n      this.print(motd, Enum.textColorClass.GREEN);\n    }"
+    ],
+    [
+        "return stack.join('\\n');"
+    ],
+    [
+        "void promptDenied();"
+    ],
+    [
+        "characterCount++;"
+    ],
+    [
+        "function Node(value) "
+    ],
+    [
+        "def md5sum(message):\n    "
+    ],
+    [
+        "RtcMsg.createContractTransaction(\n                        subject, application, content, to));"
+    ],
+    [
+        "for i, (start, end) in enumerate(zip(span_starts, span_ends)):\n            candidate_mentions.append(text[start : end + 1])"
+    ],
+    [
+        " group += paren_string[i];\n"
+    ],
+    [
+        ""
+    ],
+    [
+        "while (i < length) {\n            String str2 = strArr[i];\n            stringBuilder = new StringBuilder(stringBuilder).append(\" AND \").append(k.ger).append(\"!='\").append(str2).append(\"'\").toString();\n            i++;\n        }"
+    ],
+    [
+        "def set_lr(optimizer, new_lr):\n    "
+    ],
+    [
+        "{\n        ObjectGraph.create(new MyModule()).inject(this);\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "while (i < n && typePath.charAt(i) >= '0' && typePath.charAt(i) <= '9') {\n                    typeArg = typeArg * 10 + (typePath.charAt(i++) - '0');\n                }"
+    ],
+    [
+        "orderBookLogger.off();"
+    ],
+    [
+        "        with mocked_gateway:\n            response = self.request('POST', '/api/kernels/' + kernel_id + '/interrupt')\n            self.assertEqual(response.status_code, 204)"
+    ],
+    [
+        "TimeConverter.toTicks(delay, unit),\n                        TimeConverter.toTicks(period, unit))\n        );"
+    ],
+    [
+        ""
+    ],
+    [
+        "state_load(\"qrcodes\", state)"
+    ],
+    [
+        "parameter.setImages(new String[]{"
+    ],
+    [
+        ", \"Command {"
+    ],
+    [
+        "while (match = getterRegex.exec(injectedScriptSource))\n      getters.add(match[0]);"
+    ],
+    [
+        "get();"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "instance.getCore().severe(\"Cannot set the client address for the server channel\", exception);"
+    ],
+    [
+        "report.getAverages().get(test.getTestName())"
+    ],
+    [
+        "install(new RemoteQueryCancellationModule());"
+    ],
+    [
+        "item() if loss is not None else 0))"
+    ],
+    [
+        "512]]"
+    ],
+    [
+        "if f1 == f2:\n\t\t\treturn True"
+    ],
+    [
+        "return block(x, 'h', past=past, params=params, train=train)"
+    ],
+    [
+        "\n\t\t} else if (i % 4 == 0){\n"
+    ],
+    [
+        "\n            while (x % i == 0) {\n"
+    ],
+    [
+        "for (int i = 0; i < K; i++) {\n            st = new StringTokenizer(br.readLine());\n            rules[i] = new Rule(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()));\n        }"
+    ],
+    [
+        ""
+    ],
+    [
+        ".map(months, function(month) {\n        return month.querySelector('[data-date]').dataset.date;\n      });"
+    ],
+    [
+        ""
+    ],
+    [
+        "find_by_chain_id(3) == deep_llm"
+    ],
+    [
+        "for (int i = 0; i < len; i++) {\n            m1 += adapter1.getDouble(data1, i);\n            m2 += adapter2.getDouble(data2, i);\n        }"
+    ],
+    [
+        "box.get(key));"
+    ],
+    [
+        ""
+    ],
+    [
+        "public Users(String name) {\n        this.name = name;\n    }\n\n    public String getName() "
+    ],
+    [
+        ""
+    ],
+    [
+        "\"\"\"\n        Get the 'tensorflow.dtype' equivalent to this MLRun data type.\n\n        :return: The 'tensorflow.dtype' equivalent to this MLRun data type.\n\n        :raise ValueError: If tensorflow is not supporting this data type.\n        \"\"\""
+    ],
+    [
+        "{\n        TweetListFragment fragment = new TweetListFragment();\n        Bundle args = new Bundle();\n        args.putInt(ARG_COLUMN_COUNT, columnCount);\n        fragment.setArguments(args);\n        return fragment;\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "orderedDish.setStatus(status);"
+    ],
+    [
+        "CONTEXT]:"
+    ],
+    [
+        "\n            result.push(maxlevel);\n"
+    ],
+    [
+        "if (user.get().getRole().equals(role)) {\n            attendanceRepository.findByUserId(userId).forEach(\n                    attendance -> events.add(attendance.getEvent())\n            );\n        }"
+    ],
+    [
+        "// Register the service worker"
+    ],
+    [
+        "public Long getSimCardId() {\n        return simCardId;\n    }"
+    ],
+    [
+        "private static void preparingCloudResources(Context context) {\n        Set<String> keySet = SCENE_RESOURCES.keySet();\n        for (String key : keySet) {\n            String filePath = SCENE_FOLDER + File.separator + key;\n            File file = new File(filePath);\n            if (!file.exists()) {\n                uploadFile(context, filePath, SCENE_RESOURCES.get(key));\n            }\n        }\n    }"
+    ],
+    [
+        "if (argv._.length > 0) {\n    params.push(argv._[0]);\n}"
+    ],
+    [
+        "locust_task_weight == 1"
+    ],
+    [
+        ""
+    ],
+    [
+        "function removeMarkdownStar (s) {\n  const r = /^\\*\\s/\n  if (r.test(s)) {\n    return s.replace(r, '')\n  }\n  return s\n}"
+    ],
+    [
+        "get('package', 'kek')"
+    ],
+    [
+        ""
+    ],
+    [
+        ".get(uuid).forEach(request -> request.getFuture().complete(response));"
+    ],
+    [
+        "    arr = np.asarray(arr, dtype=float)\n    norm = linalg.norm(arr, axis=axis, keepdims=True)\n    return arr / norm"
+    ],
+    [
+        "Iterator<String> getScripts();"
+    ],
+    [
+        "(pointer2.getNext() != getHead()) {"
+    ],
+    [
+        "if name == '__init__':\n        return True"
+    ],
+    [
+        "{\n        self.monitorClient.info(self._updateInfo.bind(self))\n      }"
+    ],
+    [
+        ""
+    ],
+    [
+        "if(DEBUG) {\n\t\tif(isGM) {\n\t\t\tconsole.log(LOG_PREFIX + 'Greasemonkey API detected.');\n\t\t}\n\t\telse {\n\t\t\tconsole.log(LOG_PREFIX + 'Greasemonkey API not detected.');\n\t\t}\n\t}"
+    ],
+    [
+        "n degrees * radConst;"
+    ],
+    [
+        ""
+    ],
+    [
+        "show_single_comment(1, session, new_user)"
+    ],
+    [
+        "@Override\n    public String getMystromFriendlyName(String itemName) {\n        MyStromEcoPowerBindingConfig config = (MyStromEcoPowerBindingConfig) bindingConfigs.get(itemName);\n        return config != null ? config.mystromFriendlyName : null;\n    }"
+    ],
+    [
+        "end('okay');"
+    ],
+    [
+        ""
+    ],
+    [
+        "    var new_lst = [];\n"
+    ],
+    [
+        "] cmdLenNew = new byte[2];\n                cmdLenNew[0] = (byte) (ndefLenIntRequest & 0xFF);\n                cmdLenNew[1] = (byte) ((ndefLenIntRequest >> 8) & 0xFF);"
+    ],
+    [
+        ""
+    ],
+    [
+        "(lifeBlockBlocked){"
+    ],
+    [
+        "    users = User.query.all()\n    return jsonify([user.to_dict() for user in users])"
+    ],
+    [
+        "urls)"
+    ],
+    [
+        "building_type == 'residential':"
+    ],
+    [
+        "        raise NotImplementedError(\n            'Must define log function to use this base class'\n        )"
+    ],
+    [
+        ""
+    ],
+    [
+        "ocessing RpcStatus')"
+    ],
+    [
+        "= engineersService.findByIdFetchCollisions(id);"
+    ],
+    [
+        ""
+    ],
+    [
+        "ray[n];"
+    ],
+    [
+        "etwork;"
+    ],
+    [
+        "return decodeText(value);"
+    ],
+    [
+        ""
+    ],
+    [
+        "return \"installed\""
+    ],
+    [
+        "if (method === \"create\") {\n        resp = guid();\n        TAP.setString(resp, \"id\");\n    } else if (method === \"read\") {\n        resp = TAP.getString(\"id\");\n    }"
+    ],
+    [
+        "+= quantidade * product.get().getValue();"
+    ],
+    [
+        "check (sum) {\n    if (!(sum instanceof Buffer)) {\n      throw new Error('sum must be a Buffer')\n    }\n\n    if (sum.length !== SHA256_BYTE_SIZE) {\n      throw new Error('sum must be the correct length')\n    }\n\n    return xor(this.sum, sum).equals(Buffer.alloc(SHA256_BYTE_SIZE))\n  }"
+    ],
+    [
+        "for feature in config[CONF_FEATURE_LIST]:\n                if feature in (FEATURE_PLAY_PAUSE, FEATURE_PLAY_STOP):\n                    feature_list[feature] = get_media_player_features(state)"
+    ],
+    [
+        "logger = get_global_dist_logger()"
+    ],
+    [
+        ""
+    ],
+    [
+        "\n            if (n % i == 0 || n % (i + 2) == 0) return false;\n"
+    ],
+    [
+        "try {\n            allTags.getItems().setAll(database.tags().getAll());\n        } catch (SQLException e) {\n            e.printStackTrace();\n        }"
+    ],
+    [
+        ""
+    ],
+    [
+        "\n                times += 1\n"
+    ],
+    [
+        "pe)"
+    ],
+    [
+        "run_dinov2_inference(model, file, class_names)"
+    ],
+    [
+        "flow.getContext());"
+    ],
+    [
+        "\n            song.push(1);\n"
+    ],
+    [
+        "set['actions']"
+    ],
+    [
+        "def main():\n    "
+    ],
+    [
+        "ntifier;"
+    ],
+    [
+        "def __repr__(self) -> str:\n    "
+    ],
+    [
+        "Map<String, Object> json = JsonHelper.toMap(data.getResponse().body());"
+    ],
+    [
+        "toStr(methodInfo.getActionInfo().getBatchSql()));"
+    ],
+    [
+        "{\n\tif (MagicPuzzleTrail.length >= MagicPuzzleTrailLimit) MagicPuzzleTrail.shift();\n\tMagicPuzzleTrail.push({ X: MouseX, Y: MouseY });\n}"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "else{\n        return prod;\n    }"
+    ],
+    [
+        "@SuppressWarnings(\"serial\")\n    private void createSelectMappedStatement(String mappedStatement, SqlSource sqlSource, Class<?> resultType) "
+    ],
+    [
+        "methodLog.setDesc(finishedDesc);"
+    ],
+    [
+        "public void setTabId(int tabId) "
+    ],
+    [
+        "def oneVsAll(X, y, num_labels, the_lambda):\n    "
+    ],
+    [
+        ""
+    ],
+    [
+        "url"
+    ],
+    [
+        "classify_boundary_nodes(example_graph, nodes)"
+    ],
+    [
+        "public abstract String getCanonicalName();"
+    ],
+    [
+        "validate_user(user)"
+    ],
+    [
+        "get_header_value_from_response(response, self.rule.HEADER_NAME), \"0\")"
+    ],
+    [
+        "    sum = 0\n"
+    ],
+    [
+        "ue;"
+    ],
+    [
+        "{\n  return degrees * radConst;\n}"
+    ],
+    [
+        "make_morton3d_descriptor(length)"
+    ],
+    [
+        "cookieStore.updateCookies(response);"
+    ],
+    [
+        "ap;"
+    ],
+    [
+        "async_ncrypt_unprotect_secret(enc_blob)"
+    ],
+    [
+        "join_lists(list_data(), list_data2(), 'Description', 'MergedData')"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "        q = super().get_es_django_indexable(force_reindexing).prefetch_related(\"tags\")"
+    ],
+    [
+        "attributes()[classname]"
+    ],
+    [
+        "hct.getChroma();"
+    ],
+    [
+        "from_text(text, self.auto_infer_settings)"
+    ],
+    [
+        "def create_default_items(self):\n    "
+    ],
+    [
+        "if (typeof event.promise.unhandledRejection === 'function') {\n            event.promise.unhandledRejection(event);\n        }"
+    ],
+    [
+        "var streamer   = new saxpath.SaXPath(saxParser, '//nam3_spac3:nod3[@special_attribut3_name=\"foo\"]/subnod3', recorder);\n\n        assert.throws(function() {\n            saxParser.on('end', testNodesRecorded);\n            fileStream.pipe(saxParser);\n        }, SyntaxError);"
+    ],
+    [
+        "mySettingsComponent.isAutoReplaceCode() != settings.autoReplaceCode;"
+    ],
+    [
+        "pass"
+    ],
+    [
+        "public abstract boolean setStretch (final MultiSegmentSequence mss);"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "def test_send(self):\n        "
+    ],
+    [
+        "return \"staff\";"
+    ],
+    [
+        "constructor() {\n\t\t/**\n\t\t * Map of all markers added to the collection.\n\t\t *\n\t\t * @private\n\t\t * @type {Map.<String, module:engine/model/markercollection~Marker>}\n\t\t */\n\t\tthis._markers = new Map();\n\t}"
+    ],
+    [
+        "\n        String strongest = \"\";\n"
+    ],
+    [
+        "@Override\n    public String getId() "
+    ],
+    [
+        "public String getProcessName() {\n        return processName;\n    }"
+    ],
+    [
+        "Main.getLogger().error(\"The callable didn't return a value when trying to run 'joke'\");"
+    ],
+    [
+        "public int getFaultCode() {\n        return faultCode;\n    }"
+    ],
+    [
+        "public Object encode(Object value) throws EncoderException "
+    ],
+    [
+        "(game.getId() == id) {"
+    ],
+    [
+        ""
+    ],
+    [
+        "neg_sum, [2, 0, 4])"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "\n        words = sentence.split()\n"
+    ],
+    [
+        "try {\n                threads.get(i).join();\n            } catch (InterruptedException e) {\n                throw new RuntimeException(e);\n            }"
+    ],
+    [
+        "etail(problem);"
+    ],
+    [
+        ""
+    ],
+    [
+        "user(\"Consider the following recipe for a chocolate cake:\")"
+    ],
+    [
+        "\n    for(var i = 0; i < lst.length; i++){\n"
+    ],
+    [
+        "if (waitPoint.getCount() == 0) {\n            waitPoint.countDown();\n        }"
+    ],
+    [
+        "(sender, command) -> Component.text(\"Usage: \" + command.getUsage()));"
+    ],
+    [
+        "this.renderToScreen = false;"
+    ],
+    [
+        "apnConnection.on('error', function(e){\n      console.log('APN Connection error is :', e);\n  });\n\n  apnConnection.on('transmissionError', function(e){\n      console.log('APN transmission error is :', e);\n  });\n\n  apnConnection.on('transmissionSuccess', function(e){\n      console.log('APN transmission success is :', e);\n  });\n\n  apnConnection.pushNotification(body, payload, array);"
+    ],
+    [
+        "for (int i = 0; i < expected.length; i++) {\n            sumExpected += expected[i];\n            sumObserved += observed[i];\n        }"
+    ],
+    [
+        ""
+    ],
+    [
+        "function TranslationPluralHelper() "
+    ],
+    [
+        "private void dfs(char[][] board, int x, int y) "
+    ],
+    [
+        "udget, progression } = props;"
+    ],
+    [
+        "constructor(instance) {\n    super(instance);\n    this.animation = {\n      w: 32, h: 32,\n      frame: 0, speed: 0\n    };\n    this.animation.w = instance.animation.w;\n    this.animation.h = instance.animation.h;\n    this.animation.speed = instance.animation.speed;\n    this.animation.frame = instance.animation.frame;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;\n    this.animation.speed = instance.animation.speed;"
+    ],
+    [
+        "rmsd_by_resmap(structure,structure_ref,resmap,allow_missing_res=True,verbose=False)"
+    ],
+    [
+        ""
+    ],
+    [
+        "{\n        JdiModelTargetModule module = getTargetModuleIfPresent(name);\n        if (module != null) {\n            changeElements(List.of(module), List.of(), Map.of(), \"Unloaded\");\n        }\n    }"
+    ],
+    [
+        "add_constraint(sum_lt_val, ('listvar',))"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "return Response(\n            generate(),\n            mimetype=\"text/csv\",\n            headers={\n                \"Content-Disposition\":\n                \"attachment;filename=%s.csv\" % self.model.__name__.lower()\n            }\n        )"
+    ],
+    [
+        "\n        operand.splice(count + 1, 1);\n"
+    ],
+    [
+        "logger.warning(f'Request {request_id} was rejected by excess attempts {self.retry_times} times')"
+    ],
+    [
+        "iterator.set(TokenRange.encompassing(lastRange, previous));"
+    ],
+    [
+        "generate_registers_I(len(pep))"
+    ],
+    [
+        "\n    var result = [];\n"
+    ],
+    [
+        "change_summary(curr)"
+    ],
+    [
+        "readAnimView.buildBitmap(coverSlideDirection);"
+    ],
+    [
+        ""
+    ],
+    [
+        "public static int getHomeId(ActionBar actionBar) "
+    ],
+    [
+        "calls.push('nop called');"
+    ],
+    [
+        "public static String findPrivate(NestMates f) "
+    ],
+    [
+        "var el2 = document[property];\n        testUtils.assertStartsWith(\"SecureElement\", el2.toString(), \"Expected document.body in helper to be a SecureElement\");"
+    ],
+    [
+        "return ' '.join(html.findAll(text=True))"
+    ],
+    [
+        "{\n        return SIZE;\n    }"
+    ],
+    [
+        "mvImageButton):"
+    ],
+    [
+        "long current_depth = 0;\n"
+    ],
+    [
+        "display.getMode().toString()));"
+    ],
+    [
+        "\n    }"
+    ],
+    [
+        "    try:\n        return ipfshttpclient.Client(daemonMultiaddr)\n    except (ConnectionError, AddressError):\n        raise IPFSDaemonNotAvailable(\n            f'Daemon is not running at: {daemonMultiaddr}',\n        )"
+    ],
+    [
+        ""
+    ],
+    [
+        "dto.setUserName(userName);"
+    ],
+    [
+        "{\n        return \"DefaultColumn{\" +\n                \"name='\" + name + '\\'' +\n                \", value=\" + value +\n                '}';\n    }"
+    ],
+    [
+        "for i in range(1, 7):\n            e = tkinter.Entry(right_frame, bg='lightBlue', fg='black')\n            name = 'Player' + str(i)\n            e.insert(0, name)\n            e.pack()"
+    ],
+    [
+        "solve(evidence=a)"
+    ],
+    [
+        "\n        if value >= key:\n"
+    ],
+    [
+        "get(self.config['fix_model'])"
+    ],
+    [
+        "for filename in fnmatch.filter(filelist, filepat):\n            yield os.path.join(path, filename)"
+    ],
+    [
+        "add(i, embedding)"
+    ],
+    [
+        "if self._root is not None:\n      content += \"root={self._root})\""
+    ],
+    [
+        "add_result(probility.detach().cpu())"
+    ],
+    [
+        "perCoreMsrRegister), numCores)"
+    ],
+    [
+        "raster.getDataElements(lX, y, predictor);"
+    ],
+    [
+        "info(f\"Start Loading packets of {pcap}\")"
+    ],
+    [
+        "String exchangeRate = result.substring(result.indexOf(\":\") + 1);"
+    ],
+    [
+        "\n        return True\n"
+    ],
+    [
+        "async function _export(address, format) "
+    ],
+    [
+        ""
+    ],
+    [
+        "{\n  return name.replace(/\\//g, '\\\\');\n}"
+    ],
+    [
+        ".number('distance', distance);"
+    ],
+    [
+        "n this;"
+    ],
+    [
+        "{\n        return logbookLifeCycleParameters;\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "\n      arrayXOR.push(0);\n"
+    ],
+    [
+        ""
+    ],
+    [
+        "nn.VectorQuant:"
+    ],
+    [
+        "function gen_commit(kmsgs) "
+    ],
+    [
+        ""
+    ],
+    [
+        "\"foo\");"
+    ],
+    [
+        "while True:\n                string_custom_id = string_custom_ids[index]\n                repr_parts.append(repr(string_custom_id))\n                \n                index += 1\n                if index == limit:\n                    break"
+    ],
+    [
+        "return encode_hex(x)"
+    ],
+    [
+        "symbols):"
+    ],
+    [
+        "else{\n"
+    ],
+    [
+        "if (handle === 'round') {\n\t\t\tthis.handle1.addClass('round');\n\t\t\tthis.handle2.addClass('round');\n\t\t}"
+    ],
+    [
+        "messageHandler.destroySession(username);"
+    ],
+    [
+        "Mapping = {};"
+    ],
+    [
+        ""
+    ],
+    [
+        "newValue = getPropertyValue(newKey, mavenProjectProperties, environment, circularDefinitionPreventer);"
+    ],
+    [
+        "RMOVE_LIST[reach_move])"
+    ],
+    [
+        ""
+    ],
+    [
+        "return (\n    <thead>\n      <tr>\n        {actionsShowed.length > 0 && (\n          <th className=\"table-header-actions\">\n            <TableHeaderActions actions={actionsShowed} />\n          </th>\n        )}\n        {columns.map((column, index) => (\n          <th key={index}>\n            {columnQueries[column] && (\n              <a\n                href={`#${columnQueries[column]}`}\n                onClick={() => onSearch(columnQueries[column])}\n              >\n                {columnValues[column]}\n              </a>\n            )}\n            {!columnQueries[column] && columnValues[column]}\n          </th>\n        ))}\n        {filters && (\n          <th className=\"table-header-filter\">\n            <input\n              type=\"text\"\n              placeholder=\"Filter\"\n              onChange={(e) => onFilter(e.target.value)}\n            />\n          </th>\n        )}\n        {sort && (\n          <th className=\"table-header-sort\">\n            <a href=\"#\" onClick={() => onSort('asc')}>\n              \u25b2\n            </a>\n            <a href=\"#\" onClick={() => onSort('desc')}>\n              \u25bc\n            </a>\n          </th>\n        )}\n      </tr>\n    </thead>\n  );\n}"
+    ],
+    [
+        "return toJSON();"
+    ],
+    [
+        "return performAjax(url, method, data).promise;"
+    ],
+    [
+        "if (type == EventType.STARTED) {\n                transferredBytes = 0L;\n            }"
+    ],
+    [
+        "}"
+    ],
+    [
+        "public void addParameterDefinitions(List<ParameterDefinition> paramList) {\n        paramList.add(new ParameterDefinitionImpl(PARAM_TYPE, DataTypeDefinition.QNAME));\n    }"
+    ],
+    [
+        "\n  }\n"
+    ],
+    [
+        "while (count !== index) {\n        current = current.next;\n        count++;\n      }"
+    ],
+    [
+        ""
+    ],
+    [
+        "decode(z)"
+    ],
+    [
+        "1;"
+    ],
+    [
+        "@RestrictTo(RestrictTo.Scope.LIBRARY)\n    public boolean isClickable() {\n        return mOnClickListener != null;\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "def compute_accuracy(self, dataloader: DataLoader):\n        "
+    ],
+    [
+        "b, 2)"
+    ],
+    [
+        "if request.user.is_staff:\n                return func(view, request, *args, **kw)"
+    ],
+    [
+        "\n      if (left_to_right[i] && right_to_left[j]) {\n"
+    ],
+    [
+        "from_json(res)"
+    ],
+    [
+        "fs.mkdir(path, mask, function(err) {\n        if (err) {\n            if (err.code == 'EEXIST') cb(null);\n            else cb(err);\n        } else cb(null);\n    });"
+    ],
+    [
+        ""
+    ],
+    [
+        "discordActivityAccess.stop();"
+    ],
+    [
+        "set_model(\"model\", 1, 1)"
+    ],
+    [
+        "break;"
+    ],
+    [
+        "iapApiCallback.onFail(e);"
+    ],
+    [
+        "\tvar result = [];\n"
+    ],
+    [
+        "println(\"Dep\u00f3sito realizado com sucesso.\");"
+    ],
+    [
+        ""
+    ],
+    [
+        "for (int i = 0; i < columnCount; i++) {\n                idealWidths[i] = td.getOffsetWidth();\n                td = td.getNextSiblingElement();\n            }"
+    ],
+    [
+        "return False"
+    ],
+    [
+        "{\n            return \"User{\" +\n                    \"name='\" + name + '\\'' +\n                    \", surname='\" + surname + '\\'' +\n                    '}';\n        }"
+    ],
+    [
+        "= botsAPI.getOnlineBots();"
+    ],
+    [
+        "set_arch(Architecture.X86)"
+    ],
+    [
+        "request.getInput().getTimeout() * 20L);"
+    ],
+    [
+        "// If the picker is open, close it."
+    ],
+    [
+        "  var numString = numbers.split(\" \");\n"
+    ],
+    [
+        "    blocks = parse_json_file_for_blocks(path)\n    variables = []\n    for block in blocks:\n        variables.extend(get_outputs_from_block(block))\n    return variables"
+    ],
+    [
+        "function SubClass() "
+    ],
+    [
+        "@GET\n    @Path(\"/{id}\")\n    @AnonymousAllowed\n    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })\n    public Response getCategory(@PathParam(\"id\") String id) throws SearchException "
+    ],
+    [
+        "\"\"\"\n    Given a project and user, create notification policy for it.\n    \"\"\""
+    ],
+    [
+        "vertex_added.connect(self._add_vert)"
+    ],
+    [
+        "if (drawable != null) {\n            drawable.setCallback(this);\n        }\n    }"
+    ],
+    [
+        "'"
+    ],
+    [
+        "\n\tfor(var i=0;i<s.length;i++){\n"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "while i < len(used):\n            if used[i]:\n                i += 1\n            else:\n                j = i\n                while j < len(used) and not used[j]:\n                    j += 1\n                if j - i >= min_leftover:\n                    io.write_fasta(leftover_f, name, contigs[name][i:j])"
+    ],
+    [
+        ""
+    ],
+    [
+        "        coordinates.push([i, j]);}"
+    ],
+    [
+        "elementType.buildFormattedString(nextPrefix, builder);"
+    ],
+    [
+        "}"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "(ref.toString(), issues);"
+    ],
+    [
+        ""
+    ],
+    [
+        "name, 'history')"
+    ],
+    [
+        "driver == \"asyncpg\""
+    ],
+    [
+        ""
+    ],
+    [
+        "HistoricProcessInstanceQuery startedBy(String userId);"
+    ],
+    [
+        "function contains(arr, item) {\n    if (!angular.isArray(arr)) {\n      return false;\n    }\n    return arr.indexOf(item) > -1;\n  }"
+    ],
+    [
+        "if (data.dataset) {\n\t\t\t\trows = this._getParser(data).call(this, data, mapper);\n\t\t\t} else {\n\t\t\t\trows = data;\n\t\t\t}"
+    ],
+    [
+        "assertOrgLeader.shouldNotEmpty(leaderId);"
+    ],
+    [
+        "    with myopen(input_file) as f:\n        for line in f:\n            if line.startswith(\"@\"):\n                name = re.sub('[@]', '', line)\n                seq = f.next()\n                name2 = re.sub('[@]', '', f.next())\n                qual = f.next()\n                yield Fastq(name, seq, name2, qual)"
+    ],
+    [
+        "if (this.href_attribute) {\n        this.app.$element().delegate('[' + this.href_attribute + ']', 'click', function(e) {\n          var $el = $(e.currentTarget);\n          proxy.setLocation($el.attr(proxy.href_attribute));\n          e.preventDefault();\n        });\n      }"
+    ],
+    [
+        "contextValue.getId());"
+    ],
+    [
+        "= mainConfig.getDembedTitle();"
+    ],
+    [
+        ""
+    ],
+    [
+        "String gitlabEventUUID = mrSimple.getGitlabEventUUID();"
+    ],
+    [
+        "if (!HadesCache.getGroovyCode(instanceName).equals(groovyCode)) {"
+    ],
+    [
+        "\n                map.put(val, (long)1);\n"
+    ],
+    [
+        "lcas.addAll(cas);\n        for (OWLObject ca : cas) {\n            Set<OWLObject> zs = g.getAncestors(ca, overProps);\n            for (OWLObject z : zs) {\n                for (OWLObject lca : lcas) {\n                    if (lca.equals(z))\n                        lcas.remove(lca);\n                }\n            }\n        }"
+    ],
+    [
+        "def process(self, device, results, log):\n        "
+    ],
+    [
+        ""
+    ],
+    [
+        "cprint('Test Loss: %.4f' % test_loss)"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "run_energy_efficiency_optimization(test_data)"
+    ],
+    [
+        "try {\n\t\t\t\tobj = JSON.parse(data);\n\t\t\t} catch (e) {\n\t\t\t\t// Ignore\n\t\t\t}"
+    ],
+    [
+        ""
+    ],
+    [
+        "_getHeaderString() {\n    const subKernels = this.subKernels;\n    if (subKernels === null || subKernels.length < 1) {\n      return '';\n    } else {\n      return `\n        #define KERNEL_SIZE ${ subKernels.length }\n        #define KERNEL_ARG_0 ${ subKernels[0].name }\n      `;\n    }\n  }"
+    ],
+    [
+        "for (let i = 0; i < notes.length; i++) {\n    let x = i * w;\n    let y = map(notes[i], 0, 127, height, 0);\n    fill(255);\n    rect(x, y, w, height);\n  }"
+    ],
+    [
+        "def export_to_json(self, ids):\n        "
+    ],
+    [
+        "\n        return []\n"
+    ],
+    [
+        "await send(cToken, 'harnessSetTotalSupply', [redeemTokens]);\n}"
+    ],
+    [
+        ""
+    ],
+    [
+        "get(b, default_val=0) + 1"
+    ],
+    [
+        "convert(response.plan_result.plan, upf_problem)"
+    ],
+    [
+        "function defineIteratorMethods(prototype) {\n    prototype.next = function() {\n      return this._invoke(\"next\", undefined);\n    };\n\n    prototype.throw = function(e) {\n      return this._invoke(\"throw\", e);\n    };\n\n    prototype.return = function(value) {\n      return this._invoke(\"return\", value);\n    };\n  }"
+    ],
+    [
+        ""
+    ],
+    [
+        "recordName).inferSchema(object));"
+    ],
+    [
+        "protected void setHeightVisible(boolean visible) {\n        Style style = m_heightField.getElement().getParentElement().getStyle();\n        if (visible) {\n            style.clearDisplay();\n        } else {\n            style.setDisplay(Display.NONE);\n        }\n    }"
+    ],
+    [
+        "{"
+    ],
+    [
+        "return result;"
+    ],
+    [
+        "File logDir() "
+    ],
+    [
+        "raw_value == original_condition"
+    ],
+    [
+        "{\n    return url.replace(/\\/?$/, '/');\n}"
+    ],
+    [
+        "{\n    if(sessions[sessionToken]){\n        sessions[sessionToken].stop();\n        delete sessions[sessionToken];\n    }\n    if(timeouts[sessionToken]){\n        clearTimeout(timeouts[sessionToken]);\n        delete timeouts[sessionToken];\n    }\n}"
+    ],
+    [
+        "pi_v1, version=1)"
+    ],
+    [
+        "(campaign.getGame());"
+    ],
+    [
+        "OutputWindow.print(\"Proxy server Listening on \" + bindAddress);"
+    ],
+    [
+        "const [addressCity, setCity] = useState(city || \"\")"
+    ],
+    [
+        "void dispose();"
+    ],
+    [
+        "public boolean addValue(String text, int score) {\n        if (score > 0) {\n            if (strings.contains(text)) {\n                int index = strings.indexOf(text);\n                try {\n                    score = ((Integer) scores.get(index)).intValue() + score;\n                } catch (Exception ignore) {\n                    ignore.printStackTrace();\n                }\n                scores.set(index, new Integer(score));\n            } else {\n                strings.add(text);\n                scores.add(new Integer(score));\n            }\n            return removeOne(text);\n        } else {\n            return false;\n        }\n    }"
+    ],
+    [
+        "masks = glob.glob(MASKS_PATH + '*')"
+    ],
+    [
+        "{\n    }"
+    ],
+    [
+        "add_constraint(wb_dst_src, ('wb', 'dst0', 'src0'))"
+    ],
+    [
+        ""
+    ],
+    [
+        "converse(message_payload.message, message_payload.conversation_id)"
+    ],
+    [
+        ".setRealmPathToGFX(realm.getRealmPathToGFX());"
+    ],
+    [
+        "String databaseName = database.getConnection().getMetaData().getDatabaseProductName();"
+    ],
+    [
+        ""
+    ],
+    [
+        "while node is not None:\n            if (uri := node.uri) is not None:\n                keys.appendleft(uri)"
+    ],
+    [
+        "const strangeFiles = {};\n\n  _.each(files, (f, filename)=> {\n    const fn = toWindows(filename);\n    strangeFiles[fn] = f;\n  });"
+    ],
+    [
+        ""
+    ],
+    [
+        "return post();"
+    ],
+    [
+        ""
+    ],
+    [
+        "messages = body.getMessages();"
+    ],
+    [
+        "AliyunPushLog.e(REC_TAG, \"key \" + entry.getKey() + \" value \" + entry.getValue());"
+    ],
+    [
+        "try {\n            var decodedPacketInfo = uriResolver.apply(fullHttpRequest);\n            var encodedPacketInfo = new EncodedPacketInfo(decodedPacketInfo.getPacket(), new HttpAttachment(fullHttpRequest));\n            list.add(encodedPacketInfo);\n        } catch (Exception e) {\n            logger.error(\"[{}]\u89e3\u7801exception\u5f02\u5e38\", fullHttpRequest, e);\n            throw e;\n        } catch (Throwable t) {\n            logger.error(\"[{}]\u89e3\u7801throwable\u9519\u8bef\", fullHttpRequest, t);\n            throw t;\n        }"
+    ],
+    [
+        "{\n        if (f.getRFoot().getY() > 0)\n            f.getRFoot().moveDown();\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "function setStatus(table, updateField, whereField) {\n  return mysql.update(updateField).from(table).where(whereField).then();\n}"
+    ],
+    [
+        ""
+    ],
+    [
+        "\"\"\"Solves the LSA problem using the lapjv library.\"\"\"\n    from lapjv import lapjv"
+    ],
+    [
+        "if (c == '\\n') {\n            line++;\n            column = 1;\n        } else {\n            column++;\n        }"
+    ],
+    [
+        "function LoginFormModal() "
+    ],
+    [
+        "parse_obj(values[\"revoke_event\"])"
+    ],
+    [
+        ""
+    ],
+    [
+        "    level += 1l;"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "{"
+    ],
+    [
+        ""
+    ],
+    [
+        "\n                s += int(j)"
+    ],
+    [
+        ""
+    ],
+    [
+        "boolean filter(T type);"
+    ],
+    [
+        "challenge = challengeBiz.selectOne(challengeName);"
+    ],
+    [
+        "def get_index():\n    "
+    ],
+    [
+        "{e++;a.column=e;"
+    ],
+    [
+        "get_closest_vertex((+1, 0, 0))"
+    ],
+    [
+        "if(!cell)\n\t\tcontinue;"
+    ],
+    [
+        "model(x)"
+    ],
+    [
+        "@VisibleForTesting\n    boolean isConvertibleToFBE() "
+    ],
+    [
+        "if self.portNumber is not None:\n            self.com = serial.Serial(self.portString, 115200, timeout=1)"
+    ],
+    [
+        "def update(self, request, *args, **kwargs):\n        "
+    ],
+    [
+        "// var synth = new WebMidiLink()"
+    ],
+    [
+        "= collisionsService.findByIdFetchCollisionOwner(id);"
+    ],
+    [
+        "xhr.open('POST', 'http://example.com', true);\n   xhr.setRequestHeader('Content-Type','application/json');\n   xhr.setRequestHeader('Authorization',to_header(create_signature()));\n   xhr.onreadystatechange = function(){\n\tconsole.log(xhr.readyState, xhr.status, xhr.responseText, xhr.statusText);\n    if(xhr.readyState == 4){\n      if(xhr.status == 200){\n        var data = JSON.parse(xhr.responseText);\n        localStorage.setItem('oauth_key', data.oauth_key);\n        localStorage.setItem('oauth_secret', data.oauth_secret);\n        finish_setup();\n      }else{\n        getEl('login_error').style.display = '';\n      }\n    }\n  }"
+    ],
+    [
+        "@Override\n    public String getName() {\n        return \"asyncCallLuaFunction\";\n    }"
+    ],
+    [
+        "    if 3 != len( obj):\n        raise TypeError( len( obj), \"obj not a 3-array\")\n    model, proj, view = readModProjView( model, proj, view)\n    _glulib.gluUnProject( obj[ 0], obj[ 1], obj[ 2], model, proj, view,\n                         win[0:1], win[ 1:2], win[ 2:3])"
+    ],
+    [
+        ""
+    ],
+    [
+        "geometry_combo.currentText()"
+    ],
+    [
+        "transform_normal(normal, extrin)"
+    ],
+    [
+        "\n        if(s[i-2] === s[i] && s[i-1] === s[i]){\n"
+    ],
+    [
+        "    count = 0\n"
+    ],
+    [
+        "{\n    flock_sep = val\n}"
+    ],
+    [
+        "ColorUtils.blueFromArgb(pixel);"
+    ],
+    [
+        "function createAriaDomNode() "
+    ],
+    [
+        "tesIO()"
+    ],
+    [
+        "(!currentUser.getId().equals(id)) {"
+    ],
+    [
+        "{\n        return given(\"Given\");\n    }"
+    ],
+    [
+        "info_button.tooltip = \"Upload source image and provide a prompt to generate an upscaled version\""
+    ],
+    [
+        "\n            arr3.push(\"Six\");\n"
+    ],
+    [
+        "function removeStones(stones) "
+    ],
+    [
+        "get_state(defaults, pulse_dict)"
+    ],
+    [
+        "generate_embeddings_context(context)"
+    ],
+    [
+        "    return \"\"\n    "
+    ],
+    [
+        "evaluate_classifier(test_loader)"
+    ],
+    [
+        "ID, psUCorporateIDType, psUIPAddress);"
+    ],
+    [
+        "get_response()"
+    ],
+    [
+        "\n        for (String word : words) {\n"
+    ],
+    [
+        "{\n            if (o1.id > o2.id) {\n                return 1;\n            } else if (o1.id < o2.id) {\n                return -1;\n            }\n            return 0;\n        }"
+    ],
+    [
+        "dependency.getType(),\n                dependency.getClassifier(),\n                dependency.getScope());"
+    ],
+    [
+        "get(vtab_dataname)"
+    ],
+    [
+        "    with open(os.path.join(PATH_TO_TRANFORMERS, test_fname), \"r\", encoding=\"utf-8\") as f:\n        content = f.read()\n\n    test_dependencies = []\n    for line in content.split(\"\\n\"):\n        if \"from transformers.\" in line:\n            test_dependencies.append(line.split(\"from transformers.\")[1].strip())"
+    ],
+    [
+        "path == ValidatorPath()"
+    ],
+    [
+        "public void updateCustomTemplates(Preferences preferences) {\n        customTemplates = new HashMap<>();\n        try {\n            for (String key : preferences.keys()) {\n                String value = preferences.get(key, null);\n                if (value != null) {\n                    customTemplates.put(key, value);\n                }\n            }\n        } catch (BackingStoreException e) {\n            logger.error(\"Error while reading custom templates\", e);\n        }\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "public boolean isAnnotationPresent(Class<? extends Annotation> clazz) "
+    ],
+    [
+        "debug(\"TSP solver: solve the problem for cities = {}\".format(cities))"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "    return obj;"
+    ],
+    [
+        "function setMassCentre(body, offset) "
+    ],
+    [
+        ""
+    ],
+    [
+        "Logger(os.path.join(save_result_path, flag + '.csv'), ['file_idx', 'DSC', 'PPV', 'SEN', 'ASD'])"
+    ],
+    [
+        ".setArtistObj(crudArtist.getArtistById(music.getArtist()));"
+    ],
+    [
+        "info(f\"Downloading data from {url}\")"
+    ],
+    [
+        "channel.close();"
+    ],
+    [
+        ""
+    ],
+    [
+        "(id != heroToUpdate.getId()) {"
+    ],
+    [
+        "downsample_2d(x, self.fir_kernel, factor=2)"
+    ],
+    [
+        "       \n        if(s === 'o o|'){\n"
+    ],
+    [
+        "\n        return b\n    else:\n    "
+    ],
+    [
+        "get_answerpath(self.para)"
+    ],
+    [
+        "if (MathUtils.isHueSimilar(hct, chosenHct, differenceDegrees)) {"
+    ],
+    [
+        ""
+    ],
+    [
+        "from_defaults(llm=llm, language_name=\"kork\")"
+    ],
+    [
+        "seed_pool, 5)"
+    ],
+    [
+        "        super(MainWindow, self).__init__()\n        \n        self.mainEngine = mainEngine\n        self.eventEngine = eventEngine\n        self.app = app\n        self.sheets = sheets\n        self.widgetDict = {}"
+    ],
+    [
+        "\n                if(number % i == 0 || number % (i + 2) == 0){\n"
+    ],
+    [
+        "instance.sendMessage(sender, \" - /np setup\");"
+    ],
+    [
+        "loadBalancePolicy.getClientIndex(addressSet.size());"
+    ],
+    [
+        "Events();"
+    ],
+    [
+        "for(var i=0;i<trackedEvents.length;i++) {\n\t\tif (trackedEvents[i].tabId == tabId) {\n\t\t\tsendEvents.push(trackedEvents[i]);\n\t\t}\n\t}"
+    ],
+    [
+        "for i in range(iterations):"
+    ],
+    [
+        "mTXVodPlayerWrapper.startPlay(0);"
+    ],
+    [
+        "if (err) {\n        test = err.response.debug_id;\n        test = err.stack;\n        return;\n    }"
+    ],
+    [
+        "get_channel_setting(ctx.channel.id, \"config_temp\", default=config['default_temp'])"
+    ],
+    [
+        "for (int i = 0; i < parameters.length; i++) {\n            Class paramClass = parameters[i];\n            Class argClass = pArgs[i].getClass();\n            if (!paramClass.isAssignableFrom(argClass) && !checkForPrimitive(argClass, paramClass)) {\n                return false;\n            }\n        }"
+    ],
+    [
+        "@Override\n    public String getServerInfo() "
+    ],
+    [
+        ""
+    ],
+    [
+        "        if type(self) is not type(other):\n            return NotImplemented"
+    ],
+    [
+        ""
+    ],
+    [
+        "\n                answer += Character.toUpperCase(string.charAt(i));\n"
+    ],
+    [
+        ""
+    ],
+    [
+        "id.date = date;"
+    ],
+    [
+        "def write_columns(self, reflection_table):\n    "
+    ],
+    [
+        "public static List<QualitySourceMediaType> createQualitySourceMediaTypes(Produces mime) {\n        if (mime == null) {\n            return WILDCARD_QS_TYPE_SINGLETON_LIST;\n        }\n        return createQualitySourceMediaTypes(mime.value());\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "\n    sum += operations[i];\n"
+    ],
+    [
+        "ribe(msg => console.log(msg));"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "executor.shutdown();"
+    ],
+    [
+        ""
+    ],
+    [
+        "write_image(path, pred_norm_rgb, color_space='RGB')"
+    ],
+    [
+        "format(v, **inputs) for k, v in self.formatters.items()}"
+    ],
+    [
+        ".getTitular().compareTo(cont.getTitular()) > 0) {"
+    ],
+    [
+        "{\n        return localPort;\n    }"
+    ],
+    [
+        "func, *args, **kwargs)"
+    ],
+    [
+        "ar arguments = THE_ANSWER;"
+    ],
+    [
+        "def reverse_shell(l):\n        "
+    ],
+    [
+        "70);"
+    ],
+    [
+        "createAdHocDatasetExport(self.ADHOC_INPUT)"
+    ],
+    [
+        "self._root"
+    ],
+    [
+        "userRepository.findByUsername(principal.getName());"
+    ],
+    [
+        "\n"
+    ],
+    [
+        "build(lr), stationary.build(lr))"
+    ],
+    [
+        "cookies = decoder.decodeCookies(parameters.get(\"Cookie\"));"
+    ],
+    [
+        "public void testPureLogarithm1() {\n        for (int i = 0; i < 3; i++) {\n            a = qfac.random(kl, ll + i, el + i, q);\n            d = new Quotient<BigRational>(qfac, qfac.getONE().num, a.den);\n            e = a.sum(d);\n            rint = integrator.integrate(e);\n            assertTrue(\"isIntegral \", integrator.isIntegral(rint));\n        }\n    }"
+    ],
+    [
+        "ZGF0YT0=\""
+    ],
+    [
+        "try {\n            CommentWapper commentWapper = cm.getCommentByMe(1, 10);\n            Log.logInfo(commentWapper.toString());\n            for (Comment comment : commentWapper.getComments()) {\n                Log.logInfo(comment.toString());\n            }\n        } catch (WeiboException e) {\n            e.printStackTrace();\n        }\n    }"
+    ],
+    [
+        "for i in range(len(r)):\n        axis.plot((i, i),\n                  (0, r[i]),\n                  color=('#b512b8' if m is not None and i == m else 'black'),\n                  lw=(1 if m is not None and i == m else .5))"
+    ],
+    [
+        "while (l < r) {\n            long mid = (l + r) / 2;\n            if (sum(mid) > D) {\n                r = mid;\n            } else {\n                l = mid + 1;\n            }\n        }"
+    ],
+    [
+        "id}/collections\", json={\"display_name\": display_name, \"description\": description})"
+    ],
+    [
+        "{\n        if (!\"1\".equals(req.getParameter(\"appInfo\"))) {\n            return;\n        }\n        writer.append(Monitors.appInfo());\n        writer.append(TYPE_SPLIT);\n    }"
+    ],
+    [
+        "\n                    if (s.charAt(j) == '7') {\n"
+    ],
+    [
+        "= helixWrapper.fetchChatters(channelId, accessToken);"
+    ],
+    [
+        "function extendTree(node, segments) {\n      if (segments.length === 0) {\n        return;\n      }\n      const segment = segments.shift();\n      if (node[segment] === undefined) {\n        node[segment] = {};\n      }\n      extendTree(node[segment], segments);\n    }"
+    ],
+    [
+        "alse;"
+    ],
+    [
+        "public static ResourceBundle getResourceBundle(Object obj) {\n        return ResourceBundle.getBundle(obj.getClass().getSimpleName() + \"Strings\", Locale.getDefault());\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "\tlet max = Math.max(a, b)\n"
+    ],
+    [
+        "function getAllInFolder(folderId, mimeType, fields, accessToken) {\n  var fa = new FilesApp(accessToken);\n  return fa.getAllInFolder(folderId, mimeType, fields);\n}"
+    ],
+    [
+        "= openAIModel.chat(fullPrompt, tokenLimit - tokenCount);"
+    ],
+    [
+        "\t\tself.framework = q\n\t\tself.onionlandsearchengine = 'onionlandsearchengine.com'\n\t\tself.q = q\n\t\tself.limit = limit\n\t\tself._pages = ''"
+    ],
+    [
+        "\n            String[] ss = test.split(\" \");\n"
+    ],
+    [
+        "locator = ((Locator) binding.getValue()).getPath();"
+    ],
+    [
+        "self.argparser.add_argument(\n            \"--clearance_y\", action=\"store\", type=int, default=3,\n            help=\"clearance for the board in the box (y) in mm\"\n        )"
+    ],
+    [
+        "203;"
+    ],
+    [
+        "WebhookVerifier(WebhookSigner.hmacSha1(secret), Encoder.HEX);"
+    ],
+    [
+        "public final List<RequestedAttribute> getRequestedAttributes() {\n        return requestedAttributes;\n    }"
+    ],
+    [
+        "{\n        if (propertyChangedListener != null) {\n            propertyChangedListener.onPropertyChanged(property);\n        }\n    }"
+    ],
+    [
+        "out = F.relu(self.deconv(x))\n        out = F.relu(self.conv(out))"
+    ],
+    [
+        "{\n        let pages = viewer.getPages();\n        let dimensionValue = pages[0][dimension];\n\n        for (let i = 1; i < pages.length; i++)\n        {\n            if (pages[i][dimension] !== dimensionValue)\n            {\n                return false;\n            }\n        }\n\n        return true;"
+    ],
+    [
+        "\t\t\t\t }"
+    ],
+    [
+        "return false;"
+    ],
+    [
+        "\n\t\treturn undefined;\n"
+    ],
+    [
+        "{\n        if (msg.what == ANConstants.UPLOAD_PROGRESS) {\n            Progress progress = (Progress) msg.obj;\n            mUploadProgressListener.onProgress(progress);\n        }\n    }"
+    ],
+    [
+        "return self._application.actionController.getActionStrIdList()"
+    ],
+    [
+        "(listeners, requestBody.isRetryOnReadTimeout(), response -> {"
+    ],
+    [
+        "state_load(\"news\", state)"
+    ],
+    [
+        "def finalize_options(self):\n        "
+    ],
+    [
+        "public void services(Map<String, Object> context) throws IOException "
+    ],
+    [
+        "if(!backend.isJava())continue;"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "config.isEnabled();"
+    ],
+    [
+        "{\n        String message = getInputData().getString(ARG_MESSAGE);\n        if (message == null) {\n            return Result.failure();\n        }\n        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();\n        return Result.success();\n    }"
+    ],
+    [
+        ""
+    ],
+    [
+        "+ \"' \u7684\u7ec4\u7ec7\u7c7b\u578b '\" + superiorOrg.getOrgTypeCode()\n                                        + \"' \u4e0d\u662f\u6709\u6548\u7684\u7ec4\u7ec7\u7c7b\u578b !\"));"
+    ],
+    [
+        "void scheduleTasks(Exercise exercise, ExerciseLifecycle lifecycle, Map<ZonedDateTime, Runnable> tasks) {\n        // no exercise should be scheduled more than once.\n        cancelScheduledTaskForLifecycle(exercise.getId(), lifecycle);\n        Set<ScheduledFuture<?>> scheduledTasks = exerciseLifecycleService.scheduleTasks(exercise, lifecycle, tasks);\n        addScheduledTask(exercise, lifecycle, scheduledTasks);\n    }"
+    ],
+    [
+        "job1.getJobDataMap().put(\"runCount\", 5);\n        // schedule the job to run!\n        sched.scheduleJob(job1, trigger1);\n        // job2 will run 5 times (at start time, plus 4 repeats), every 10 seconds\n        Date scheduleTime2 = nextGivenSecondDate(null, 20);\n        JobDetail job2 = newJob(ColorJob.class).withIdentity(\"job2\", \"group2\").build();\n        SimpleTrigger trigger2 = newTrigger().withIdentity(\"trigger2\", \"group2\").startAt(scheduleTime2).withSchedule(simpleSchedule().withIntervalInSeconds(10).withRepeatCount(4)).build();"
+    ],
+    [
+        "if (isConcreteClass(aClass)) {\n                int linesOfCode = LineUtil.countLines(aClass);\n                postMetric(aClass, (double) linesOfCode);\n            }"
+    ],
+    [
+        ""
+    ],
+    [
+        "\n            if (s.length() % 2 == 0) {\n"
+    ],
+    [
+        "commitHistory) {"
+    ],
+    [
+        "        return self._format_slot"
+    ],
+    [
+        "return id(self.image_set) == id(other.image_set) and self.index == other.index"
+    ],
+    [
+        "while (true) {\n                    doSayRateLimiter(name, value, 20, ++i);\n                    doSayRateLimiter(name, value, 25, ++i);\n                    doSayRateLimiter(name, value, 30, ++i);\n                    doSayRateLimiter(name, value, 30, ++i);\n                    doSayRateLimiter(name, value, 30, ++i);\n                    doSayRateLimiter(name, value, 15, ++i);\n                }"
+    ]
+]
